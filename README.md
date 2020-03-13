@@ -1,2 +1,2 @@
 # TKinterDesigner
-TKinterDesigner is a tool software to development the Python Interface for Python programmer.
+TKinterDesigner is a small tool software to development the Python Interface for Python programmers.
