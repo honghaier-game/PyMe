@@ -3,11 +3,12 @@
 #import libs 
 import RT_cmd
 import Fun
+import sys
+sys.path.append("D:/TKinterDesigner/Sample/Server")
 import tkinter
 from   tkinter import *
 import tkinter.ttk
 import tkinter.font
-G_VarArray=[['Count',0]]
 ElementBGArray={}  
 ElementBGArray_Resize={} 
 ElementBGArray_IM={} 
@@ -17,109 +18,45 @@ ElementBGArray_IM={}
 root = tkinter.Tk()
 root.title("Form1")
 Form_1= tkinter.Canvas(root,width = 10,height = 4)
-Form_1.place(x = 0,y = 0,width = 214,height = 219)
+Form_1.place(x = 0,y = 0,width = 548,height = 239)
 Form_1.configure(bg = "#efefef")
-root.geometry("214x219")
+root.geometry("548x239")
 #Create the elements of root 
-Label_2= tkinter.Label(root,text="",width = 10,height = 4)
-Label_2.place(x = 10,y = 10,width = 190,height = 30)
-Label_2.configure(bg = "#ffffff")
+import MySocket
+MySocket_2=MySocket.MySocket()
+#MySocket_2.xy(437,57)
+setattr(MySocket_2,'HOST','127.0.0.1')
+setattr(MySocket_2,'PORT','8888')
+Fun.G_UIElementArray['MySocket_2']=MySocket_2
+Fun.G_UIElementVariableArray['Entry_3']=tkinter.StringVar()
+Entry_3= tkinter.Entry(root,textvariable=Fun.G_UIElementVariableArray['Entry_3'])
+Entry_3.place(x = 85,y = 19,width = 120,height = 20)
+Entry_3.configure(bg = "#efefef")
+Entry_3.configure(relief = "sunken")
 BoundingDataArray=[]
-BoundingDataArray.append(['Count','float','0.0',1])
-Fun.G_ElementBoundingDataArray.append(['Label_2',BoundingDataArray])
-Fun.G_UIElementArray['Label_2']=Label_2
-Button_3= tkinter.Button(root,text="1",width = 10,height = 4)
-Button_3.place(x = 10,y = 50,width = 40,height = 30)
-Button_3.configure(relief = "groove")
-Button_3.configure(command =RT_cmd.Button_3_onCommand)
-Fun.G_UIElementArray['Button_3']=Button_3
-Button_4= tkinter.Button(root,text="2",width = 10,height = 4)
-Button_4.place(x = 60,y = 50,width = 40,height = 30)
-Button_4.configure(relief = "groove")
-Button_4.configure(command =RT_cmd.Button_4_onCommand)
-Fun.G_UIElementArray['Button_4']=Button_4
-Button_5= tkinter.Button(root,text="3",width = 10,height = 4)
-Button_5.place(x = 110,y = 50,width = 40,height = 30)
-Button_5.configure(relief = "groove")
-Button_5.configure(command =RT_cmd.Button_5_onCommand)
-Fun.G_UIElementArray['Button_5']=Button_5
-Button_6= tkinter.Button(root,text="4",width = 10,height = 4)
-Button_6.place(x = 10,y = 90,width = 40,height = 30)
-Button_6.configure(relief = "groove")
+BoundingDataArray.append(['IPAddr','string','127.0.0.1',1])
+Fun.G_ElementBoundingDataArray.append(['Entry_3',BoundingDataArray])
+Fun.G_UIElementArray['Entry_3']=Entry_3
+Label_4= tkinter.Label(root,text="端口",width = 10,height = 4)
+Label_4.place(x = 216,y = 19,width = 74,height = 20)
+Fun.G_UIElementArray['Label_4']=Label_4
+Fun.G_UIElementVariableArray['Entry_5']=tkinter.StringVar()
+Entry_5= tkinter.Entry(root,textvariable=Fun.G_UIElementVariableArray['Entry_5'])
+Entry_5.place(x = 294,y = 19,width = 120,height = 20)
+Entry_5.configure(relief = "sunken")
+BoundingDataArray=[]
+BoundingDataArray.append(['Port','int','8888',1])
+Fun.G_ElementBoundingDataArray.append(['Entry_5',BoundingDataArray])
+Fun.G_UIElementArray['Entry_5']=Entry_5
+Button_6= tkinter.Button(root,text="启动",width = 10,height = 4)
+Button_6.place(x = 433,y = 16,width = 100,height = 28)
 Button_6.configure(command =RT_cmd.Button_6_onCommand)
 Fun.G_UIElementArray['Button_6']=Button_6
-Button_7= tkinter.Button(root,text="5",width = 10,height = 4)
-Button_7.place(x = 60,y = 90,width = 40,height = 30)
-Button_7.configure(relief = "groove")
-Button_7.configure(command =RT_cmd.Button_7_onCommand)
-Fun.G_UIElementArray['Button_7']=Button_7
-Button_8= tkinter.Button(root,text="6",width = 10,height = 4)
-Button_8.place(x = 110,y = 90,width = 40,height = 30)
-Button_8.configure(relief = "groove")
-Button_8.configure(command =RT_cmd.Button_8_onCommand)
-Fun.G_UIElementArray['Button_8']=Button_8
-Button_9= tkinter.Button(root,text="7",width = 10,height = 4)
-Button_9.place(x = 10,y = 130,width = 40,height = 30)
-Button_9.configure(relief = "groove")
-Button_9.configure(command =RT_cmd.Button_9_onCommand)
-Fun.G_UIElementArray['Button_9']=Button_9
-Button_10= tkinter.Button(root,text="8",width = 10,height = 4)
-Button_10.place(x = 60,y = 130,width = 40,height = 30)
-Button_10.configure(relief = "groove")
-Button_10.configure(command =RT_cmd.Button_10_onCommand)
-Fun.G_UIElementArray['Button_10']=Button_10
-Button_11= tkinter.Button(root,text="9",width = 10,height = 4)
-Button_11.place(x = 110,y = 130,width = 40,height = 30)
-Button_11.configure(relief = "groove")
-Button_11.configure(command =RT_cmd.Button_11_onCommand)
-Fun.G_UIElementArray['Button_11']=Button_11
-Button_12= tkinter.Button(root,text="0",width = 10,height = 4)
-Button_12.place(x = 10,y = 170,width = 40,height = 30)
-Button_12.configure(relief = "groove")
-Button_12.configure(command =RT_cmd.Button_12_onCommand)
-Fun.G_UIElementArray['Button_12']=Button_12
-Button_13= tkinter.Button(root,text="C",width = 10,height = 4)
-Button_13.place(x = 60,y = 170,width = 40,height = 30)
-Button_13.configure(relief = "groove")
-Button_13.configure(command =RT_cmd.Button_13_onCommand)
-Fun.G_UIElementArray['Button_13']=Button_13
-Button_14= tkinter.Button(root,text="=",width = 10,height = 4)
-Button_14.place(x = 110,y = 169,width = 40,height = 30)
-Button_14.configure(relief = "groove")
-Button_14.configure(command =RT_cmd.Button_14_onCommand)
-Fun.G_UIElementArray['Button_14']=Button_14
-Button_15= tkinter.Button(root,text="+",width = 10,height = 4)
-Button_15.place(x = 160,y = 50,width = 40,height = 30)
-Button_15.configure(relief = "groove")
-Button_15.configure(command =RT_cmd.Button_15_onCommand)
-Fun.G_UIElementArray['Button_15']=Button_15
-Button_16= tkinter.Button(root,text="-",width = 10,height = 4)
-Button_16.place(x = 160,y = 90,width = 40,height = 30)
-Button_16.configure(relief = "groove")
-Button_16.configure(command =RT_cmd.Button_16_onCommand)
-Fun.G_UIElementArray['Button_16']=Button_16
-Button_17= tkinter.Button(root,text="X",width = 10,height = 4)
-Button_17.place(x = 160,y = 130,width = 40,height = 30)
-Button_17.configure(relief = "groove")
-Button_17.configure(command =RT_cmd.Button_17_onCommand)
-Fun.G_UIElementArray['Button_17']=Button_17
-Button_18= tkinter.Button(root,text="/",width = 10,height = 4)
-Button_18.place(x = 160,y = 170,width = 40,height = 30)
-Button_18.configure(relief = "groove")
-Button_18.configure(command =RT_cmd.Button_18_onCommand)
-Fun.G_UIElementArray['Button_18']=Button_18
-#Create the Menu of root 
-MainMenu=tkinter.Menu(root)
-root.config(menu = MainMenu)
-A=tkinter.Menu(MainMenu,tearoff = 0)
-A1=tkinter.Menu(A,tearoff = 0)
-A1.add_command(label="A11",command=RT_cmd.Menu_A11)
-A.add_cascade(label="A1",menu=A1)
-MainMenu.add_cascade(label="A",menu=A)
-B=tkinter.Menu(MainMenu,tearoff = 0)
-B.add_command(label="B2",command=RT_cmd.Menu_B2)
-MainMenu.add_cascade(label="B",menu=B)
+ListBox_7= tkinter.Listbox(root)
+ListBox_7.place(x = 21,y = 57,width = 394,height = 160)
+Fun.G_UIElementArray['ListBox_7']=ListBox_7
 #Add Some Logic Code Here: (Keep This Line of comments)
 #Inital all element's Data 
 Fun.InitElementData()
 root.mainloop()
+
