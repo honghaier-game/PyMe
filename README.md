@@ -9,3 +9,7 @@ publish version:1.2.0
 #Date : 2020/03/31
 publish version:1.2.1
 Description:Add Module Plug-in supoort.
+
+#Date : 2020/04/01
+publish version:1.2.2
+Description:Support drag a widget from elements tree to attribute edit. you can pass a widget param by this way.
