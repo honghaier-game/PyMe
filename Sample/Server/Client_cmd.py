@@ -8,12 +8,12 @@ import Fun
 #Set Element's Text :Fun.setUIText(Param1：elementName,Param2:TextValue)
 #Get Element's Text :Fun.getUIText(Param1：elementName)
 def Button_8_onCommand():
-  MySocket = Fun.getUIEle('MySocket_10')
+  MySocket = Fun.getUIEle('MySocket_11')
   IPAddr = Fun.getUIData('Entry_3','IPAddr')
   PORT = Fun.getUIData('Entry_5','Port')
   MySocket.connServer(IPAddr,PORT)
 def Button_9_onCommand():
-  MySocket = Fun.getUIEle('MySocket_10')
+  MySocket = Fun.getUIEle('MySocket_11')
   MsgText = Fun.getUIText('Entry_7')
   MySocket.sendMessage(MsgText)
 

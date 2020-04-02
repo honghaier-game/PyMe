@@ -3,6 +3,8 @@
 #import libs 
 import Client_cmd
 import Fun
+import sys
+sys.path.append("D:/PyGUIProj/3.Compile-Exe/ModleLibary/Server")
 import tkinter
 from   tkinter import *
 import tkinter.ttk
@@ -16,9 +18,9 @@ ElementBGArray_IM={}
 root = tkinter.Tk()
 root.title("Form1")
 Form_1= tkinter.Canvas(root,width = 10,height = 4)
-Form_1.place(x = 0,y = 0,width = 564,height = 90)
+Form_1.place(x = 0,y = 0,width = 564,height = 305)
 Form_1.configure(bg = "#efefef")
-root.geometry("564x90")
+root.geometry("564x305")
 #Create the elements of root 
 Label_2= tkinter.Label(root,text="服务器IP",width = 10,height = 4)
 Label_2.place(x = 15,y = 15,width = 69,height = 20)
@@ -62,12 +64,16 @@ Button_9= tkinter.Button(root,text="发送",width = 10,height = 4)
 Button_9.place(x = 448,y = 45,width = 100,height = 28)
 Button_9.configure(command =Client_cmd.Button_9_onCommand)
 Fun.G_UIElementArray['Button_9']=Button_9
+ListBox_11= tkinter.Listbox(root)
+ListBox_11.place(x = 21,y = 87,width = 528,height = 197)
+Fun.G_UIElementArray['ListBox_11']=ListBox_11
 import MySocket
-MySocket_10=MySocket.MySocket()
-#MySocket_10.xy(3,3)
-setattr(MySocket_10,'HOST','127.0.0.1')
-setattr(MySocket_10,'PORT','8888')
-Fun.G_UIElementArray['MySocket_10']=MySocket_10
+MySocket_11=MySocket.MySocket()
+#MySocket_11.xy(21,87)
+MySocket_11.set_HOST('127.0.0.1')
+MySocket_11.set_PORT('8888')
+MySocket_11.set_LISTBOX(ListBox_11)
+Fun.G_UIElementArray['MySocket_11']=MySocket_11
 #Add Some Logic Code Here: (Keep This Line of comments)
 #Inital all element's Data 
 Fun.InitElementData()
