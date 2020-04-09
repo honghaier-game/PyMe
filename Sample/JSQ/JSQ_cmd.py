@@ -1,4 +1,7 @@
 #coding=utf-8
+import sys
+import tkinter
+from   tkinter import *
 import Fun
 
 from   tkinter.messagebox import showwarning
