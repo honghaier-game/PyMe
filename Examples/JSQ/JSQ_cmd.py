@@ -1,8 +1,10 @@
 #coding=utf-8
 import sys
+import os
 from   os.path import abspath, dirname
 sys.path.append(abspath(dirname(__file__)))
 import tkinter
+import tkinter.filedialog
 from   tkinter import *
 import Fun
 
@@ -120,6 +122,7 @@ def Button_15_onCommand():
 
 def Button_16_onCommand():
   global G_OpType
+  global G_TempCount
   G_TempCount =Fun.getUIData('Label_2','Count')
   G_OpType = 2
   Fun.setUIData('Label_2','Count',0.0)
@@ -127,13 +130,16 @@ def Button_16_onCommand():
 
 def Button_17_onCommand():
   global G_OpType
+  global G_TempCount
   G_TempCount =Fun.getUIData('Label_2','Count')
   G_OpType = 3
+  print(G_TempCount)
   Fun.setUIData('Label_2','Count',0.0)
 
 
 def Button_18_onCommand():
   global G_OpType
+  global G_TempCount
   G_TempCount =Fun.getUIData('Label_2','Count')
   G_OpType = 4
   Fun.setUIData('Label_2','Count',0.0)
