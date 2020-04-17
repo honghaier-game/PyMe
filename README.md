@@ -18,3 +18,7 @@ Description:Support drag a widget from elements tree to attribute edit. you can 
 publish version:1.2.3
 Description:Support to select widgets by dragging rectangle 
 
+#Date : 2020/04/17
+publish version:1.3.0
+Description:Huge improvements, including project management, multi-file management, and improvements to more controls.
+
