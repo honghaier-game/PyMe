@@ -80,11 +80,11 @@ class  RegDlg:
       Fun.G_UIElementArray['Text_12']=Text_12
       Button_13= tkinter.Button(root,text="确定",width = 10,height = 4)
       Button_13.place(x = 176,y = 354,width = 100,height = 28)
-      Button_13.configure(command =RegDlg_cmd.Button_13_onCommand)
+      Button_13.configure(command=RegDlg_cmd.Button_13_onCommand)
       Fun.G_UIElementArray['Button_13']=Button_13
       Button_14= tkinter.Button(root,text="取消",width = 10,height = 4)
       Button_14.place(x = 310,y = 354,width = 100,height = 28)
-      Button_14.configure(command =RegDlg_cmd.Button_14_onCommand)
+      Button_14.configure(command=RegDlg_cmd.Button_14_onCommand)
       Fun.G_UIElementArray['Button_14']=Button_14
       #Inital all element's Data 
       Fun.InitElementData()
