@@ -14,7 +14,7 @@ import Fun
 #Get Element's Text :Fun.getUIText(Param1：elementName)
 #Update Element's Input Data Array:Fun.UpdateUIInputDataArray()
 def Button_5_onCommand():
-  MySocket = Fun.getUIEle('MySocket_9')
+  MySocket = Fun.getUIEle('MySocket_8')
   IPAddr = Fun.getUIData('Entry_2','IPAddr')
   PORT = Fun.getUIData('Entry_4','Port')
   MySocket.createServer(IPAddr,PORT)

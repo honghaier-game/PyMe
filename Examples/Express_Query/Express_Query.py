@@ -5,7 +5,7 @@ import Express_Query_cmd
 import Fun
 import sys
 from   os.path import abspath, dirname
-sys.path.append("D:\TKinterDesigner\Examples\Express_Query")
+sys.path.append(abspath(dirname(__file__)))
 import tkinter
 from   tkinter import *
 import tkinter.ttk
@@ -51,7 +51,7 @@ class  Express_Query:
       Fun.G_UIElementArray['Entry_5']=Entry_5
       Button_6= tkinter.Button(root,text="查询",width = 10,height = 4)
       Button_6.place(x = 297,y = 53,width = 100,height = 28)
-      Button_6.configure(command =Express_Query_cmd.Button_6_onCommand)
+      Button_6.configure(command=Express_Query_cmd.Button_6_onCommand)
       Fun.G_UIElementArray['Button_6']=Button_6
       ListBox_7= tkinter.Listbox(root)
       ListBox_7.place(x = 24,y = 101,width = 372,height = 160)
@@ -61,7 +61,8 @@ class  Express_Query:
       #Express_8.xy(24,101)
       Express_8.set_CompanyID('4')
       Express_8.set_ExpressNumber('0000001')
-      Fun.G_UIElementArray['ComboBox_3']=ComboBox_3
+      Express_8.set_ComboBox(ComboBox_3)
+      Fun.G_UIElementArray['Express_8']=Express_8
       #Inital all element's Data 
       Fun.InitElementData()
       #Add Some Logic Code Here: (Keep This Line of comments)
