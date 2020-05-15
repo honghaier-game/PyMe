@@ -1,6 +1,5 @@
 import urllib.request
 import json
-import msvcrt
 import tkinter
 
 
@@ -32,9 +31,8 @@ class   Express:
         return self.ComboBox   
     #查询
     def Query(self,ListBox):
-        self.CompanyID = self.ComboBox.current() + 1
         ListBox.delete(0,tkinter.END)
-        url = "http://www.kuaidi100.com/query?type=%s&postid=%s" % (self.Company_Dict[self.CompanyID], self.ExpressNumber)
+        url = "http://www.kuaidi100.com/query?type=%s&postid=%s" % (self.Company_Dict[int(self.CompanyID)], self.ExpressNumber)
         response = urllib.request.urlopen(url)
         html = response.read().decode('utf-8')
         target = json.loads(html)
@@ -52,4 +50,3 @@ class   Express:
                 ListBox.insert(tkinter.END,state_text)
         else:
             ListBox.insert(tkinter.END,"查询出现错误")
-

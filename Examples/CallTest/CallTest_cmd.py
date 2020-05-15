@@ -1,19 +1,13 @@
 #coding=utf-8
 import sys
+import os
 from   os.path import abspath, dirname
 sys.path.append(abspath(dirname(__file__)))
 import tkinter
+import tkinter.filedialog
 from   tkinter import *
 import Fun
-#Set Element 's BoundingData :Fun.setUIData(Param1：elementName，Param2：DataName，Param3：DataValue)
-#Get Element's BoundingData :Fun.getUIData(Param1：elementName，Param2：DataName)
-#Set Element 's Attrib :Fun.setUIAttrib(Param1：elementName，Param2：AttribName，Param3：AttribValue)
-#Get Element's Attrib :Fun.getUIAttrib(Param1：elementName，Param2：AttribName)
-#Get Element:Fun.getUIEle(Param1：elementName)
-#Set Element's Text :Fun.setUIText(Param1：elementName,Param2:TextValue)
-#Get Element's Text :Fun.getUIText(Param1：elementName)
-#Update Element's Input Data Array:Fun.UpdateUIInputDataArray()
-def Button_2_onCommand():
+def Button_2_onCommand(className,widgetName):
   topLevel = tkinter.Toplevel()
   topLevel.attributes("-toolwindow", 1)
   topLevel.wm_attributes("-topmost", 1)
@@ -30,4 +24,3 @@ def Button_2_onCommand():
   else:
     print('性别:女')
   print('邮箱:'+InputDataArray['Entry_10'][0])
-

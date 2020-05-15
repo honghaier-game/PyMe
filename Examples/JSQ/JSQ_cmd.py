@@ -7,145 +7,126 @@ import tkinter
 import tkinter.filedialog
 from   tkinter import *
 import Fun
-
 from   tkinter.messagebox import showwarning
-G_VarArray={'Count':0}
-G_UIElementArray={}
-G_TempCount = 0.0
-G_OpType = 0
-#Set Element 's BoundingData :Fun.setUIData(Param1：elementName，Param2：DataName，Param3：DataValue)
-#Get Element's BoundingData :Fun.getUIData(Param1：elementName，Param2：DataName)
-#Set Element 's Attrib :Fun.setUIAttrib(Param1：elementName，Param2：AttribName，Param3：AttribValue)
-#Get Element's Attrib :Fun.getUIAttrib(Param1：elementName，Param2：AttribName)
-#Get Element:Fun.getUIEle(Param1：elementName)
-#Set Element's Text :Fun.setUIText(Param1：elementName,Param2:TextValue)
-#Get Element's Text :Fun.getUIText(Param1：elementName)
-#Update Element's Input Data Array:Fun.UpdateUIInputDataArray()
-def Button_3_onCommand():
-  count =Fun.getUIData('Label_2','Count')
-  count = count * 10.0 + 1
-  Fun.setUIData('Label_2','Count',count)
+
+def Button_3_onCommand(className,widgetName):
+  Count = Fun.GetUIData(className,'Label_2','Count')
+  Count = Count * 10.0 + 1
+  Fun.SetUIData(className,'Label_2','Count',Count)
+
+
+def Button_4_onCommand(className,widgetName):
+  Count = Fun.GetUIData(className,'Label_2','Count')
+  Count = Count * 10.0 + 2
+  Fun.SetUIData(className,'Label_2','Count',Count)
 
 
 
-def Button_4_onCommand():
-  count =Fun.getUIData('Label_2','Count')
-  count = count * 10.0 + 2
-  Fun.setUIData('Label_2','Count',count)
+def Button_5_onCommand(className,widgetName):
+  Count = Fun.GetUIData(className,'Label_2','Count')
+  Count = Count * 10.0 + 3
+  Fun.SetUIData(className,'Label_2','Count',Count)
 
 
 
-def Button_5_onCommand():
-  count =Fun.getUIData('Label_2','Count')
-  count = count * 10.0 + 3
-  Fun.setUIData('Label_2','Count',count)
+def Button_6_onCommand(className,widgetName):
+  Count = Fun.GetUIData(className,'Label_2','Count')
+  Count = Count * 10.0 + 4
+  Fun.SetUIData(className,'Label_2','Count',Count)
 
 
 
-def Button_6_onCommand():
-  count =Fun.getUIData('Label_2','Count')
-  count = count * 10.0 + 4
-  Fun.setUIData('Label_2','Count',count)
+def Button_7_onCommand(className,widgetName):
+  Count = Fun.GetUIData(className,'Label_2','Count')
+  Count = Count * 10.0 + 5
+  Fun.SetUIData(className,'Label_2','Count',Count)
 
 
 
-def Button_7_onCommand():
-  count =Fun.getUIData('Label_2','Count')
-  count = count * 10.0 + 5
-  Fun.setUIData('Label_2','Count',count)
+def Button_8_onCommand(className,widgetName):
+  Count = Fun.GetUIData(className,'Label_2','Count')
+  Count = Count * 10.0 + 6
+  Fun.SetUIData(className,'Label_2','Count',Count)
 
 
 
-def Button_8_onCommand():
-  count =Fun.getUIData('Label_2','Count')
-  count = count * 10.0 + 6
-  Fun.setUIData('Label_2','Count',count)
+def Button_9_onCommand(className,widgetName):
+  Count = Fun.GetUIData(className,'Label_2','Count')
+  Count = Count * 10.0 + 7
+  Fun.SetUIData(className,'Label_2','Count',Count)
 
 
 
-def Button_9_onCommand():
-  count =Fun.getUIData('Label_2','Count')
-  count = count * 10.0 + 7
-  Fun.setUIData('Label_2','Count',count)
+def Button_10_onCommand(className,widgetName):
+  Count = Fun.GetUIData(className,'Label_2','Count')
+  Count = Count * 10.0 + 8
+  Fun.SetUIData(className,'Label_2','Count',Count)
 
 
 
-def Button_10_onCommand():
-  count =Fun.getUIData('Label_2','Count')
-  count = count * 10.0 + 8
-  Fun.setUIData('Label_2','Count',count)
+def Button_11_onCommand(className,widgetName):
+  Count = Fun.GetUIData(className,'Label_2','Count')
+  Count = Count * 10.0 + 9
+  Fun.SetUIData(className,'Label_2','Count',Count)
 
 
 
-def Button_11_onCommand():
-  count =Fun.getUIData('Label_2','Count')
-  count = count * 10.0 + 9
-  Fun.setUIData('Label_2','Count',count)
-
-
-
-def Button_12_onCommand():
-  count =Fun.getUIData('Label_2','Count')
-  count = count * 10.0
-  Fun.setUIData('Label_2','Count',count)
+def Button_12_onCommand(className,widgetName):
+  Count = Fun.GetUIData(className,'Label_2','Count')
+  Count = Count * 10.0
+  Fun.SetUIData(className,'Label_2','Count',Count)
   
 
 
-def Button_13_onCommand():
-  Fun.setUIData('Label_2','Count',0.0)
+def Button_13_onCommand(className,widgetName):
+  Fun.SetUIData(className,'Label_2','Count',0.0)
+  Fun.SetUIData(className,'Label_2','MidCount',0.0)
+  Fun.SetUIData(className,'Label_2','OpType',0)
+
+def Button_14_onCommand(className,widgetName):
+  OpType = Fun.GetUIData(className,'Label_2','OpType')
+  Count = Fun.GetUIData(className,'Label_2','Count')
+  MidCount = Fun.GetUIData(className,'Label_2','MidCount')
+  if OpType == 1:
+    Count = MidCount  + Count
+  elif OpType == 2:
+    Count = MidCount  - Count
+  elif OpType == 3:
+    Count = MidCount  * Count
+  elif OpType == 4:
+    Count = MidCount / Count
+  Fun.SetUIData(className,'Label_2','Count',Count)
 
 
-
-def Button_14_onCommand():
-  global G_TempCount
-  global G_OpType
-  count =Fun.getUIData('Label_2','Count')
-  if G_OpType == 1:
-    count = G_TempCount  + count
-  elif G_OpType == 2:
-    count = G_TempCount  - count
-  elif G_OpType == 3:
-    count = G_TempCount  * count
-  elif G_OpType == 4:
-    count = G_TempCount / count
-  Fun.setUIData('Label_2','Count',count)
+def Button_15_onCommand(className,widgetName):
+  MidCount = Fun.GetUIData(className,'Label_2','Count')
+  Fun.SetUIData(className,'Label_2','OpType',1)
+  Fun.SetUIData(className,'Label_2','MidCount',MidCount)
+  Fun.SetUIData(className,'Label_2','Count',0.0)
 
 
-
-def Button_15_onCommand():
-  global G_OpType
-  global G_TempCount
-  G_TempCount =Fun.getUIData('Label_2','Count')
-  G_OpType = 1
-  Fun.setUIData('Label_2','Count',0.0)
+def Button_16_onCommand(className,widgetName):
+  MidCount = Fun.GetUIData(className,'Label_2','Count')
+  Fun.SetUIData(className,'Label_2','OpType',2)
+  Fun.SetUIData(className,'Label_2','MidCount',MidCount)
+  Fun.SetUIData(className,'Label_2','Count',0.0)
 
 
-def Button_16_onCommand():
-  global G_OpType
-  global G_TempCount
-  G_TempCount =Fun.getUIData('Label_2','Count')
-  G_OpType = 2
-  Fun.setUIData('Label_2','Count',0.0)
+def Button_17_onCommand(className,widgetName):
+  MidCount = Fun.GetUIData(className,'Label_2','Count')
+  Fun.SetUIData(className,'Label_2','OpType',3)
+  Fun.SetUIData(className,'Label_2','MidCount',MidCount)
+  Fun.SetUIData(className,'Label_2','Count',0.0)
 
 
-def Button_17_onCommand():
-  global G_OpType
-  global G_TempCount
-  G_TempCount =Fun.getUIData('Label_2','Count')
-  G_OpType = 3
-  print(G_TempCount)
-  Fun.setUIData('Label_2','Count',0.0)
+def Button_18_onCommand(className,widgetName):
+  MidCount = Fun.GetUIData(className,'Label_2','Count')
+  Fun.SetUIData(className,'Label_2','OpType',4)
+  Fun.SetUIData(className,'Label_2','MidCount',MidCount)
+  Fun.SetUIData(className,'Label_2','Count',0.0)
 
 
-def Button_18_onCommand():
-  global G_OpType
-  global G_TempCount
-  G_TempCount =Fun.getUIData('Label_2','Count')
-  G_OpType = 4
-  Fun.setUIData('Label_2','Count',0.0)
-
-
-def Menu_A11():
+def Menu_A11(className,itemName):
   pass
-def Menu_B2():
+def Menu_B2(className,itemName):
   pass

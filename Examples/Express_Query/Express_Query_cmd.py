@@ -1,22 +1,25 @@
 #coding=utf-8
 import sys
+import os
 from   os.path import abspath, dirname
 sys.path.append(abspath(dirname(__file__)))
 import tkinter
+import tkinter.filedialog
 from   tkinter import *
 import Fun
-#Set Element 's BoundingData :Fun.setUIData(Param1：elementName，Param2：DataName，Param3：DataValue)
-#Get Element's BoundingData :Fun.getUIData(Param1：elementName，Param2：DataName)
-#Set Element 's Attrib :Fun.setUIAttrib(Param1：elementName，Param2：AttribName，Param3：AttribValue)
-#Get Element's Attrib :Fun.getUIAttrib(Param1：elementName，Param2：AttribName)
-#Get Element:Fun.getUIEle(Param1：elementName)
-#Set Element's Text :Fun.setUIText(Param1：elementName,Param2:TextValue)
-#Get Element's Text :Fun.getUIText(Param1：elementName)
-#Update Element's Input Data Array:Fun.UpdateUIInputDataArray()
-def Button_6_onCommand():
-  QueryID = Fun.getUIText('Entry_5')
-  Express = Fun.getUIEle('Express_8')
-  ListBox = Fun.getUIEle('ListBox_7')
-  Express.set_ExpressNumber(QueryID)
-  Express.Query(ListBox)
-
+import threading
+def ThreadCount(param1,param2,param3):
+      param1.set_ExpressNumber(param2)
+      param1.Query(param3)
+def Button_6_onCommand(className,widgetName):
+  QueryID = Fun.GetUIText(className,'Entry_5')
+  Express = Fun.GetUIEle(className,'Express_9')
+  ListBox = Fun.GetUIEle(className,'ListBox_7')
+  isThread = Fun.GetElementVariable(className,"CheckButton_10")
+  print(isThread)
+  if isThread == True:
+      run_thread = threading.Thread(target=ThreadCount, args=[Express,QueryID,ListBox])
+      run_thread.start()
+  else:
+      Express.set_ExpressNumber(QueryID)
+      Express.Query(ListBox)

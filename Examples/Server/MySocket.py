@@ -12,7 +12,7 @@ def handle_socket_server(ServerSocket, ListBox):
         data = conn.recv(1024)
         text = "Receive Data:" + data.decode('utf-8')
         ListBox.insert(tkinter.END,text)
-        time.sleep(3)
+        time.sleep(1)
         send_data = 'Server got it'
         conn.send(send_data.encode('utf-8'))
     conn.close()
