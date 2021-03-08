@@ -4,9 +4,9 @@
 
 |   开发者 | Honghaier  |
 | -------: | ---------- |
-|   版本号 | V1.3.2     |
-| 更新日期 | 2020-05-18 |
-
+|   版本号 | V1.3.6     |
+| 更新日期 | 2021-03-8 |
+| QQ群 | 100180960 |
 
 
 GitHub: https://github.com/honghaier-game/TKinterDesigner.git 
@@ -45,30 +45,30 @@ TKinterDesigner V1.3目前包括以下九大功能:
 
 ​		双击启动TKinterDesigner.exe，首先进入的是项目管理界面，你可以根据在右上角需要选择所用语言，这里我们选择中文。
 
-![](https://img-blog.csdnimg.cn/20200417224512205.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvbmdoYWllcg==,size_16,color_FFFFFF,t_70)
+![](https://i.loli.net/2021/03/08/gCKoly6GxtmkbS9.jpg)
 
 在这个界面中，我提供了三个选项的选项卡：
 
 （1）新建项目: 提供了空白界面项目，对话框界面项目和单文档界面项目三种模版供选择。你只需要选择相应的项目，并点击“确定”，即可完成一个项目的建立，如果需要更改项目路径，可以点击“更改路径”进行修改。
 
-![2](https://img-blog.csdnimg.cn/20200417224526658.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvbmdoYWllcg==,size_16,color_FFFFFF,t_70)
+![](https://i.loli.net/2021/03/08/xC3vOwIA9YBjU6n.jpg)
 
 这里我们选中对话框界面项目，然后点击“确定”。
 
 项目创建成功后，我们将立刻进入到主设计界面进行项目开发，我们可以通过右上角的关闭按钮来返回到项目管理控制台。
 
-![3](https://img-blog.csdnimg.cn/20200417224536781.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvbmdoYWllcg==,size_16,color_FFFFFF,t_70)
+![](https://i.loli.net/2021/03/08/n5RSh2ftmEK31Mo.jpg)
 
 （2）打开项目: 所有我们创建的项目，会在这个面板列表中显示，我们只需要选择需要的项目并点击“确定”即可进入项目，第一个显示为加号的按钮，用于打开一个不在列表中的项目。
-	![4](https://img-blog.csdnimg.cn/20200417224546862.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvbmdoYWllcg==,size_16,color_FFFFFF,t_70)
+![](https://i.loli.net/2021/03/08/gcZpGHz37oeLsBd.jpg)
 
 （3）实例项目: 我提供了一些小的案例作为参考，开发者可以打开进行学习，以便对于一些类似的小工程的框架和实现有所了解。
 
-![5](https://img-blog.csdnimg.cn/20200417224556373.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvbmdoYWllcg==,size_16,color_FFFFFF,t_70)
+![](https://i.loli.net/2021/03/08/6jdcKAUHB2J1SNx.jpg)
 
 比如我们选择“JSQ”，然后点击“确定”，你将看到一个计算器的界面项目:
 
-![6](https://img-blog.csdnimg.cn/20200417224634657.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvbmdoYWllcg==,size_16,color_FFFFFF,t_70)
+![](https://i.loli.net/2021/03/08/guflXp8hTE9zYUk.jpg)
 
 
 在这个主设计界面中，我们可以看到它的布局为：
@@ -88,7 +88,7 @@ TKinterDesigner V1.3目前包括以下九大功能:
 2.Project1.py:这是项目主界面的Python文件，提供对于界面的基本布局进行代码支撑。
 3.Project1_cmd.py:这是项目主界面的逻辑文件，提供对于界面的逻辑进行代码支持，控件的事件函数主要在这里进行编码实现。
 
-![6_2](https://img-blog.csdnimg.cn/2020041722464828.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvbmdoYWllcg==,size_16,color_FFFFFF,t_70)
+![](https://i.loli.net/2021/03/08/GXoJVZgbT8mAs2M.jpg)
 
 当我们点击到一个Fun.py 或 Project1_cmd.py时，在主视图区域会变成代码区:
 
@@ -96,21 +96,21 @@ TKinterDesigner V1.3目前包括以下九大功能:
 
 ​	如果我们希望在工程中创建多个窗口，我们可以在框架结构树中新增界面，比如我们打开新创建的对话框界面项目，在左边的框架结构树上用右键点击一下：
 
-![7](https://img-blog.csdnimg.cn/20200417224658459.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvbmdoYWllcg==,size_16,color_FFFFFF,t_70)
+![](https://i.loli.net/2021/03/08/lGAfUQk1sxYDPbZ.jpg)
 
 ​	在弹出的菜单中，点击“新建窗体”，这里我们可以看到一个新弹出的对话框，我们可以输入新窗体的名称，然后点击“OK”。
 
-![8](https://img-blog.csdnimg.cn/20200417224708921.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvbmdoYWllcg==,size_16,color_FFFFFF,t_70)
+![](https://i.loli.net/2021/03/08/cOBWFgxZvRuihU9.jpg)
 
 ​	点击“OK”后，我们可以看到一个新增的窗体，包括MyWindow.py和MyWindow_cmd.py两个文件，分别对应MyWindow的窗体布局和逻辑实现。
 
 ​	如果我们想增加一个自已的逻辑代码，我们可以在框架结构树右键弹出菜单项点击“新建文件”，输入新建文件的名称，我们可以新创建一个Python文件出来。
 
-![9](https://img-blog.csdnimg.cn/20200417224718748.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvbmdoYWllcg==,size_16,color_FFFFFF,t_70)
+![](https://i.loli.net/2021/03/08/3g81CtOSwB5NzPe.jpg)
 
 点击“OK”后，可以看到新的文件代码，这时你可以开始编写代码了。
 
-![10](https://img-blog.csdnimg.cn/20200417224732713.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hvbmdoYWllcg==,size_16,color_FFFFFF,t_70)
+![](C:\Users\28542\Desktop\TKinterDesigner截图\11.jpg)
 
 ​	有时，你可能需要一些图片，声音，或者其它什么格式的文件资源放入到工程中，这里也可以通过在框架结构树右键弹出菜单项点击“导入资源”来选取并导入它。
 
