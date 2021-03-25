@@ -62,7 +62,7 @@ class  Express_Query:
         Fun.AddElement(className,'ListBox_7',ListBox_7)
         import Express
         Express_9=Express.Express()
-        #Express_9.xy(298,15)
+        #Express_9.xy(186,74)
         Express_9.set_CompanyID('4')
         Express_9.set_ExpressNumber('0000001')
         Express_9.set_ComboBox(ComboBox_3)

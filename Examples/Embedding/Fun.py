@@ -99,7 +99,11 @@ def SetUIText(uiName,elementName,textValue):
             return
     if uiName in G_UIElementArray:
         if elementName in G_UIElementArray[uiName]:
-            G_UIElementArray[uiName][elementName].configure(text=showtext)
+            if elementName.find('Text_') >= 0:
+                G_UIElementArray[uiName][elementName].delete('0.0',tkinter.END)
+                G_UIElementArray[uiName][elementName].insert(tkinter.END,showtext)
+            else:
+                G_UIElementArray[uiName][elementName].configure(text=showtext)
 #Get Element 's Text:Param1：uiName, Param2：elementName
 def GetUIText(uiName,elementName):
     global G_UIElementArray

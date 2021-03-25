@@ -2,6 +2,7 @@
 
 #import libs 
 import Server_cmd
+import Server_sty
 import Fun
 import tkinter
 from   tkinter import *
@@ -23,6 +24,7 @@ class  Server:
         global ElementBGArray_IM
         Fun.AddElement(className,'UIClass',self)
         self.root = root
+        style = Server_sty.SetupStyle()
         if isTKroot == True:
             root.title("Form1")
             root.geometry("543x244")
@@ -41,36 +43,4 @@ class  Server:
         Fun.AddElement(className,'Entry_2',Entry_2)
         Label_3= tkinter.Label(root,text="端口",width = 10,height = 4)
         Label_3.place(x = 216,y = 19,width = 74,height = 20)
-        Fun.AddElement(className,'Label_3',Label_3)
-        Entry_4_Variable = Fun.AddElementVariable(className,'Entry_4')
-        Entry_4= tkinter.Entry(root,textvariable=Entry_4_Variable)
-        Entry_4.place(x = 294,y = 19,width = 120,height = 20)
-        Entry_4.configure(relief = "sunken")
-        Fun.AddUIData(className,'Entry_4','Port','int',8888,1)
-        Fun.AddElement(className,'Entry_4',Entry_4)
-        Button_5= tkinter.Button(root,text="启动",width = 10,height = 4)
-        Button_5.place(x = 433,y = 16,width = 100,height = 28)
-        Button_5.configure(command=lambda:Server_cmd.Button_5_onCommand(className,"Button_5"))
-        Fun.AddElement(className,'Button_5',Button_5)
-        ListBox_6= tkinter.Listbox(root)
-        ListBox_6.place(x = 21,y = 57,width = 394,height = 160)
-        Fun.AddElement(className,'ListBox_6',ListBox_6)
-        Label_7= tkinter.Label(root,text="IP地址",width = 10,height = 4)
-        Label_7.place(x = 4,y = 21,width = 74,height = 20)
-        Fun.AddElement(className,'Label_7',Label_7)
-        import MySocket
-        MySocket_9=MySocket.MySocket()
-        #MySocket_9.xy(4,21)
-        MySocket_9.set_HOST('127.0.0.1')
-        MySocket_9.set_PORT('8888')
-        MySocket_9.set_LISTBOX(ListBox_6)
-        Fun.AddElement(className,'MySocket_9',MySocket_9)
-        #Inital all element's Data 
-        Fun.InitElementData(className)
-        #Add Some Logic Code Here: (Keep This Line of comments)
-
-#Create the root of Kinter 
-if  __name__ == '__main__':
-    root = tkinter.Tk()
-    MyDlg = Server(root)
-    root.mainloop()
+        Label_3_Ft

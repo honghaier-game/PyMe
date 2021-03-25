@@ -26,15 +26,15 @@ class  JSQ:
         self.root = root
         if isTKroot == True:
             root.title("Form1")
-            root.geometry("216x215")
+            root.geometry("222x216")
         Form_1= tkinter.Canvas(root,width = 10,height = 4)
-        Form_1.place(x = 0,y = 0,width = 216,height = 215)
+        Form_1.place(x = 0,y = 0,width = 222,height = 216)
         Form_1.configure(bg = "#efefef")
         Fun.AddElement(className,'root',root)
         Fun.AddElement(className,'Form_1',Form_1)
         #Create the elements of root 
         Label_2= tkinter.Label(root,text="",width = 10,height = 4)
-        Label_2.place(x = 10,y = 10,width = 190,height = 30)
+        Label_2.place(x = 12,y = 13,width = 190,height = 30)
         Label_2.configure(bg = "#808080")
         Label_2.configure(fg = "#ffffff")
         Fun.AddUIData(className,'Label_2','Count','float',0.0,1)
@@ -130,6 +130,7 @@ class  JSQ:
         A.add_cascade(label="A1",menu=A1)
         MainMenu.add_cascade(label="A",menu=A)
         B=tkinter.Menu(MainMenu,tearoff = 0)
+        B.add_command(label="B3",command=lambda:JSQ_cmd.Menu_B3(className,"B3"))
         B.add_command(label="B2",command=lambda:JSQ_cmd.Menu_B2(className,"B2"))
         MainMenu.add_cascade(label="B",menu=B)
         #Inital all element's Data 

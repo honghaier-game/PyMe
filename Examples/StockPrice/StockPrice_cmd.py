@@ -25,7 +25,6 @@ StockMonitorInst = None
 def Button_6_onCommand(className,widgetName):
     global StockMonitorInst
     BtnText = Fun.GetUIText(className,widgetName)
-
     if BtnText == "启动监控":
         if StockMonitorInst == None:
             StockMonitorInst = StockMonitor.StockMonitor()
