@@ -23,25 +23,29 @@ GitHub: https://github.com/honghaier-game/TKinterDesigner.git
 
 Tkinterdesigner v1.4.4 currently includes the following nine functions:
 
-###### 1.project management: create and open the project.
 
-###### 2.file management: create forms, create files and import resources for projects.
 
-###### 3.interface design: design Tkinter interface.
+1. ###### 1.project management: create and open the project.
 
-###### 4.control settings: basic attribute editing is performed for the control.
+2. ###### 2.file management: create forms, create files and import resources for projects.
 
-###### 5.variable binding: bind variables for Tkinter control.
+3. ###### 3.interface design: design Tkinter interface.
 
-###### 6.event response: establish the mapping between events and functions for the control of Tkinter.
+4. ###### 4.control settings: basic attribute editing is performed for the control.
 
-###### 7.logic writing: logical processing of event functions.
+5. ###### 5.variable binding: bind variables for Tkinter control.
 
-###### 8.compile and run: call Python command to compile and run the project.
+6. ###### 6.event response: establish the mapping between events and functions for the control of Tkinter.
 
-###### 9.package exe: call Python command to package exe for the project.
+7. ###### 7.logic writing: logical processing of event functions.
 
-###### 10.custom module import: import and call the customized module.
+8. ###### 8.compile and run: call Python command to compile and run the project.
+
+9. ###### 9.package exe: call Python command to package exe for the project.
+
+10. ###### 10.custom module import: import and call the customized module.
+
+
 
 ## TK designer function explanation:
 
@@ -322,7 +326,7 @@ class   Express:
             ListBox.insert(tkinter.END,"Error")
 ```
 
- 	
+
  There is only one way to write a custom module class: if you want to pass parameters to it in the designer, you need to use set_ And get_ Variable access method for prefix. So we design the function of three variables, including the company ID of express company, express number, and we want to pass in a control ComboBox to accept the list of company names.
  If you find it inconvenient to write the current project code, you can also use vscode or your favorite code editor to write the code, or directly import or copy "Express. py" from the instance project.
 
