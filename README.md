@@ -25,25 +25,25 @@ Tkinterdesigner v1.4.4 currently includes the following nine functions:
 
 
 
-1. ###### 1.project management: create and open the project.
+1. ###### project management: create and open the project.
 
-2. ###### 2.file management: create forms, create files and import resources for projects.
+2. ###### file management: create forms, create files and import resources for projects.
 
-3. ###### 3.interface design: design Tkinter interface.
+3. ###### interface design: design Tkinter interface.
 
-4. ###### 4.control settings: basic attribute editing is performed for the control.
+4. ###### control settings: basic attribute editing is performed for the control.
 
-5. ###### 5.variable binding: bind variables for Tkinter control.
+5. ###### variable binding: bind variables for Tkinter control.
 
-6. ###### 6.event response: establish the mapping between events and functions for the control of Tkinter.
+6. ###### event response: establish the mapping between events and functions for the control of Tkinter.
 
-7. ###### 7.logic writing: logical processing of event functions.
+7. ###### logic writing: logical processing of event functions.
 
-8. ###### 8.compile and run: call Python command to compile and run the project.
+8. ###### compile and run: call Python command to compile and run the project.
 
-9. ###### 9.package exe: call Python command to package exe for the project.
+9. ###### package exe: call Python command to package exe for the project.
 
-10. ###### 10.custom module import: import and call the customized module.
+10. ###### custom module import: import and call the customized module.
 
 
 
@@ -80,12 +80,19 @@ For example, if we select the fourth item "calculator" and click "OK", you will 
 
 In this main design interface, we can see that its layout is:
 (1) The top main menu: 1. view: including grid and adsorption functions used in design. You can also call it quickly through Ctrl + G and Ctrl + D. 2. help: some useless information, if you need to find me, please take a look.
+
 (2) Shortcut button under the main menu: frame button can display or hide frame structure tree, run button can run project quickly for testing, and Publish button can be used to package and publish project as an EXE program. Besides, there are some common text, color and alignment settings shortcut buttons, I believe you can know how they use it without explaining it.
+
 (3) The leftmost framework tree: including a list of all files in the project. Remember: you can also add a form interface, add a python file, or import a resource file through the menu that pops up by right clicking on it. If you are designing the interface, the frame structure tree will affect your viewing window space, you can click the frame button to display or hide it.
+
 (4) Control and module list selection area on the left: for the common controls needed in interface design, I have listed them here. Although not all, with the update, I believe that it will be enriched gradually. Here, the module selection area is used to import a customized module. In the actual case project, there are some customized module classes and the cases used in the project, For example, ‘express’ or ‘chatServer’, you can take a look at it a little, it only needs to have certain design constraints. I will detail the functions in part seven.
+
 (5) Central design preview area: the main visual area of interface design. You can drag in and put and stretch all the required interface controls here. The resulting interface is available.
+
 (6) List tree of all controls in the upper right part of the current interface: list all the controls in the current interface. You can click the corresponding tree item to select the corresponding control, or delete it in the pop-up menu by right clicking the mouse.
+
 (7) The property list item of the currently selected control in the lower right part: lists all the properties corresponding to the currently selected control. You can double-click the corresponding property item to modify it here.
+
 (8) Information text at the bottom: displays the position and size information of the current control.
 
 ### 2. Files management
@@ -99,18 +106,18 @@ The leftmost frame structure tree lists the files in the current project. Taking
 
 ![](http://www.tkinterdesigner.com/ReadMeImages/7.png)
 
-When we click on a fun. Py or project1_ When cmd.py, the main view area becomes the code area:
- 	 Because the software is designed to use the form designer instead of modifying the code of the form interface, when you click project1.py, the main view displays the interface. For the logic code and function library code, it is hoped that developers can write, modify and debug more logic code. Therefore, a code text area and an information output window are displayed, It is convenient to modify the code at any time and view the output at compile run time.
+When we click on “Fun. Py” or “JSQ_cmd.py”, the main view area becomes the code area:
+ 	 Because the software is designed to use the form designer instead of modifying the code of the form interface, when you click “JSQ.py”, the main view displays the interface. For the logic code and function library code, it is hoped that developers can write, modify and debug more logic code. Therefore, a code text area and an information output window are displayed, It is convenient to modify the code at any time and view the output at compile run time.
  	 If we want to create multiple windows in the project, we can add a new interface in the frame structure tree. For example, we can open the newly created dialog box interface project and right-click on the frame structure tree on the left.
 
 ![](http://www.tkinterdesigner.com/ReadMeImages/8.png)
 
-​	In the pop-up menu, click "new form", here we can see a new pop-up dialog box, we can enter the name of the new form, and then click "OK".
+​	In the pop-up menu, click "New form", here we can see a new pop-up dialog box, we can enter the name of the new form, and then click "OK".
 
 ![](http://www.tkinterdesigner.com/ReadMeImages/9.png)
 
-​		 After clicking "OK", we can see a new window, including mywindow.py and mywindow_ Two files, cmd.py, correspond to the form layout and logic implementation of mywindow respectively.
- 	 If we want to add our own logic code, we can right-click the pop-up menu item in the framework tree, click "new file", enter the name of the new file, and we can create a new Python file.
+​		 After clicking "OK", we can see a new window, including “Mywindow.py” and “Mywindow_cmd.py” Two files,  correspond to the form layout and logic implementation of mywindow respectively.
+ 	 If we want to add our own logic code, we can right-click the pop-up menu item in the framework tree, click "New file", enter the name of the new file, and we can create a new Python file.
 
 ![](http://www.tkinterdesigner.com/ReadMeImages/10.png)
 
@@ -118,9 +125,9 @@ After clicking "OK", you can see the new file code, and then you can start to wr
 
 ![](http://www.tkinterdesigner.com/ReadMeImages/11.png)
 
-​    Sometimes, you may need some pictures, sounds, or other file resources to put into the project. You can also select and import them by right clicking the pop-up menu item in the frame structure tree and clicking "import resources".
+​    Sometimes, you may need some pictures, sounds, or other file resources to put into the project. You can also select and import them by right clicking the pop-up menu item in the frame structure tree and clicking "import File".
 
-​	Finally, if you want to delete one of the files, you need to right-click the corresponding file item to pop up the menu item and click "delete file". After confirmation, you can delete the file.
+​	Finally, if you want to delete one of the files, you need to right-click the corresponding file item to pop up the menu item and click "delete File". After confirmation, you can delete the file.
 
 ### 3. UI design
 
@@ -128,13 +135,13 @@ After clicking "OK", you can see the new file code, and then you can start to wr
 
 ![](http://www.tkinterdesigner.com/ReadMeImages/12.png)
 
-   We click project1 or project1.py to enter the interface design area, and then we can start the interface design. For example, if we want to add gender options, occupation classification, and married or not to the basic account and password input interface, we need to add some new controls, including two RadioButtons and a combobox, A checkbutton and the required label text. These are very common controls.
+   We click project1 or project1.py to enter the interface design area, and then we can start the interface design. For example, if we want to add gender options, occupation classification, and married or not to the basic account and password input interface, we need to add some new controls, including two RadioButtons and a Combobox, A Checkbutton and the required label text. These are very common controls.
 
-​	we need to expand the main form, because its size is not enough. At this time, you can click the control tree item "form" in the upper right corner_ 1 ", or directly click the form interface in the design area, we can see that dotted lines appear around the form, and a gray drag block appears at the midpoint of the vertex and sideline. We can click the drag block in the lower right corner of the mouse and drag it to the appropriate size.
+​	we need to expand the main form, because its size is not enough. At this time, you can click the control tree item "Form_1" in the upper right corner, or directly click the form interface in the design area, we can see that dotted lines appear around the form, and a gray drag block appears at the midpoint of the vertex and sideline. We can click the drag block in the lower right corner of the mouse and drag it to the appropriate size.
 
 ![](http://www.tkinterdesigner.com/ReadMeImages/13.png)
 
-​	When we're done, we can drag the OK and exit buttons directly to the right location.
+​	When we're done, we can drag the OK and exit buttons directly to the right Down location.
 
 ![](http://www.tkinterdesigner.com/ReadMeImages/14.png)
 
@@ -144,7 +151,7 @@ After clicking "OK", you can see the new file code, and then you can start to wr
 
 **Here's a skill. If you need to create the same control repeatedly, you can directly select a control and drag it with the  state of pressing ALT key. You can directly copy a control for you to drag.**
 
-If you feel that the position is not well aligned, you can select the "grid" and "suction" buttons in the shortcut button, or you can quickly call the display or cancel through Ctrl + G, Ctrl + D. the grid is every 10 pixel unit, which is convenient for you to drag and align after suction.
+If you feel that the position is not well aligned, you can select the "grid" and "suction" buttons in the shortcut button, or you can quickly call the display or cancel through key 'Ctrl + G', 'Ctrl + D'. the grid is every 10 pixel unit, which is convenient for you to drag and align after suction.
 
 ![](http://www.tkinterdesigner.com/ReadMeImages/16.png)
 
@@ -159,11 +166,11 @@ Select the label before the gender radio button, then we can find the "text" att
 
 **Here's a skill. If you need to set the text of label or button,you actually press key when it focused ,then you can see the Input String Dialog .**	
 
-​    So, soon we finished all the label, the text of the two RadioButtons and the text of the checkbutton.
+​    So, soon we finished all the label, the text of the two RadioButtons and the text of the Checkbutton.
 
 ​	It looks good, doesn't it? Of course, you can set a lot of properties, such as you can modify the background color and text color, you can also modify the font and so on. You can modify these operations in the property bar, or you can quickly adjust them through the shortcut button bar at the top
 
-​	Of course, gender can't be male and female at the same time. Such bisexual is not in line with our orientation, right? We select the radio button with the word "female". In the column of grouping and value, double-click the value item, change it to 2 in the input box, and then click the button. Then we can see the correct radio button grouping.
+​	Of course, gender can't be male and female at the same time. Such bisexual is not in line with our orientation, right? We select the radio button with the word "Female". In the column of grouping and value, double-click the value item, change it to 2 in the input box, and then click the button. Then we can see the correct radio button grouping.
 
 
 
@@ -173,9 +180,9 @@ Select the label before the gender radio button, then we can find the "text" att
 
 ​	There can be many RadioButtons in one interface. Some of them may be for one option, such as gender, and some for another option, such as living in several areas of the city. These two parts need to be grouped into two groups, and they need to be distinguished by unique values in each group. Therefore, when the two radio buttons representing "male" and "female" use the default group number of 1, you only need to change the value of RadioButton corresponding to "female" to 2.
 
-Next, we add career options for input. We select combobox, find "data item" in its property box, and double-click to edit the corresponding data item of combobox in the pop-up dialog box of data item editing area.
+Next, we add career options for input. We select Combobox, find "Items" in its property box, and double-click to edit the corresponding data item of Combobox in the pop-up dialog box of data item editing area.
 
- For example, we input three data, namely "programmer", "planner", "designer", and click "OK", and we can see combobox become the desired shape.
+ For example, we input three data, namely "programmer", "planner", "designer", and click "OK", and we can see Combobox become the desired shape.
 
 ![](http://www.tkinterdesigner.com/ReadMeImages/19.png)
 
@@ -183,19 +190,19 @@ After clicking OK, the final result is like this：
 
 ![](http://www.tkinterdesigner.com/ReadMeImages/20.png)
 
-​	Click "run" or press F5, which will automatically save the design and code, and compile the run results.
+​	Click "Run" or press F5, which will automatically save the design and code, and compile the run results.
 
 ![](http://www.tkinterdesigner.com/ReadMeImages/21.png)
 
-​	This example demonstrates the property design and use of several common controls. You can try other controls by yourself, which will not be repeated here.If you have problems,please send mail to me :285421210@qq.com or visit :www.tkinterdesigner.com to submit.
+​	This example demonstrates the property design and use of several common controls. You can try other controls by yourself, which will not be repeated here. If you have problems,please send mail to me :285421210@qq.com or visit :www.tkinterdesigner.com to submit.
 
 ### 5. Variable binding
 
-​	In the development, we often need to store some data, maybe it's just a simple result storage, maybe it's the input value of the control. For example, in the development of instance project JSQ, we bind a temporary variable to store the intermediate value for the label displaying the data, so as to facilitate the operation of addition, subtraction, multiplication and division. In the above example, suppose that when we click "OK" to judge that the account value is the same as the last input value, we will pop up a dialog box to prompt "account used". We can add a custom variable to bind the account. This design idea is a reference to VC + +, if you have VC + + development experience, want to letter can quickly understand.
+​	In the development, we often need to store some data, maybe it's just a simple result storage, maybe it's the input value of the control. For example, in the development of instance project  JSQ(means "Calculator"), we bind a temporary variable to store the intermediate value for the label displaying the data, so as to facilitate the operation of addition, subtraction, multiplication and division. In the above example, suppose that when we click "OK" to judge that the account value is the same as the last input value, we will pop up a dialog box to prompt "account used". We can add a custom variable to bind the account. This design idea is a reference to VC + +, if you have VC + + development experience, want to letter can quickly understand.
 
 ![](http://www.tkinterdesigner.com/ReadMeImages/22.png)
 
-​	Right click the input box corresponding to the account, and click "variable binding" in the pop-up menu. In the pop-up dialog box, we enter the name of the data item to be bound "Namearray" and select it as "List" type. If we use number type or string type, we can see an option box of "mapping to 'text'", Clicking this option means that the variable will be updated to the text of the label or entry control at the same time when the function fun. Setuidata is called for setting. Only one variable is allowed for the same control. If this item is not selected, you can create multiple variables for a control. We don't need to click here.
+​	Right click the input box corresponding to the account, and click "variable binding" in the pop-up menu. In the pop-up dialog box, we enter the name of the data item to be bound "NameArray" and select it as "List" type. If we use number type or string type, we can see an option box of "mapping to 'text'", Clicking this option means that the variable will be updated to the text of the label or entry control at the same time when the function fun. Setuidata is called for setting. Only one variable is allowed for the same control. If this item is not selected, you can create multiple variables for a control. We don't need to click here.
 
 ![](http://www.tkinterdesigner.com/ReadMeImages/23.png)
 
@@ -211,7 +218,7 @@ Next, let's make relevant judgments when we click the "OK" button, which require
 
 ![](http://www.tkinterdesigner.com/ReadMeImages/24.png)
 
-​    In the pop-up event response processing editing area, we can see an event list on the left, listing common Python events. On the right, there is an input box, displaying the default function name. We can also modify it. Click "edit function code" to directly enter the code editing area of the logic file. At this time, We can see the added event response function, where we can edit the code manually.
+​    In the pop-up event response processing editing area, we can see an event list on the left, listing common Python events. On the right, there is an input box, displaying the default function name. We can also modify it. Click "Edit function code" to directly enter the code editing area of the logic file. At this time, We can see the added event response function, where we can edit the code manually.
 
 ![](http://www.tkinterdesigner.com/ReadMeImages/25.png)
 
@@ -224,11 +231,11 @@ Next, let's make relevant judgments when we click the "OK" button, which require
 ![](http://www.tkinterdesigner.com/ReadMeImages/27.png)
 
 
-​	The most commonly used open and save file box can be directly selected here, but if you create a multi window program, you need to call another window here, just select "call custom interface" to find its py file to call. I have a calltest project in the example project to demonstrate this.
+​	The most commonly used open and save file box can be directly selected here, but if you create a multi window program, you need to call another window here, just select "call custom interface" to find its py file to call. I have a "calltest" project in the example projects to demonstrate this.
 
 ### 7. Logic code writing
 
-​	Button in the code editing area of the logic file_ 6_ In the oncommand function, we can write the following code:
+​	Button in the code editing area of the logic file , In the `Button_6_oncommand` Function, we can write the following code:
 
 ![](http://www.tkinterdesigner.com/ReadMeImages/28.png)
 
@@ -243,31 +250,37 @@ Next, let's make relevant judgments when we click the "OK" button, which require
 ​	We input the name in the account of the running program, and the first time we click "OK", the "registration success" dialog box will pop up. Then we click OK again, and the "name has been registered" dialog box will pop up.
  	 We can still register successfully by changing our name. It seems that everything is the same as we expected.
 
+
+
+![](http://www.tkinterdesigner.com/ReadMeImages/30.png)
+
+​	
+
 ### 9. Package exe
 
 ​	After completing our own program, we hope to package the program as an EXE and publish it to users. We can directly click the "publish" button on the top right, select the output directory, and then enter the name of the EXE to be packaged.
 
-![](http://www.tkinterdesigner.com/ReadMeImages/30.png)
 
-​	Click the "OK" button, tkinterdesigner will start to call the packer to package the project.
 
 ![](http://www.tkinterdesigner.com/ReadMeImages/31.png)
 
-​	If it goes well, you can finally find the corresponding exe program in the output directory:
+Click the "OK" button, tkinterdesigner will start to call the packer to package the project.
 
 ![](http://www.tkinterdesigner.com/ReadMeImages/32.png)
 
-### 10. Custom module import
-
-I put the custom module at the end because you don't have to use it, but it can easily extend your project. I'm in the example project express_ It is used in both query and server.
+If it goes well, you can finally find the corresponding exe program in the output directory:
 
 ![](http://www.tkinterdesigner.com/ReadMeImages/33.png)
+
+### 10. Custom module import
+
+I put the custom module at the end because you don't have to use it, but it can easily extend your project. I'm in the example project "express"," It is used in both query and server.
+
+![](http://www.tkinterdesigner.com/ReadMeImages/34.png)
 
  In short, you can write a custom module class for multiple projects to use. You can easily set the properties of the module class in the designer, including throwing the interface control as a parameter to it.
  We take the project express as an example_ Query development process for a simple explanation.
  First, we need to create a blank project, right-click on the tree item of the framework file, create a python file in the pop-up menu, and then name it "Express. py" . In this file, we need to create an express class to query the express results by keywords. The complete code of this class is as follows:
-
- 	
 
 ```
 iimport urllib.request
@@ -334,36 +347,36 @@ Anyway, you just have this code.
 
 Back to the main interface design area, quickly build an interface:
 
-![](http://www.tkinterdesigner.com/ReadMeImages/34.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/35.png)
 
 ​	Now that we have finished the design of the interface, we will switch to the 'Mod' page  of the toolbar. In the "Mod" Page, we click the "import module" button, then find "Express. py" and click "open". In fact, "Express.py" does not have to be in the current directory. You can use one module for multiple projects, and you only need to import it here, and you don't need to create a module class file for every project that you use to the same module.
 
-![](http://www.tkinterdesigner.com/ReadMeImages/35.png)
-
-​      
+![](http://www.tkinterdesigner.com/ReadMeImages/36.png)
 
 ​	OK, now that the express module item appears on the module panel, let's drag it to the interface.
 
-![](http://www.tkinterdesigner.com/ReadMeImages/36.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/37.png)
 
 ​    We can see that in the property box in the lower right part, three variables of the express module are displayed in the property box. We can set the "CompanyID" and "ExpressNumber" manually, but how to set the combobox? Here, you only need to find the corresponding combobox in the upper right control tree, and drag to the value item position of "Combobox" in the property box.
 
-![](http://www.tkinterdesigner.com/ReadMeImages/37.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/38.png)
 
 Then we add the command response function to the "query" button.
 
-![](http://www.tkinterdesigner.com/ReadMeImages/38.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/39.png)
 
 On "Button_ 8_ oncommand" function, we can write the corresponding code:
 
-![](http://www.tkinterdesigner.com/ReadMeImages/39.png)
-
-
-    This part of the code implements get ExpressNumber from the entry_ 5, and through the our moudle name "Express_ 9 " call `Fun.GetUIEle` to get the express module,and use the same method to get the Listbox  then called the function of the Express. `set_ExpressNumber` set the express number, and finally call the Query method to query. The parameter is the ListBox object that is displayed.
-
-​      There are so many codes. After we finish, press F5 to run it. We can see the running program. After trying to enter the number in the express order number, click "query", and we can see the express information displayed in the list box soon.
-
 ![](http://www.tkinterdesigner.com/ReadMeImages/40.png)
+
+
+    
+
+This part of the code implements get ExpressNumber from the entry_ 5, and through the our moudle name "Express_ 9 " call `Fun.GetUIEle` to get the express module,and use the same method to get the Listbox  then called the function of the Express. `set_ExpressNumber` set the express number, and finally call the Query method to query. The parameter is the ListBox object that is displayed.
+
+​     There are so many codes. After we finish, press F5 to run it. We can see the running program. After trying to enter the number in the express order number, click "query", and we can see the express information displayed in the list box soon.
+
+ ![](http://www.tkinterdesigner.com/ReadMeImages/41.png)
 
 ​	This is how to use the custom module.
 
