@@ -79,13 +79,14 @@ For example, if we select the fourth item "calculator" and click "OK", you will 
 ![](http://www.tkinterdesigner.com/ReadMeImages/6.png)
 
 In this main design interface, we can see that its layout is:
+
 (1) The top main menu: 1. view: including grid and adsorption functions used in design. You can also call it quickly through Ctrl + G and Ctrl + D. 2. help: some useless information, if you need to find me, please take a look.
 
 (2) Shortcut button under the main menu: frame button can display or hide frame structure tree, run button can run project quickly for testing, and Publish button can be used to package and publish project as an EXE program. Besides, there are some common text, color and alignment settings shortcut buttons, I believe you can know how they use it without explaining it.
 
 (3) The leftmost framework tree: including a list of all files in the project. Remember: you can also add a form interface, add a python file, or import a resource file through the menu that pops up by right clicking on it. If you are designing the interface, the frame structure tree will affect your viewing window space, you can click the frame button to display or hide it.
 
-(4) Control and module list selection area on the left: for the common controls needed in interface design, I have listed them here. Although not all, with the update, I believe that it will be enriched gradually. Here, the module selection area is used to import a customized module. In the actual case project, there are some customized module classes and the cases used in the project, For example, ‘express’ or ‘chatServer’, you can take a look at it a little, it only needs to have certain design constraints. I will detail the functions in part seven.
+(4) Control and module list selection area on the left: for the common controls needed in interface design, I have listed them here. Although not all, with the update, I believe that it will be enriched gradually. Here, the module selection area is used to import a customized module. In the actual case project, there are some customized module classes and the cases used in the project, For example, ‘Express’ or ‘ChatServer’, you can take a look at it a little, it only needs to have certain design constraints. I will detail the functions in part seven.
 
 (5) Central design preview area: the main visual area of interface design. You can drag in and put and stretch all the required interface controls here. The resulting interface is available.
 
@@ -370,7 +371,7 @@ On "Button_ 8_ oncommand" function, we can write the corresponding code:
 ![](http://www.tkinterdesigner.com/ReadMeImages/40.png)
 
 
-    
+​    
 
 This part of the code implements get ExpressNumber from the entry_ 5, and through the our moudle name "Express_ 9 " call `Fun.GetUIEle` to get the express module,and use the same method to get the Listbox  then called the function of the Express. `set_ExpressNumber` set the express number, and finally call the Query method to query. The parameter is the ListBox object that is displayed.
 
