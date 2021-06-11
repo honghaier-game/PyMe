@@ -144,6 +144,8 @@ After clicking "OK", you can see the new file code, and then you can start to wr
 
 ​	When we're done, we can drag the OK and exit buttons directly to the right Down location.
 
+​	**Attention：Starting with version 1.4.6, you need to press Ctrl at the same time and drag the control with the mouse to move the control.**
+
 ![](http://www.tkinterdesigner.com/ReadMeImages/14.png)
 
 ​	Now we can select and drag the required controls from the list of Tool Bar on the left to the form.
