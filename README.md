@@ -4,8 +4,8 @@
 
 | Author | Honghaier  |
 | -------: | ---------- |
-| Version | V1.4.4     |
-| Last Update Date | 2021-06-8 |
+| Version | V1.4.8     |
+| Last Update Date | 2021-06-17 |
 | Twitter: | honghaier_2020@Honghaier_game |
 | Email: | 285421210@qq.com |
 | QQ Group | 100180960 |
@@ -143,8 +143,6 @@ After clicking "OK", you can see the new file code, and then you can start to wr
 ![](http://www.tkinterdesigner.com/ReadMeImages/13.png)
 
 ​	When we're done, we can drag the OK and exit buttons directly to the right Down location.
-
-​	**Attention：Starting with version 1.4.6, you need to press Ctrl at the same time and drag the control with the mouse to move the control.**
 
 ![](http://www.tkinterdesigner.com/ReadMeImages/14.png)
 
