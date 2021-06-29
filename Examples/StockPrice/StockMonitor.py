@@ -3,7 +3,7 @@ import time
 import tushare as ts
 import pandas as pd
 import threading
-from twilio.rest import Client
+# from twilio.rest import Client
 threadactive = True
 def getStockInfo(stock_code):
     df = ts.get_realtime_quotes(stock_code)
@@ -29,7 +29,7 @@ class StockMonitor:
     def StartMonitoring(self):
         account_sid = ""#改成申请的SID
         auth_token = ""#改成申请的TOKEN
-        client = Client(account_sid, auth_token)
+        # client = Client(account_sid, auth_token)
         all_items = self.TreeView.get_children()    
         for item in all_items:
             self.TreeView.delete(item)
@@ -47,7 +47,7 @@ class StockMonitor:
                     # smsText = "您的股票"+n[0]+"("+c[0]+") 已超过设定上限价格"+ stock_code[2] + ",当前价格"+p[0]+",请及时关注!"
                     smsText = "Stock:"+"("+c[0]+") Price:"+p[0]
                     #from_改成得到的试用手机号
-                    client.messages.create(to=self.PhoneNumber,from_="+13343784863",body=smsText)
+                    # client.messages.create(to=self.PhoneNumber,from_="+13343784863",body=smsText)
                     stock_code[3] = True
             elif float(p[0]) < float(stock_code[1]):
                 self.TreeView.insert('','end',values=(c[0],n[0],t[0],p[0],stock_code[2],stock_code[1],"低于下限"))
@@ -56,7 +56,7 @@ class StockMonitor:
                     smsText = "Stock:"+"("+c[0]+") Price:"+p[0]
                     print(smsText)
                     #from_改成得到的试用手机号
-                    client.messages.create(to=self.PhoneNumber,from_="+13343784863",body=smsText)
+                    # client.messages.create(to=self.PhoneNumber,from_="+13343784863",body=smsText)
                     stock_code[4] = True
             else:
                 self.TreeView.insert('','end',values=(c[0],n[0],t[0],p[0],stock_code[1],stock_code[2],"平稳波动"))

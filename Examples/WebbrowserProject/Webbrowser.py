@@ -1,8 +1,6 @@
 import tkinter
 import tkinter.ttk
 import os
-
-
 class   Webbrowser:
     def __init__(self):
         self.URL = ""
@@ -14,12 +12,10 @@ class   Webbrowser:
         self.Width = 1000
         self.Height = 600
         print("Webbrowser")
-
     #设置Entry
     def setURLEntryVariable(self,entrytextvariable):
         print("set_Entry")
         self.URLEntryVariable = entrytextvariable
-
     #设置Frame
     def set_Frame(self,frame):
         print("set_Frame")
@@ -45,7 +41,6 @@ class   Webbrowser:
                print(url)
                self.WebFrame.setURL(url)
                self.URLEntryVariable.set(url)
-
     #是否可以后退
     def cangoBack(self):
         if self.URLIndex > 0:
@@ -61,13 +56,11 @@ class   Webbrowser:
                print(url)
                self.WebFrame.setURL(url)
                self.URLEntryVariable.set(url)
-
     #是否可以后退
     def cangoForward(self):
         if self.URLIndex < len(self.URLArray)-1:
             return True
         return False
-
     #刷新
     def refresh(self):
         print("refresh:%d"%(self.URLIndex))
@@ -78,7 +71,6 @@ class   Webbrowser:
         print("gohome:%d"%(self.URLIndex))
         self.set_URL("http://www.baidu.com")
         self.URLEntryVariable.set("http://www.baidu.com")
-
     #设置Frame
     def resetSize(self,W,H):
         self.Width = W

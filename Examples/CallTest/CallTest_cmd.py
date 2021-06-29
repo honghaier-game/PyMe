@@ -7,7 +7,11 @@ import tkinter
 import tkinter.filedialog
 from   tkinter import *
 import Fun
-def Button_2_onCommand(className,widgetName):
+ElementBGArray={}  
+ElementBGArray_Resize={} 
+ElementBGArray_IM={} 
+
+def Button_2_onCommand(uiName,widgetName):
   topLevel = tkinter.Toplevel()
   topLevel.attributes("-toolwindow", 1)
   topLevel.wm_attributes("-topmost", 1)

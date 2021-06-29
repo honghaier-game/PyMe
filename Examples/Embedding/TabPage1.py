@@ -1,5 +1,4 @@
 #coding=utf-8
-
 #import libs 
 import TabPage1_cmd
 import Fun
@@ -10,18 +9,17 @@ import tkinter.font
 ElementBGArray={}  
 ElementBGArray_Resize={} 
 ElementBGArray_IM={} 
-
 #Add your Varial Here: (Keep This Line of comments)
 #Define UI Class
 class  TabPage1:
     def __init__(self,root,isTKroot = True):
-        className = self.__class__.__name__
-        Fun.G_UIElementArray[className]={}
-        Fun.G_ElementBindingDataArray[className]={}
+        uiName = self.__class__.__name__
+        Fun.G_UIElementArray[uiName]={}
+        Fun.G_UIElementUserDataArray[uiName]={}
         global ElementBGArray
         global ElementBGArray_Resize
         global ElementBGArray_IM
-        Fun.AddElement(className,'UIClass',self)
+        Fun.Register(uiName,'UIClass',self)
         self.root = root
         if isTKroot == True:
             root.title("Form1")
@@ -29,8 +27,8 @@ class  TabPage1:
         Form_1= tkinter.Canvas(root,width = 10,height = 4)
         Form_1.place(x = 0,y = 0,width = 611,height = 320)
         Form_1.configure(bg = "#efefef")
-        Fun.AddElement(className,'root',root)
-        Fun.AddElement(className,'Form_1',Form_1)
+        Fun.Register(uiName,'root',root)
+        Fun.Register(uiName,'Form_1',Form_1)
         #Create the elements of root 
         TreeView_2= tkinter.ttk.Treeview(root,show="tree")
         TreeView_2.place(x = 8,y = 8,width = 593,height = 301)
@@ -45,11 +43,10 @@ class  TabPage1:
         TreeView_2.heading("年龄",text="年龄")
         TreeView_2.column("地址",anchor="center",width=240)
         TreeView_2.heading("地址",text="地址")
-        Fun.AddElement(className,'TreeView_2',TreeView_2)
+        Fun.Register(uiName,'TreeView_2',TreeView_2)
         #Inital all element's Data 
-        Fun.InitElementData(className)
+        Fun.InitElementData(uiName)
         #Add Some Logic Code Here: (Keep This Line of comments)
-
 #Create the root of Kinter 
 if  __name__ == '__main__':
     root = tkinter.Tk()

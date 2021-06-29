@@ -7,3 +7,7 @@ import tkinter
 import tkinter.filedialog
 from   tkinter import *
 import Fun
+ElementBGArray={}  
+ElementBGArray_Resize={} 
+ElementBGArray_IM={} 
+

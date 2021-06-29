@@ -1,8 +1,6 @@
 import urllib.request
 import json
 import tkinter
-
-
 class   Express:
     def __init__(self):
         self.Company_Dict = {1:'shentong',2:'youzhengguonei',3:'yuantong',4:'shunfeng',5:'yunda',6:'zhongtong',7:"tiantian",8:"debang"}
@@ -42,7 +40,6 @@ class   Express:
             data = target['data']
             #print(data)
             data_len = len(data)
-            
             for i in range(data_len):
                 time_text = "时间: " + data[i]['time']
                 ListBox.insert(tkinter.END,time_text)
