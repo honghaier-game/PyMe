@@ -25,7 +25,7 @@ GitHub: https://github.com/honghaier-game/TKinterDesigner.git
 
 ## TKinterDesigner的开发流程是什么？
 
-​		![](C:\Users\28542\Desktop\TKinterDesigner\0.png)
+​		![](http://www.tkinterdesigner.com/ReadMeImages/0.png)
 
 
 
@@ -61,7 +61,7 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 
 ​	  双击TKinterDesigner程序，可以看到一个控制台界面，在这个页面，您可以根据需要在右上角选择语言，目前提供了五种语言：英语，简体中文，繁体中文，日语，韩语。在这里我们选择简体中文，如果我们当前版本不是最新版本，我们可以看到最新版本提示，点击即可打开最新版本的下载页。
 
-​		![](C:\Users\28542\Desktop\TKinterDesigner\1A.png)
+​		![](http://www.tkinterdesigner.com/ReadMeImages/1A.png)
 
 ​		默认情况下是离线使用，如果你需要使用会员和导出功能，可以点击**GUEST**图标进行登录。
 
@@ -69,15 +69,15 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 
 ​    	点击Guest图标，会看到一个登录界面如下。
 
-​		![](C:\Users\28542\Desktop\TKinterDesigner\1.png)
+​		![](http://www.tkinterdesigner.com/ReadMeImages/1.png)
 
 ​		输入账号和密码后点击”登录“按钮即可登录，如果没有账号，可以点击”注册？“文字进入注册界面，填写“账号",”密码“,邮箱等信息后点击“注册“按钮，注册成功后会自动登录。如果不想注册，也可以直接点击”离线使用“。
 
-​		![](C:\Users\28542\Desktop\TKinterDesigner\2.png)
+​		![](http://www.tkinterdesigner.com/ReadMeImages/2.png)
 
 ​		登录成功后，会进入到项目管理页面，这里会显示登录名称，你将拥有更多的会员权益，比如在这里你可以看到出现了“组件市场''和"皮肤市场”。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\3.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/3.png)
 
 
 
@@ -95,12 +95,12 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 
 如果我们选择空界面，然后单击“确定”。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\57.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/57.png)
 
 我们选择”对话框“项目，然后单击“确定”。在这个主要的设计界面中，我们可以看到它的布局是：
 （1） **顶部主菜单**：包括了软件的主要菜单项，目前分为"TKinterDesigner"、"编辑"、"视图"、"帮助"四项，其中"TKinterDesigner"中最重要的是有"设置"项，在设置项里，我们可以对TKinterDesigner的一些可选项进行设置，我在这里简单介绍一下。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\128.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/128.png)
 
 首先是“**常用设置**”，它下面有四个可选项：
 
@@ -114,7 +114,7 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 
   
 
-![](C:\Users\28542\Desktop\TKinterDesigner\129.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/129.png)
 
 然后是**“设计操作”**项。
 
@@ -128,7 +128,7 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 
   
 
-![](C:\Users\28542\Desktop\TKinterDesigner\130.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/130.png)
 
 第三项是**“代码编辑”**项。
 
@@ -138,7 +138,7 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 
 （2） **主菜单下的快捷按钮**：框架按钮可以显示或隐藏框架结构树，运行按钮可以快速运行项目进行测试，发布按钮可以将项目打包发布为EXE程序。另外，还有一些常见的对齐设置，文字字体，前景背景颜色，图片背景快捷按钮。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\131.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/131.png)
 
 （3） **最左边的项目框架文件树**：包括项目中所有文件的列表。记住：您还可以通过右键单击弹出的菜单添加窗体接口、添加python文件或导入资源文件。如果您正在设计界面，框架结构树将影响您的查看窗口空间，您可以单击"框架"按钮来显示或隐藏它。
 （4） **控件和模块工具栏**：对于界面设计中需要的常用控件，我在这里列出了它们。虽然不是全部，但随着更新，相信会逐渐丰富起来。在这里，模块选择区域用于导入自定义模块。在实际的案例项目中，有一些定制的模块类和项目中使用的案例，例如'Express'或'ChatServer'，您可以稍微看一下，它只需要有一定的设计约束即可使用，在后面自定义模块部分将会讲到。
@@ -151,15 +151,15 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 
 “空界面”项目给了开发者最简单的方式从头设计界面和项目，但如果你想基于其它现有的模版来进行项目开发，可以通过右上角的关闭按钮返回到项目管理控制台，然后选择”对话框“项目模版。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\59.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/59.png)
 
 ​	创建成功后，我们将立即进入一个拥有简单对话框的项目中。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\4.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/4.png)
 
 ​	在”对话框“项目中，我们进行了基本的简单界面设计，并给按钮事件增加了相应的逻辑功能，你可以直接点击右上角”运行“来尝试它。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\58.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/58.png)
 
 ​	这是一个简单的例子，但大多数情况下，这可能是一个复用率比较高的例子。
 
@@ -167,19 +167,19 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 
 ​	再次回到控制台，我们再来看一下单文档项目模版：
 
-![](C:\Users\28542\Desktop\TKinterDesigner\60.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/60.png)
 
 ​	创建成功后，我们将看到一个单文档Python编辑器项目。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\61.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/61.png)
 
 ​    运行起来，你可以直接用它写代码的。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\62.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/62.png)
 
   在这个项目中，你可以看到它有一个完整的菜单，这是怎么做的呢？
 
-![](C:\Users\28542\Desktop\TKinterDesigner\64.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/64.png)
 
 ​	我在上面的截图中详细说明了这个过程，一旦你建立了菜单，TKinterDesigner会自动为你创建出对应的响应消息函数，你只需要在对应的cmd.py中为菜单项的消息函数编写具体的逻辑代码就可以了，可以在后面的项目中多多尝试。
 
@@ -187,31 +187,31 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 
 ​		再次回到控制台，我们再来看一下多文档项目模版：
 
-![](C:\Users\28542\Desktop\TKinterDesigner\63.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/63.png)
 
 ​	创建成功后，我们将看到一个多文档Python编辑器项目，它使用了分割窗体。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\65.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/65.png)
 
 ​	在这个项目里，我们实现了分割窗体与页面嵌入，你可以利用这个功能来做一些独立的界面并通过嵌入的方式来把它们组合到一个界面中，TKinterDesigner目前支持Frame，NoteBook和PanedWindow三种嵌入模式。其中Frame是用来嵌入一个页面，NoteBook用来为每个页嵌入对应的页面，PanedWindow用来为分割的两个部分嵌入对应的页面，操作时只需要按照对应属性去设置就可以了。
 
 ​	在这个实例中，我们可以看到运行时，点击左边的树项文件，右边的文本框会显示对应的内容，并可以如单文档一样的运行和打印Python文件结果。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\66.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/66.png)
 
 #### <4>."网络爬虫"项目
 
-​		![](C:\Users\28542\Desktop\TKinterDesigner\67.png)
+​		![](http://www.tkinterdesigner.com/ReadMeImages/67.png)
 
 ​	网络爬虫现在是一个热点方向，我们也把他放入到项目模版里了，在这个项目中，我们基于多文档的框架，实现了一个网络爬图片的工程。
 
-​		![](C:\Users\28542\Desktop\TKinterDesigner\68.png)
+​		![](http://www.tkinterdesigner.com/ReadMeImages/68.png)
 
 
 
 ​	为了更好的吸引人气，这里我们用一个下载美女图片的例子来演示，如果你有时候心情不太好，可以多放松一下眼睛。
 
-​		![](C:\Users\28542\Desktop\TKinterDesigner\69.png)
+​		![](http://www.tkinterdesigner.com/ReadMeImages/69.png)
 
 ​		以上就是四种新建项目的模版示例，虽然还不能满足所有的项目需求，但是我会继续努力扩增，也欢迎你提出宝贵的方向性建议，如果入选，我会将它增加到模版中提供出来。
 
@@ -221,47 +221,47 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 
 我们创建的所有项目都将显示在此面板列表中。我们只需要选择我们需要的项目，并点击“确定”进入项目。显示为加号的第一个按钮用于弹出文件"浏览"对话框打开电脑上不在列表中的项目。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\70.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/70.png)
 
 ### （3） 项目实例：
 
 我提供一些小案例作为参考，开发者可以开放学习，从而了解一些类似小项目的框架和实现。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\6.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/6.png)
 
 ​	这些案例包括：
 
 1. **注册调用**：演示在一个界面里通过点击按钮事件弹出另一个注册对话框。
 
-   ![](C:\Users\28542\Desktop\TKinterDesigner\49.png)
+   ![](http://www.tkinterdesigner.com/ReadMeImages/49.png)
 
 2. **SQLite增删查改**：演示对Python自带的数据库SQLite进行增删查改。
 
-   ![](C:\Users\28542\Desktop\TKinterDesigner\50.png)
+   ![](http://www.tkinterdesigner.com/ReadMeImages/50.png)
 
 3. **嵌入面板**：演示如何在画板Canvas和选项卡Notebook中进行其它界面嵌入。
 
-   ![](C:\Users\28542\Desktop\TKinterDesigner\51.png)
+   ![](http://www.tkinterdesigner.com/ReadMeImages/51.png)
 
 4. **快递查询**：演示如何用自编写的模块插件完成快递查询和界面控件交互的功能。
 
-   ![](C:\Users\28542\Desktop\TKinterDesigner\52.png)
+   ![](http://www.tkinterdesigner.com/ReadMeImages/52.png)
 
 5. **计算器**：演示了如何快速开发一款可进行加减乘除运算的计算器软件。
 
-   ![](C:\Users\28542\Desktop\TKinterDesigner\53.png)
+   ![](http://www.tkinterdesigner.com/ReadMeImages/53.png)
 
 6. **网络聊天**：演示了如何开发一款带界面的服务器和客户端聊天程序软件。
 
-   ![](C:\Users\28542\Desktop\TKinterDesigner\54.png)
+   ![](http://www.tkinterdesigner.com/ReadMeImages/54.png)
 
 7. **股价查询**：演示了如何调用股票查询接口进行股票查询。
 
-   ![](C:\Users\28542\Desktop\TKinterDesigner\55.png)
+   ![](http://www.tkinterdesigner.com/ReadMeImages/55.png)
 
 8. **浏览器**：演示了如何开发一个自己的浏览器软件。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\56.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/56.png)
 
 这些实例都是使用TKinterDesigner设计开发的，它让我们感到由衷的自豪，因为整个过程中，我们没有再为界面设计和事件处理花费多少时间，只把精力放在核心功能类上即可快速完成项目的开发。后面我们会加入更多的实例工程，以帮助大家更好的学习和掌握TKinterDesigner。
 
@@ -272,41 +272,41 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 ​	我们打开《计算器》这个工程实例，可以看到最左边的框架结构树列出了当前项目中的文件。框架结构树下有一个以项目名称命名的根节点项，下面有五个文件项:
 1.Fun.Py：这是一个公共函数库文件，提供对控件和控制变量的访问和一些常用函数，不建议修改，所以这里不支持直接编辑。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\8.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/8.png)
 
 2.ico.png：这是项目的图标文件，在创建时生成，前提是在TkinterDesigner的目录中有一个ICO目录，在这里因为是实例工程，我把ico改成了实例的样子。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\71.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/71.png)
 
 3.JSQ.Py：这是项目主界面的控件布局python文件，为界面的基本布局提供代码支持，虽然它是Py文件，但TKinterDesigner在读取它时，会发现它是界面文件，就直接进入设计模式了，因为在整个开发环节，一般是不建议你手动处理界面控件布局python文件的。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\72.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/72.png)
 
 4.JSQ_cmd.py：项目主界面的逻辑文件，为接口的逻辑提供代码支持。这里主要对控件的事件函数进行编码，并可以进行断点调试。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\73.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/73.png)
 
 5.JSQ_sty.py：这是项目的样式设置文件，它提供控件的样式编辑，如果在此处添加自定义样式，则可以直接设置给控件。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\74.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/74.png)
 
 
 如果我们想在项目中创建多个窗口，我们可以在框架结构树中添加一个新的接口。例如，我们可以打开新建的对话框界面项目，右键单击左侧的框架结构树。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\9.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/9.png)
 
 在弹出菜单中，点击“新建窗体”，在这里我们可以看到一个新的弹出对话框，我们可以输入新窗体的名称，然后点击“确定”。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\10.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/10.png)
 
 单击“确定”后，我们会看到一个新窗口，包括“Mywindow.py” 和 “Mywindow_cmd.py” 两个文件，分别对应于Mywindow的表单布局和逻辑实现。
 如果要添加自己的逻辑代码，可以在框架树的弹出菜单项上单击鼠标右键，单击“新建文件”，输入新文件的名称，就可以创建一个新的Python文件。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\11.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/11.png)
 
 单击“确定”后，您可以看到新的文件代码，然后您可以开始编写代码。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\12.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/12.png)
 
 ​    有时，您可能需要一些图片、声音或其他文件资源来放入项目中。您也可以通过右键单击框架结构树中的弹出菜单项并单击“导入文件”来选择和导入它们。.
 
@@ -316,33 +316,33 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 
 ​	首先，我们加载前面创建的对话框项目。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\13.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/13.png)
 
    单击project1或project1.py进入界面设计区域，然后开始界面设计。例如，如果要在基本帐户和密码输入界面中添加性别选项、职业分类和已婚与否，则需要添加一些新控件，包括两个单选按钮和一个组合框、一个复选按钮和所需的标签文本。这些是非常常见的控件。
 
 ​	我们需要扩大主要形式，因为它的规模还不够。此时，您可以点击右上角的控件树项 "Form_1" ，也可以直接点击设计区域中的表单界面，我们可以看到表单周围出现虚线，在顶点和边线的中点处出现一个灰色的拖动块。我们可以单击鼠标右下角的拖动块并将其拖动到适当的大小。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\14.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/14.png)
 
 ​	完成后，我们可以将“确定”和“退出”按钮直接拖动到右下方的位置。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\15.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/15.png)
 
 ​	现在，我们可以从左侧工具栏列表中选择并拖动所需控件到表单。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\16.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/16.png)
 
 **记住这个技巧。如果需要重复创建同一个控件，可以直接选择一个控件，在按住ALT键的状态下进行拖动，可以直接复制一个新的控件以供拖动，这样更快。**
 
 如果您感觉位置没有很好对齐，可以在快捷键中选择“网格”和“抽吸”按钮，也可以通过键“Ctrl+G”、“Ctrl+D”快速调用显示或取消。网格默认为每50像素单位，便于您在吸入后拖动和对齐。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\17.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/17.png)
 
 ​	
 
 选中“性别”单选按钮前的标签，在右侧的属性框中找到“文本”属性，双击该属性，在弹出的对话框中输入“性别”，单击“确定”即可更改相应标签的文本。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\18.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/18.png)
 
 **这里也有一个技巧。如果您需要设置标签或按钮的文本，当它处于选中时你可以先按一下CTRL + BACKSPACE对文字进行清空，然后直接键盘输入文字就可以了。**	
 
@@ -352,7 +352,7 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 
 ​	当然，性别不能同时是男性和女性。这样的双性恋不符合我们的取向，对吧？我们选择带有“女性”字样的单选按钮。在分组和值列中，双击值项，在输入框中将其更改为2，然后单击按钮。然后我们可以看到正确的单选按钮分组。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\19.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/19.png)
 
 ​	一个界面中可以有许多单选按钮。其中一些可能是一种选择，如性别，一些是另一种选择，如生活在城市的几个地区。这两部分需要分为两组，并且需要通过每组中的唯一值来区分。因此，当代表“男性”和“女性”的两个单选按钮使用默认组号1时，您只需要将对应于“女性”的单选按钮的值更改为2。
 
@@ -360,19 +360,19 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 
 ​    例如，我们输入三个数据，即“程序员”、“计划员”、“设计师”，然后单击“确定”，我们可以看到组合框变成了所需的形状。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\20.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/20.png)
 
 单击“确定”后，最终结果如下：
 
-![](C:\Users\28542\Desktop\TKinterDesigner\21.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/21.png)
 
 ​	好的，现在我们已经完成了所需控件的创建与摆放，所有的控件都是通过这样拖拽的方式创建到界面中的，如果你觉得这些控件在右上角树中的名字不太好记，你可以双击控件树项，在弹出的修改名称的对话框中进行修改，你也可以在属性框中通过双击"名称"属性栏来进行修改或对树项用鼠标右键，在弹出菜单里找到"修改"名称菜单项来进行修改。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\87.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/87.png)
 
 ​	这样就完成了名称的修改。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\88.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/88.png)
 
 ​	**不过要注意的是：在TKinterDesigner中，这个新修改的名称，是原始名称的别名，在后面的函数中，你即可以输入原始名称，也可以用别名来查找控件或设置变量，但为了好记，优先使用自定义的别名。Form_1作为窗体根结点，不支持修改别名。**
 
@@ -380,27 +380,27 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 
 ​	下面我们来说一下如何为窗口增加图标和菜单，关于窗口的设置，基本都在Form_1中，我们需要先需中“Form_1", 然后双击属性框的”程序图标“项的值处，这时会弹出一个查找图标的对话框，我们选择一个图标后，会发现窗口中的图标变为了对应的图标，这样就完成了图标的设置。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\89.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/89.png)
 
 ​	要为一个界面增加菜单，然后双击属性框的”菜单“项的空值处，这时会弹出一个菜单编辑区的对话框,然后双击属性框的”菜单“项的空值处，这时会弹出一个菜单编辑区的对话框。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\90.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/90.png)
 
 ​	我们可以在这个菜单编辑区的对话框里进行菜单的编辑，首先是增加顶层菜单项，然后是选中列表框中菜单项的值，为其再次增加子菜单项或子分隔线。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\91.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/91.png)
 
 ​    在这个过程中，菜单也被实时的增加到菜单编辑区的对话框里来进行预览，调整好后，在实际运行时就可以看到效果了。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\92.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/92.png)
 
 ​	但怎么响应呢？如果你一旦确定使用菜单，则在界面对应的CMD.py文件中，会产生对应的菜单项响应函数，你在函数中进行代码编辑即可。
 
-​    ![](C:\Users\28542\Desktop\TKinterDesigner\93.png)
+​    ![](http://www.tkinterdesigner.com/ReadMeImages/93.png)
 
 单击“运行”键，将自动保存设计和代码，并运行显示结果。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\94.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/94.png)
 
 下面我们来介绍一下控件的属性。
 
@@ -410,7 +410,7 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 
 ​	第一部分是控件，主要是界面上的常用控件。第二部分是模块，主要是我们自已开发的扩展控件或者一些功能模块插件。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\95.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/95.png)
 
 ​	在控件这一页中，我们总共列罗了18种控件，这个数量不算太全，但是基本涵盖了TKinter常用的控件，后续我们会继续跟进和开发新的控件加入进来。我们点击界面上的控件，可以在右边的属性栏面板中看到一定数量的属性值可以设置，包括了以下一些方面：
 
@@ -444,7 +444,7 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 
 - 圆角半径：边缘是否做圆角形态，如果设置了半径值，在运行时，将会在边角处以半径值形成圆角。
 
-  ![](C:\Users\28542\Desktop\TKinterDesigner\101.png)
+  ![](http://www.tkinterdesigner.com/ReadMeImages/101.png)
 
 **Label属性：**
 
@@ -461,24 +461,24 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 - 样式:几种边框的显示样式。
 - 状态:一般有几种情况，(1)普通(2)不可用(3)只读。
 - 圆角半径：边缘是否做圆角形态，如果设置了半径值，在运行时，将会在边角处以半径值形成圆角。
-- ![](C:\Users\28542\Desktop\TKinterDesigner\102.png)
+- ![](http://www.tkinterdesigner.com/ReadMeImages/102.png)
 
 **Button属性：**
 
 - 经过时字颜色：当鼠标经过时文字的颜色
 - 经过时背景色：当鼠标经过时背景的颜色
-- ![](C:\Users\28542\Desktop\TKinterDesigner\103.png)
+- ![](http://www.tkinterdesigner.com/ReadMeImages/103.png)
 
 **Entry属性：**
 
 - 替代符：对于密码型Entry，可设置的类似*的替代符。
-- ![](C:\Users\28542\Desktop\TKinterDesigner\104.png)
+- ![](http://www.tkinterdesigner.com/ReadMeImages/104.png)
 
 **Text属性：**
 
 - 滚动条：是否需要设置滚动条。
 
-- ![](C:\Users\28542\Desktop\TKinterDesigner\105.png)
+- ![](http://www.tkinterdesigner.com/ReadMeImages/105.png)
 
   
 
@@ -486,11 +486,11 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 
 - 选择模式：几种常见的ListBox选择模式，"browse"（单选）、"multiple"（多选）和 "extended"（也是多选，但需要同时按住 Shift 键或 Ctrl 键或拖拽鼠标实现）
 - 数据项：列表框中的文字项。
-- ![](C:\Users\28542\Desktop\TKinterDesigner\106.png)
+- ![](http://www.tkinterdesigner.com/ReadMeImages/106.png)
 
 **Combobx属性：**
 
-- ![](C:\Users\28542\Desktop\TKinterDesigner\107.png)
+- ![](http://www.tkinterdesigner.com/ReadMeImages/107.png)
 
 ​	
 
@@ -498,24 +498,24 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 
 - 分组：所属的分组ID。
 - 值：当前选中时反馈的值。
-- ![](C:\Users\28542\Desktop\TKinterDesigner\108.png)
+- ![](http://www.tkinterdesigner.com/ReadMeImages/108.png)
 
 **Text属性：**
 
-- ![](C:\Users\28542\Desktop\TKinterDesigner\109.png)
+- ![](http://www.tkinterdesigner.com/ReadMeImages/109.png)
 
   
 
 **LabelFrame属性：**
 
-- ![](C:\Users\28542\Desktop\TKinterDesigner\110.png)
+- ![](http://www.tkinterdesigner.com/ReadMeImages/110.png)
 
 
 
 **Frame属性：**
 
 - 导入界面:用于嵌入其它界面的入口，双击选择其它界面Py文件，即可嵌入到当前Frame中。
-- ![](C:\Users\28542\Desktop\TKinterDesigner\111.png)
+- ![](http://www.tkinterdesigner.com/ReadMeImages/111.png)
 
 **Scale属性：**
 
@@ -524,7 +524,7 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 - 起始值,结束值:可调整的数值区间。
 - 粒度:显示刻度的间隔。
 - 刻度:调整的最小单位。
-- ![](C:\Users\28542\Desktop\TKinterDesigner\112.png)
+- ![](http://www.tkinterdesigner.com/ReadMeImages/112.png)
 
 
 
@@ -532,7 +532,7 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 
 - 最大值：进度条的区间最大数值。
 - 当前值:进度条的当前进度数值。
-- ![](C:\Users\28542\Desktop\TKinterDesigner\113.png)
+- ![](http://www.tkinterdesigner.com/ReadMeImages/113.png)
 
 
 
@@ -544,7 +544,7 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 
 - 数据项：如果你想自定义SpinBox的区间值，可以直接在这里去编辑一个数据列表，作为SpinBox的数值项。
 
-- ![](C:\Users\28542\Desktop\TKinterDesigner\115.png)
+- ![](http://www.tkinterdesigner.com/ReadMeImages/115.png)
 
   
 
@@ -553,22 +553,22 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 - 显示类型，默认为tree,你也可以选择“headings"，这样它将变成数据列表的形式，就类似属性面板的样子。
 - 选择模式：参考ListBox选择模式
 - 列数据，如果你选择了"headings"，你可以在这里为它编辑列项。
-- ![](C:\Users\28542\Desktop\TKinterDesigner\116.png)
-- ![](C:\Users\28542\Desktop\TKinterDesigner\117.png)
-- ![](C:\Users\28542\Desktop\TKinterDesigner\118.png)
+- ![](http://www.tkinterdesigner.com/ReadMeImages/116.png)
+- ![](http://www.tkinterdesigner.com/ReadMeImages/117.png)
+- ![](http://www.tkinterdesigner.com/ReadMeImages/118.png)
 - 
 
 **Canvas属性：**
 
 - 在Canvas拖动到设计区时，在底部会有一栏绘图用的工具条，包括清空，画笔，直线，箭头，短形，圆形，五角形，文字，橡皮擦等，选择相应图标后，就可以在Canvas上随意做画了。
-- ![](C:\Users\28542\Desktop\TKinterDesigner\119.png)
+- ![](http://www.tkinterdesigner.com/ReadMeImages/119.png)
 
 
 
 **NoteBook属性：**
 
 - 页面：用于为当前NoteBook的创建各个页面，并导入要嵌入的窗口。
-- ![](C:\Users\28542\Desktop\TKinterDesigner\120.png)
+- ![](http://www.tkinterdesigner.com/ReadMeImages/120.png)
 
 
 
@@ -578,7 +578,7 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 - 左边界面:双击可导入左边嵌入的界面Py文件。
 - 右边界面:双击可导入右边嵌入的界面Py文件。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\121.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/121.png)
 
 
 
@@ -586,7 +586,7 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 
 - 栏背景与栏前景：上面的星期日到星期六一栏的背景色与文字色，对应下图中黑色背景和白色文字。
 - 选中背景与选中前景：在日历控件中用鼠标选中一个日期时的改变，对应下图中的2021年7月3日位置的浅绿色背景与深绿色文字。
-- ![](C:\Users\28542\Desktop\TKinterDesigner\122.png)
+- ![](http://www.tkinterdesigner.com/ReadMeImages/122.png)
 
 
 
@@ -597,26 +597,26 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 **DataSource属性：**这是一个用于从各类数据源获取数据的模块。
 
 - 数据类型：它有一个列表，展示了所有可以获取的数据源，你只要按上面的选择，然后就会出现相应的数据源属性。
-- ![](C:\Users\28542\Desktop\TKinterDesigner\123.png)
+- ![](http://www.tkinterdesigner.com/ReadMeImages/123.png)
 
 比如这里选择TXT。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\124.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/124.png)
 
 点击”运行“即可看到TXT文件的内容被输出显示到了TXT控件中。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\125.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/125.png)
 
 
 
 **VideoCapture属性：**这是一个用于从摄像头获取视频并输出到Canvas上的控件。
 
 - Canvas：输出到指定的Canvas控件，你要从右上面的控件树项中找一个合适的Canvas拖动到这里来指定。
-- ![](C:\Users\28542\Desktop\TKinterDesigner\126.png)
+- ![](http://www.tkinterdesigner.com/ReadMeImages/126.png)
 
 好了，大功告成，你只需要点击”运行“，就可以看到效果了。
 
-​	![](C:\Users\28542\Desktop\TKinterDesigner\127.png)
+​	![](http://www.tkinterdesigner.com/ReadMeImages/127.png)
 
 ​	这才是我想做的，拖拖拽拽就快速化的实现界面和功能。
 
@@ -624,11 +624,11 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 
 ​	在开发过程中，我们经常需要存储一些数据，也许只是简单的结果存储，也许是控件的输入值。例如，在实例项目JSQ（Calculator的意思）的开发中，我们绑定了一个临时变量来存储显示数据的标签的中间值，以便进行加、减、乘、除操作。在上面的例子中，假设当我们点击“确定”来判断账户值与上次输入的值相同时，会弹出一个对话框提示“账户已使用”。我们可以添加一个自定义变量来绑定帐户。这个设计思路是对VC++的一个参考，如果你有VC++开发经验，相信可以很快理解。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\23.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/23.png)
 
 ​	右键点击账户对应的输入框，在弹出菜单中点击“变量绑定”。在弹出的对话框中，我们输入要绑定的数据项的名称“NameArray”，并选择它作为“List”类型。如果我们使用数字类型或字符串类型，我们可以看到一个选项框“映射到'文本'”，点击此选项意味着变量将更新为标签或条目控件的文本，同时函数将被激活。调用Fun.SetUserData进行设置。同一控件只允许有一个变量。如果未选择此项，则可以为控件创建多个变量。我们不需要点击这里。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\24.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/24.png)
 
 
 
@@ -640,19 +640,19 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 所谓“事件函数映射”，就是对可以绑定到控制的事件进行函数映射，这样当触发相应的事件时，调用set函数。
 我们右键单击“OK”按钮，然后在弹出菜单中选择“事件响应”。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\25.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/25.png)
 
 在弹出的事件响应处理编辑区域中，我们可以看到左侧的事件列表，其中列出了常见的Python事件。右边有一个输入框，显示默认函数名。我们也可以修改它。点击“编辑功能代码”或在列表中直接双击事件项，直接进入逻辑文件的代码编辑区。此时，我们可以看到添加的事件响应函数，在这里我们可以手动编辑代码。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\26.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/26.png)
 
 对于按钮控件，我们也可以像VC++一样直接在设计时双击控件即可进入对应的onCommand函数。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\27.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/27.png)
 
 如果我们想在事件响应中调用其他界面，我们也可以点击“调用其他界面”按钮，然后弹出一个选项对话框，让我们根据需要调用。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\28.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/28.png)
 
 
 这里可以直接选择最常用的打开和保存文件框，但是如果您创建了一个多窗口程序，您需要在这里调用另一个窗口，只需选择“调用自定义接口”就可以找到要调用的py文件。我在示例项目中有一个“calltest”项目来演示这一点。
@@ -661,7 +661,7 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 
 按钮在逻辑文件的代码编辑区，在“Button\u 6\u oncommand”函数中，我们可以编写以下代码：
 
-![](C:\Users\28542\Desktop\TKinterDesigner\29.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/29.png)
 
 此代码通过“Fun.GetUserData”获取绑定到输入框的列表变量，并通过“Fun.GetText”直接获取当前输入值，然后进行比较。如果相同，将弹出“名称已注册”对话框。如果它们不同，输入值将添加到列表变量中，并弹出“注册成功”对话框。
 
@@ -669,26 +669,26 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 
 如果您想立即运行，可以直接点击右上角的“运行”按钮。程序代码将自动保存，并开始运行。如果代码中有错误，则将显示在代码区域的编译错误信息输出窗口中。如果将打印添加到该功能中，则也会实时显示打印。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\30.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/30.png)
 
 我们在运行程序的帐户中输入名称，第一次单击“确定”时，会弹出“注册成功”对话框。然后再次点击OK，弹出“姓名已注册”对话框。
 我们仍然可以通过改名成功注册。似乎一切都和我们预期的一样。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\31.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/31.png)
 
 如果我们想要调试，可以用鼠标在代码区行号条左边点击，为程序增加断点。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\32.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/32.png)
 
 ​	增加好断点之后，即可点击下方调试区的蓝色小按钮启动调试。
 
-​	![](C:\Users\28542\Desktop\TKinterDesigner\33.png)
+​	![](http://www.tkinterdesigner.com/ReadMeImages/33.png)
 
 ​	在上面的截图中，我们可以看到，一旦启动Debug，在点击了”确定“按钮后，在Button_6_onCommand中触发了断点，并出现当前执行行的箭头，同时在下面的调试面板中，有两块区域信息显示，左边是局部变量区域，在这里可以看到当前函数已经有值的局部变量。右边是输出的DEBUG信息。
 
 ​	这时，我们可以通过点击Debug按钮栏的快捷按钮进行调试，具体使用说明如下：
 
-​	![](C:\Users\28542\Desktop\TKinterDesigner\34.png)
+​	![](http://www.tkinterdesigner.com/ReadMeImages/34.png)
 
 ​    如果你有VC++或其它编程IDE的调试经验，相信应该清楚如何使用，在这里也有一个小提示：你可在当前窗口使用如下快捷键来进行快速命令：
 
@@ -704,21 +704,21 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 
 在完成我们自己的程序后，我们希望将程序打包为EXE并发布给用户。我们可以直接点击右上角的“发布”按钮，选择输出目录，然后输入要打包的EXE的名称。不过如果你未登录，是不能打包的。
 
-​	![](C:\Users\28542\Desktop\TKinterDesigner\36.png)
+​	![](http://www.tkinterdesigner.com/ReadMeImages/36.png)
 
 单击“确定”按钮，tkinterdesigner将开始调用打包程序来打包项目。
 
-​	![](C:\Users\28542\Desktop\TKinterDesigner\37.png)
+​	![](http://www.tkinterdesigner.com/ReadMeImages/37.png)
 
 如果进展顺利，您最终可以在输出目录中找到相应的exe程序：
 
-​	![](C:\Users\28542\Desktop\TKinterDesigner\38.png)
+​	![](http://www.tkinterdesigner.com/ReadMeImages/38.png)
 
 ### 10. 自定义模块导入
 
 ​	自定义模块是为了让开发者通过自编写的模块类与控件进行交互，完成相对独立的功能，您可以在界面设计器中将模块类导入，并轻松的设置模块类的属性，包括将接口控件作为参数传递给它。我们希望将来提供大量的可用模块给开发者使用，目前我们在”组件市场“提供了少许模块来验证这个方案，但前提是您得是注册账号才可以看到组件市场。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\39.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/39.png)
 
 ​	在”组件市场“面板里，我们可以看到Express 快递查询的组件，我们可以点击安装，安装成后后，它会被放置在当前工具目录的Market_com目录中。
 
@@ -785,27 +785,27 @@ class   Express:
 
 ​	现在我们创建一个空白项目，然后我们在左边Project2树项上用鼠标右键单击，在弹出菜单里选择”导入资源“，将Market_com中的Express.py导入进来。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\40.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/40.png)
 
 在主界面设计区域，我们通过控件拖拽快速构建界面：
 
-![](C:\Users\28542\Desktop\TKinterDesigner\41.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/41.png)
 
 ​	现在我们已经完成了界面的设计，我们将切换到工具栏的“模块”页面。在“模块”页面中，我们单击“import module”按钮，然后找到“Express”。点击“打开”。实际上，“Express.py”不必在当前目录中。您可以将一个模块用于多个项目，只需在此处导入，而不需要为用于同一模块的每个项目创建模块类文件。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\42.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/42.png)
 
 好的，现在express模块项出现在模块面板上，让我们把它拖到界面上。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\43.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/43.png)
 
 ​	我们可以看到，在右下角的属性框中，express模块的三个变量显示在属性框中。我们可以手动设置“CompanyID”和“ExpressNumber”，但是如何设置ComboBox呢？在这里，您只需要在右上角的控件树中找到相应的ComboBox，然后拖动到属性框中“combobox”的值项位置。然后我们将命令响应函数添加到“query”按钮。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\46.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/46.png)
 
 在“Button_7_oncommand”函数中，我们可以编写相应的代码：
 
-![](C:\Users\28542\Desktop\TKinterDesigner\47.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/47.png)
 
 
 ​    
@@ -813,11 +813,11 @@ class   Express:
 这部分代码实现了从Entry_5获取查询物流单号，并通过我们的模块名称“Express_9”调用'Fun.GetElement'来获取Express模块，并使用相同的方法来获取Listbox，然后调用Express的函数`set_ExpressNumber`设置快递号，最后调用查询方法进行查询。参数是显示的ListBox对象。
      完成后，点击右上角”Run"运行它。我们可以看到正在运行的程序。尝试在快递订单号中输入号码后，点击“查询”，很快就会看到列表框中显示的快递信息。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\48.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/48.png)
 
 ​	这就是在设计区加入自己编写的模块并调用的实例，如果你觉得代码写起来麻烦，也可以直接查看案例工程中的快递查询案例进行学习。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\45.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/45.png)
 
 
 
@@ -825,45 +825,45 @@ class   Express:
 
 ​	 大多数情况下，我们使用TKinter去创建的程序并不够美观，虽然不影响功能开发，但是爱美之心，人皆有之。如果能让程序变的美观一些是最好，不过鉴于我们的开发者用户大多数是程序员，对于美化的部分，能简单化是最好，因此我希望通过提供好的配色方案作为皮肤提供给开发者使用，使程序变的美丽，因此我们也推出了皮肤市场，暂时只有官方皮肤，后面将放开给广大开发者用户上传提交以提供更好的皮肤给大家。但前提是您得是注册账号才可以看到组件市场。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\75.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/75.png)
 
 ​	我们可以在这里点击"黑金主题"图标上的”未安装"文字完成安装。
 
 ​	然后我们尝试着打开实例项目"计算器"，我们可以在Form_1的属性栏里找到"主题样式"，点击下拉列表，这时我们可以看到一个”BlackGold.py"，这就是黑金皮肤了。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\76.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/76.png)
 
 ​	我们选择它，并运行程序。你将看到一个酷酷的计算器程序，它有着深灰色的背景和暗金色的文字以及对比度明显的边缘。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\77.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/77.png)
 
 ​	当然，如果你想自已去修改自已的样式，也可以在sty.py中制作，比如我们再次打开之前创建的那个注册小程序项目。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\78.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/78.png)
 
 ​	点击左边的“Project1_sty.py"，进入到样式编辑器里。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\79.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/79.png)
 
 ​	在这个界面里，我们在样式名称里输入My，并在对应控件列表里选择”TForm“，点击”新增样式“按钮。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\84.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/84.png)
 
 ​	在这个界面里，我们在样式名称里输入My，并在对应控件列表里选择”TEntry“，点击”新增样式“按钮，并为两个关键值"background"和"foreground"设置颜色。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\85.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/85.png)
 
    同样的方式，我们建立其它控件的样式。
 
-​	![](C:\Users\28542\Desktop\TKinterDesigner\86.png)
+​	![](http://www.tkinterdesigner.com/ReadMeImages/86.png)
 
 ​	完成后，我们可以回到设计区，并在对话框，编辑框，单选按钮和组合框上进行鼠标右键单击，这时的弹出菜单里，会有一个”样式选择“项，我们选择对应的样式即可。
 
-​	![](C:\Users\28542\Desktop\TKinterDesigner\82.png)
+​	![](http://www.tkinterdesigner.com/ReadMeImages/82.png)
 
 ​	为所有的控件设置好样式后，它就变成了这样。
 
-![](C:\Users\28542\Desktop\TKinterDesigner\83.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/83.png)
 
 ​	
 
@@ -881,5 +881,5 @@ class   Express:
 
 ​                                                                                                           Honghaier
 
-​																											2021/07/05
+​																											2021/07/07
 
