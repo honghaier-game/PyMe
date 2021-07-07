@@ -10,7 +10,6 @@ import Fun
 ElementBGArray={}  
 ElementBGArray_Resize={} 
 ElementBGArray_IM={} 
-
 def Button_2_onCommand(uiName,widgetName):
   topLevel = tkinter.Toplevel()
   topLevel.attributes("-toolwindow", 1)
@@ -18,7 +17,7 @@ def Button_2_onCommand(uiName,widgetName):
   import RegDlg
   RegDlg.RegDlg(topLevel)
   tkinter.Tk.wait_window(topLevel)
-  InputDataArray = RegDlg.Fun.G_UIInputDataArray
+  InputDataArray = Fun.G_UIInputDataArray
   print(InputDataArray)
   print('个人简介:'+InputDataArray['Text_12'][0])
   print('姓名:'+InputDataArray['Entry_5'][0])
@@ -28,3 +27,4 @@ def Button_2_onCommand(uiName,widgetName):
   else:
     print('性别:女')
   print('邮箱:'+InputDataArray['Entry_10'][0])
+

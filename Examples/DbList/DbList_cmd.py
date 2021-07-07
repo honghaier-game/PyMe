@@ -12,6 +12,12 @@ ElementBGArray_Resize={}
 ElementBGArray_IM={} 
 
 
+
+
+
+
+
+
 import GridBase
 import DbBase
 DbBase.initDb()

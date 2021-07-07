@@ -4,11 +4,11 @@
 
 | Author | Honghaier  |
 | -------: | ---------- |
-| Version | V1.4.8    |
-| Last Update Date | 2021-06-12 |
+| Version | V1.5.1    |
+| Last Update Date | 2021-07-06 |
 | Twitter: | honghaier_2020@Honghaier_game |
 | Email: | 285421210@qq.com |
-| QQ Group | 100180960 |
+|         Twitter: | honghaier_2020@Honghaier_game |
 
 WebSite:www.tkinterdesigner.com
 

@@ -1,4 +1,5 @@
 #This file does not support direct editing
+
 #coding=utf-8
 import os
 from   os.path import abspath, dirname
@@ -9,21 +10,35 @@ G_UIElementUserDataArray={}
 G_UIElementArray={}
 G_UIElementVariableArray={}
 G_UIInputDataArray={} 
+G_UIElementAlias={}
+G_UIGroupDictionary={}
+G_UIStyleDictionary={}
 G_CurrentFilePath=None
 G_CutContent=None
-#注册一个控件，用于记录它:参数1：界面类名, 参数2:控件名称，参数3：控件。
-def Register(uiName,elementName,element):
+#Register a control to record it:Param1：uiName, Param2:elementName，Param3：element
+def Register(uiName,elementName,element,alias=None,groupName=None,styleName=None):
     if uiName not in G_UIElementArray:
         G_UIElementArray[uiName]={}
+        G_UIElementAlias[uiName]={}
+        G_UIGroupDictionary[uiName]={}
+        G_UIStyleDictionary[uiName]={}
     G_UIElementArray[uiName][elementName]=element
-#取得控件:参数1：界面类名, 参数2:控件名称。
+    if alias:
+        G_UIElementAlias[uiName][alias]=elementName
+    if groupName:
+        G_UIGroupDictionary[uiName][elementName]=groupName
+    if styleName:
+        G_UIStyleDictionary[uiName][elementName]=styleName
+#Get the Element:Param1：uiName, Param2：elementName
 def GetElement(uiName,elementName):
-    global G_UIElementArray
+    if uiName in G_UIElementAlias:
+        if uiName in G_UIElementAlias.keys() and elementName in G_UIElementAlias[uiName].keys():
+            elementName = G_UIElementArray[uiName][elementName]
     if uiName in G_UIElementArray:
         if elementName in G_UIElementArray[uiName]:
             return G_UIElementArray[uiName][elementName]
     return None
-#为控件增加一个Tkinter的内置控件变量，参数1：界面类名, 参数2:控件名称，参数3:默认值。
+#Add a TKiner Variable to Control:Param1：uiName, Param2:elementName,Param3:Default Value
 def AddTKVariable(uiName,elementName,defaultValue = None):
     if uiName not in G_UIElementVariableArray:
         G_UIElementVariableArray[uiName]={}
@@ -39,29 +54,46 @@ def AddTKVariable(uiName,elementName,defaultValue = None):
     if defaultValue:
         G_UIElementVariableArray[uiName][elementName].set(defaultValue) 
     return G_UIElementVariableArray[uiName][elementName]
-#设置控件的tkinter变量.参数1：界面类名, 参数2:控件名称，参数3:值。
+#Set the TKiner Variable of Control:Param1：uiName, Param2:elementName, Param3:value
 def SetTKVariable(uiName,elementName,value):
     if uiName in G_UIElementVariableArray:
+        if uiName in G_UIElementAlias.keys() and elementName in G_UIElementAlias[uiName].keys():
+            elementName = G_UIElementAlias[uiName][elementName]
         if elementName in G_UIElementVariableArray[uiName]:
             G_UIElementVariableArray[uiName][elementName].set(value)
-#取得控件的tkinter变量.参数1：界面类名, 参数2:控件名称。
+        if elementName in G_UIGroupDictionary[uiName]:
+            GroupName = G_UIGroupDictionary[uiName][elementName]
+            if GroupName in G_UIElementVariableArray[uiName]:
+                G_UIElementVariableArray[uiName][GroupName].set(value)
+#Get the TKiner Variable of Control:Param1：uiName, Param2:elementName
 def GetTKVariable(uiName,elementName):
     if uiName in G_UIElementVariableArray:
+        if uiName in G_UIElementAlias.keys() and elementName in G_UIElementAlias[uiName].keys():
+            elementName = G_UIElementAlias[uiName][elementName]
         if elementName in G_UIElementVariableArray[uiName]:
             return G_UIElementVariableArray[uiName][elementName].get()
-#为控件添加一个用户数据，参数dataname为数据名，datatype为数据类型，可以包括int、float、string、list、dictionary等，一般在设计软件中用鼠标右键操作控件，在弹出的“绑定数据”对话枉中设置，参数datavalue为数据值，而ismaptotext则是是否将数据直接反映到控件的text变量中。
+        if elementName in G_UIGroupDictionary[uiName]:
+            GroupName = G_UIGroupDictionary[uiName][elementName]
+            if GroupName in G_UIElementVariableArray[uiName]:
+                return G_UIElementVariableArray[uiName][GroupName].get()
+    return None
+#Add a user data to control.The parameter dataname is the data name and datatype is the data type, which can include int, float, string, list, dictionary, etc. generally, the control is operated by the right mouse button in the design software and set in the pop-up "bind data variable".The parameter datavalue is the data value, and ismaptotext is whether to directly reflect the data to the text variable of the control
 def AddUserData(uiName,elementName,dataName,datatype,datavalue,isMapToText):
     global G_UIElementUserDataArray
     if uiName not in G_UIElementUserDataArray:
         G_UIElementUserDataArray[uiName]={} 
+    if uiName in G_UIElementAlias.keys() and elementName in G_UIElementAlias[uiName].keys():
+        elementName = G_UIElementAlias[uiName][elementName]
     if elementName not in G_UIElementUserDataArray[uiName]:
         G_UIElementUserDataArray[uiName][elementName]=[]
     G_UIElementUserDataArray[uiName][elementName].append([dataName,datatype,datavalue,isMapToText])
-#设置控件的用户数据值。
+#Set the user data value of the control.
 def SetUserData(uiName,elementName,dataName,datavalue):
     global G_UIElementArray
     global G_UIElementUserDataArray
     if uiName in G_UIElementUserDataArray:
+        if uiName in G_UIElementAlias.keys() and elementName in G_UIElementAlias[uiName].keys():
+            elementName = G_UIElementAlias[uiName][elementName]
         if elementName in G_UIElementUserDataArray[uiName]:
             for EBData in G_UIElementUserDataArray[uiName][elementName]:
                 if EBData[0] == dataName:
@@ -69,10 +101,12 @@ def SetUserData(uiName,elementName,dataName,datavalue):
                     if EBData[3] == 1:
                         SetText(uiName,elementName,datavalue) 
                     return
-#取得控件的用户数据值。
+#Get the user data value of the control.
 def GetUserData(uiName,elementName,dataName):
     global G_UIElementUserDataArray
     if  uiName in G_UIElementUserDataArray:
+        if uiName in G_UIElementAlias.keys() and elementName in G_UIElementAlias[uiName].keys():
+            elementName = G_UIElementAlias[uiName][elementName]
         if elementName in G_UIElementUserDataArray[uiName]:
             for EBData in G_UIElementUserDataArray[uiName][elementName]:
                 if EBData[0] == dataName:
@@ -83,23 +117,28 @@ def GetUserData(uiName,elementName,dataName):
                     else:
                         return EBData[2]
     return None
-#设置控件的tkinter属性值。
+#Set the tkinter attribute value of the control.
 def SetTKAttrib(uiName,elementName,AttribName,attribValue):
     global G_UIElementArray
     if uiName in G_UIElementArray:
+        if uiName in G_UIElementAlias.keys() and elementName in G_UIElementAlias[uiName].keys():
+            elementName = G_UIElementAlias[uiName][elementName]
         if AttribName in G_UIElementArray[uiName][elementName].configure().keys():
             G_UIElementArray[uiName][elementName][AttribName]=attribValue
-#获取控件的tkinter属性值。
+#Get the tkinter attribute value of the control.
 def GetTKAttrib(uiName,elementName,AttribName):
     global G_UIElementArray
     if uiName in G_UIElementArray:
+        if uiName in G_UIElementAlias.keys() and elementName in G_UIElementAlias[uiName].keys():
+            elementName = G_UIElementAlias[uiName][elementName]
         return G_UIElementArray[uiName][elementName].cget(AttribName)
-    return None
-#设置控件的文本(label, button, entry and text)。
+#Set the text of the control(label, button, entry and text)
 def SetText(uiName,elementName,textValue):
     global G_UIElementArray
     global G_UIElementVariableArray
     showtext = str("%s"%textValue)
+    if uiName in G_UIElementAlias.keys() and elementName in G_UIElementAlias[uiName].keys():
+        elementName = G_UIElementAlias[uiName][elementName]
     if uiName in G_UIElementVariableArray:
         if elementName in G_UIElementVariableArray[uiName]:
             G_UIElementVariableArray[uiName][elementName].set(showtext)
@@ -111,10 +150,12 @@ def SetText(uiName,elementName,textValue):
                 G_UIElementArray[uiName][elementName].insert(tkinter.END,showtext)
             else:
                 G_UIElementArray[uiName][elementName].configure(text=showtext)
-#获取控件的文本(label, button, entry and text)。
+#Get the text of the control(label, button, entry and text)
 def GetText(uiName,elementName):
     global G_UIElementArray
     global G_UIElementVariableArray
+    if uiName in G_UIElementAlias.keys() and elementName in G_UIElementAlias[uiName].keys():
+        elementName = G_UIElementAlias[uiName][elementName]
     if uiName in G_UIElementVariableArray:
         if elementName in G_UIElementVariableArray[uiName]:
             return G_UIElementVariableArray[uiName][elementName].get()
@@ -127,9 +168,11 @@ def GetText(uiName,elementName):
             else:
                 return G_UIElementArray[uiName][elementName].cget('text')
     return str("")
-#设置控件的背景图片(Label,Button)。
+#Set the image of the control(Label,Button).
 def SetImage(uiName,elementName,imagePath):
     global G_UIElementVariableArray
+    if uiName in G_UIElementAlias.keys() and elementName in G_UIElementAlias[uiName].keys():
+        elementName = G_UIElementAlias[uiName][elementName]
     if elementName.find('Label_') == 0 or elementName.find('Button_') == 0 :
         Control = GetElement(uiName,elementName)
         if Control != None:
@@ -150,9 +193,11 @@ def SetImage(uiName,elementName,imagePath):
             EBData2 = ImageTk.PhotoImage(image_Resize)
             AddUserData(uiName,elementName,'image',imagePath,EBData2,0)
             Control.configure(image = EBData2)
-#获取控件的背景图像文件（标签、按钮）。
+#Get the image file of the control(Label,Button).
 def GetImage(uiName,elementName):
     global G_UIElementVariableArray
+    if uiName in G_UIElementAlias.keys() and elementName in G_UIElementAlias[uiName].keys():
+        elementName = G_UIElementAlias[uiName][elementName]
     if elementName.find('Label_') == 0 or elementName.find('Button_') == 0 :
         Control = GetElement(uiName,elementName)
         if Control != None:
@@ -162,16 +207,20 @@ def GetImage(uiName,elementName):
                         if EBData[0] == 'image':
                             return EBData[1]
     return str("")
-#设置ListBox和ComboBox的选中项。
+#Set the selected index of the combobox or listbox.
 def SetSelectIndex(uiName,elementName,index):
+    if uiName in G_UIElementAlias.keys() and elementName in G_UIElementAlias[uiName].keys():
+        elementName = G_UIElementAlias[uiName][elementName]
     Control = GetElement(uiName,elementName)
     if Control != None:
         if elementName.find('ComboBox_') == 0 :
             Control.current(index)
         elif elementName.find('ListBox_') == 0 :
             Control.select_set(index)
-#取得ListBox和ComboBox的选中项。
+#Get the selected index of the combobox or listbox.
 def GetSelectIndex(uiName,elementName):
+    if uiName in G_UIElementAlias.keys() and elementName in G_UIElementAlias[uiName].keys():
+        elementName = G_UIElementAlias[uiName][elementName]
     Control = GetElement(uiName,elementName)
     if Control != None:
         if elementName.find('ComboBox_') == 0 :
@@ -181,7 +230,7 @@ def GetSelectIndex(uiName,elementName):
             if len(currIndex) > 0 and currIndex[0] >= 0:
                 return currIndex[0]
     return -1
-#初始化界面各控件初始数。
+#Initialize all user binding data without manual call.
 def InitElementData(uiName):
     global G_UIElementUserDataArray
     if uiName in G_UIElementUserDataArray:
@@ -190,25 +239,27 @@ def InitElementData(uiName):
                 if EBData[3] == 1:
                     SetText(uiName,elementName,EBData[2])
                     SetText(uiName,elementName,EBData[2])
-#初始化界面各控件初始样式。
+#Initialize all control style without manual call.
 def InitElementStyle(uiName,Style):
     StyleArray = ReadStyleFile(Style+".py")
     global G_UIElementArray
     if uiName in G_UIElementArray:
+        Root = GetElement(uiName,'root')
+        TFormKey = '.TForm'
+        if TFormKey in StyleArray:
+            if 'background' in StyleArray[TFormKey]:
+                Root['background'] = StyleArray[TFormKey]['background']
         for elementName in G_UIElementArray[uiName].keys():
             Widget = G_UIElementArray[uiName][elementName]
             try:
                 if  Widget.winfo_exists() == 1:
                     WinClass = Widget.winfo_class()
                     StyleName = ".T"+WinClass
-                    if  StyleName == '.TLabel':
-                        Root = GetElement(uiName,'root')
-                        Root['background'] = StyleArray[StyleName]['background']
                     for attribute in StyleArray[StyleName].keys():
                         Widget[attribute] = StyleArray[StyleName][attribute]
             except BaseException:
                 continue
-#取得界面的所有输入数据。
+#Get all the entry data of an interface.
 def GetInputDataArray(uiName):
     global G_UIElementArray
     global G_UIInputDataArray
@@ -231,7 +282,7 @@ def GetInputDataArray(uiName):
                 G_UIInputDataArray[elementName] = []
                 G_UIInputDataArray[elementName].append(ElementIntValue)
     return G_UIInputDataArray
-#将弹出界面对话框居中。
+#Center a pop-up interface dialog box.
 def CenterDlg(uiName,popupDlg,dw=0,dh=0):
     if dw == 0:
         dw = popupDlg.winfo_width()
@@ -252,27 +303,27 @@ def CenterDlg(uiName,popupDlg,dw=0,dh=0):
        sx = 0
        sy = 0
        popupDlg.geometry('%dx%d+%d+%d'%(dw,dh,sx+(sw-dw)/2,sy+(sh-dh)/2))
-#在界面布局文件中调用设置控件的圆角属性，但由于尚未创建接口，因此有必要在两次之后调用ShowRoundedRectangle。注意：此功能不跨平台。
+#The rounded property of the control is called in the interface Layout Pyfile, but because the interface has not been created, it is necessary to call ShowRoundedRectangle two times later. Note: this function does not cross platform.
 def SetRoundedRectangle(control,WidthEllipse=20,HeightEllipse=20):
     if control != None:
        control.after(10, lambda: ShowRoundedRectangle(control,WidthEllipse,HeightEllipse))
-#立即设置控件的圆角属性。注意：此功能不跨平台。
+#Set the fillet property of the control immediately.Note: this function does not cross platform.
 def ShowRoundedRectangle(control,WidthEllipse,HeightEllipse):
     import win32gui
     HRGN = win32gui.CreateRoundRectRgn(0,0,control.winfo_width(),control.winfo_height(),WidthEllipse,HeightEllipse)
     win32gui.SetWindowRgn(control.winfo_id(), HRGN,1)
-#弹出一个信息对话框。
+#Pop up a message dialog box.
 def MessageBox(text):
     tkinter.messagebox.showwarning('info',text)
-#弹出一个输入对话框。
+#Pop up a input dialog box.
 def InputBox(title,text):
     res = tkinter.simpledialog.askstring(title,'Input Box',initialvalue=text)
     return res
-#弹出一个选择对话框，你需要选择YES或NO。
+#Pop up a question dialog box,You need choose yes or no.
 def AskBox(title,text):
     res = tkinter.messagebox.askyesno(title,text)
     return res
-#返回对应目录的所有指定类型文件。
+#Returns all the files in the directory.
 def WalkAllResFiles(parentPath,alldirs=True,extName=None):
     ResultFilesArray = []
     if os.path.exists(parentPath) == True:
@@ -295,10 +346,10 @@ def WalkAllResFiles(parentPath,alldirs=True,extName=None):
                             if file_extension_lower == file_extName_lower:
                                 ResultFilesArray.append(newPath)
     return ResultFilesArray
-#重新定义消息映射函数，自定义参数。
+#Redefine the event response function to have the specified parameter.
 def EventFunction_Adaptor(fun,  **params):
     return lambda event, fun=fun, params=params: fun(event, **params)
-#设置控件的绝对或相对位置。
+#Sets the absolute or relative position of the control.
 def SetControlPlace(control,x,y,w,h):
     control.place(x=0,y=0,width=0,height=0)
     control.place(relx=0,rely=0,relwidth=0,relheight=0)
@@ -348,7 +399,7 @@ def SetControlPlace(control,x,y,w,h):
                    control.place(x=x,y=y,width=w,relheight=h)
                 else:
                    control.place(x=x,y=y,width=w,height=h)
-#定义一个可拖拽移动和拖拽边框大小的窗口类。
+#Define a window class that can drag, move and drag the size of the border.
 class WindowDraggable():
     def __init__(self,widget,bordersize = 6,bordercolor = '#444444'):
         self.widget = widget
@@ -713,7 +764,7 @@ class WindowDraggable():
         self.right_drag.place_forget()
         self.bottom_drag.place_forget() 
         self.widget.configure(cursor='arrow')
-#使用TKinter方式设置窗口圆角, 支持跨平台。
+#Set the fillet parameter of TK root, support cross platform.
 def SetRootRoundRectangle(canvas,x1, y1, x2, y2, radius=25,**kwargs):
     points = [x1+radius, y1,
               x1+radius, y1,
@@ -736,7 +787,7 @@ def SetRootRoundRectangle(canvas,x1, y1, x2, y2, radius=25,**kwargs):
               x1, y1+radius,
               x1, y1]
     return canvas.create_polygon(points, **kwargs, smooth=True)
-#从一个文件中读取内容。
+#Read content from file.
 def ReadFromFile(filePath):
     content = None
     if filePath != None:
@@ -746,7 +797,7 @@ def ReadFromFile(filePath):
                 content = f.read()
                 f.close()
     return content
-#将内容写入到一个文件中。
+#Writing content to a file.
 def WriteToFile(filePath,content):
     if filePath != None:
         f = open(filePath,mode='w',encoding='utf-8')
@@ -756,7 +807,7 @@ def WriteToFile(filePath,content):
             f.close()
             return True
     return False
-#读取样式定义文件，返回样式列表。
+#Read style file.
 def ReadStyleFile(filePath):
     StyleArray = {}
     if len(filePath)==0 :

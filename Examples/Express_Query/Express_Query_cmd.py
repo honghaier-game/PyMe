@@ -11,6 +11,11 @@ ElementBGArray={}
 ElementBGArray_Resize={} 
 ElementBGArray_IM={} 
 
+
+
+
+
+
 import threading
 def ThreadCount(param1,param2,param3):
       param1.set_ExpressNumber(param2)

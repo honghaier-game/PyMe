@@ -4,9 +4,9 @@
 
 | Author | Honghaier  |
 | -------: | ---------- |
-| Version | V1.4.6     |
-| Last Update Date | 2021-06-12 |
-| Twitter: | honghaier_2020@Honghaier_game |
+| Version | V1.5.1     |
+| Last Update Date | 2021-07-06 |
+| Twitter: | honghaier_2020@honghaier_game |
 | Email: | 285421210@qq.com |
 | QQ Group | 100180960 |
 
@@ -17,7 +17,7 @@ GitHub: https://github.com/honghaier-game/TKinterDesigner.git
 
 ## Fun.py是什么？
 
-py是TkinterDesigner的函数库，它提供了访问UI控件及其属性的常用函数。同时，它还包含一些常用函数封装的函数。。
+Py是TkinterDesigner的函数库，它提供了访问UI控件及其属性的常用函数。同时，它还包含一些常用函数封装的函数。。
 
 ## Fun.py 包括哪些功能?
 

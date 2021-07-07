@@ -11,6 +11,8 @@ ElementBGArray={}
 ElementBGArray_Resize={} 
 ElementBGArray_IM={} 
 
+
+
 import StockMonitor
 def Button_4_onCommand(uiName,widgetName):
     StockCode = Fun.GetText(uiName,"Entry_3")
