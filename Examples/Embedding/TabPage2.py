@@ -14,20 +14,15 @@ ElementBGArray_IM={}
 class  TabPage2:
     def __init__(self,root,isTKroot = True):
         uiName = self.__class__.__name__
-        Fun.G_UIElementArray[uiName]={}
-        Fun.G_UIElementUserDataArray[uiName]={}
-        global ElementBGArray
-        global ElementBGArray_Resize
-        global ElementBGArray_IM
         Fun.Register(uiName,'UIClass',self)
         self.root = root
+        Fun.Register(uiName,'root',root)
         if isTKroot == True:
             root.title("Form1")
             root.geometry("565x295")
         Form_1= tkinter.Canvas(root,width = 10,height = 4)
         Form_1.place(x = 0,y = 0,width = 565,height = 295)
         Form_1.configure(bg = "#efefef")
-        Fun.Register(uiName,'root',root)
         Fun.Register(uiName,'Form_1',Form_1)
         #Create the elements of root 
         Canvas_2= tkinter.Canvas(root)

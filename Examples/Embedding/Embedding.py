@@ -1,6 +1,7 @@
 #coding=utf-8
-
 #import libs 
+import sys
+import io
 import Embedding_cmd
 import Embedding_sty
 import Fun
@@ -19,6 +20,7 @@ class  Embedding:
         uiName = self.__class__.__name__
         Fun.Register(uiName,'UIClass',self)
         self.root = root
+        Fun.Register(uiName,'root',root)
         style = Embedding_sty.SetupStyle()
         if isTKroot == True:
             root.title("Form1")
@@ -28,16 +30,15 @@ class  Embedding:
         Form_1.place(x = 0,y = 0,width = 629,height = 510)
         Form_1.configure(bg = "#efefef")
         Form_1.configure(highlightthickness = 0)
-        Fun.Register(uiName,'root',root)
         Fun.Register(uiName,'Form_1',Form_1)
         #Create the elements of root 
-        Frame_2= tkinter.Frame(root)
+        Frame_2 = tkinter.Frame(root)
         Fun.Register(uiName,'Frame_2',Frame_2)
         Frame_2.place(x = 9,y = 12,width = 609,height = 160)
         Frame_2.configure(bg = "#ffffff")
         Frame_2.configure(relief = "flat")
         Page1.Page1(Frame_2,False)
-        NoteBook_3= tkinter.ttk.Notebook(root)
+        NoteBook_3 = tkinter.ttk.Notebook(root)
         Fun.Register(uiName,'NoteBook_3',NoteBook_3)
         NoteBook_3.place(x = 10,y = 188,width = 606,height = 312)
         PageFrame_1 = tkinter.ttk.Frame(NoteBook_3)

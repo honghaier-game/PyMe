@@ -157,7 +157,8 @@ def GetText(uiName,elementName):
         elementName = G_UIElementAlias[uiName][elementName]
     if uiName in G_UIElementVariableArray:
         if elementName in G_UIElementVariableArray[uiName]:
-            return G_UIElementVariableArray[uiName][elementName].get()
+            text = G_UIElementVariableArray[uiName][elementName].get()
+            return text
     if uiName in G_UIElementArray:
         if elementName in G_UIElementArray[uiName]:
             if elementName.find('Text_') >= 0:
@@ -288,7 +289,7 @@ def CenterDlg(uiName,popupDlg,dw=0,dh=0):
     if dh == 0:
         dh = popupDlg.winfo_height()
     root = GetElement(uiName,'root')
-    if root != None:
+    if root != None and popupDlg != root:
        sw = root.winfo_width()
        sh = root.winfo_height()
        sx = root.winfo_x()
