@@ -4,8 +4,8 @@
 
 | Author | Honghaier  |
 | -------: | ---------- |
-| Version | V1.5.1    |
-| Last Update Date | 2021-07-06 |
+| Version | V1.6.3    |
+| Last Update Date | 2021-12-05 |
 | Twitter: | honghaier_2020@Honghaier_game |
 | Email: | 285421210@qq.com |
 |         Twitter: | honghaier_2020@Honghaier_game |
@@ -17,7 +17,18 @@ GitHub: https://github.com/honghaier-game/TKinterDesigner.git
 
 ## What's Fun.py？
 
-​	Fun.py is a function library of  TkinterDesigner, which provides common functions to access UI controls and their properties. At the same time, it also contains some functions encapsulated by common functions..
+​	Fun.py is a function library of  TkinterDesigner, which provides common functions to access UI controls and their properties. At the same time, it also contains some functions encapsulated by common functions.
+
+Most of the parameters of these functions start with uiname and elementname, which respectively represent the class name and control name of the interface. In the logic file corresponding to the interface, such as "project1_cmd. Py", if we add an event function for the control, tkinterdesigner will also generate corresponding parameters, such as:
+```
+def Button_ 6_ onCommand(uiName,widgetName):
+UserName=Fun.GetText(uiName,"Entry_3")
+PassWord=Fun.GetText(uiName,"Entry_5")
+Fun.MessageBox("UserName:"+UserName+"  PassWord:"+PassWord)
+```
+In this function, we also pass similar parameters uiname and widgetname, corresponding to the class name and control name of the interface, which can be directly passed to the function in fun.py.
+In fact, the uiname can be directly set to your corresponding interface class name, such as "project1", and the elementname can also be directly set to the control name you need, such as "entry_5"
+Note: fun.py is created dynamically according to the needs of the project. It is not recommended to modify fun.py.
 
 ## What are the functions of Fun.py ?
 
@@ -26,70 +37,47 @@ Tkinterdesigner v1.4.6 currently includes below functions:
 
 
 1. **Register: Register a control in the control list.**
-
 2. **GetElement: Access the control entity through the control name.**
-
 3. **AddTKVariable: Add a tkinter variable to control.**
-
 4. **SetTKVariable: Set the tkinter variable value of the control.**
-
 5. **GetTKVariable: Get the tkinter variable value of the control.**
-
 6. **AddUserData: Add a user data to control.**
-
 7. **SetUserData: Set the user data value of the control.**
-
 8. **GetUserData: Get the user data value of the control.**
-
 9. **SetTKAttrib: Set the tkinter attribute value of the control.**
-
 10. **GetTKAttrib: Get the tkinter attribute value of the control.**
-
 11. **SetText: Set the text of the control.**
-
 12. **GetText: Get the text of the control.**
-
 13. **SetImage: Set the image of the control.**
-
 14. **GetImage:Get the image of the control.**
-
-15. **InitElementData:Initialize all control data.**
-
-16. **InitElementStyle:Initialize all control style.**
-
-17. **UpdateUIInputDataArray:Get all the entry data of an interface**
-
-18. **CenterDlg:Center a pop-up interface dialog box**
-
-19. **SetRoundedRectangle:Set the fillet properties of the control**
-
-20. **ShowRoundedRectangle:Set the fillet property of the control immediately.**
-
-21. **MessageBox:Pop up a message dialog box**
-
-22. **InputBox:Pop up a input dialog box**
-
-23. **AskBox:Pop up a question dialog box,You need choose yes or no.**
-
-24. **WalkAllResFiles:Returns all the files in the directory**
-
-25. **EventFunction_Adaptor:Redefine the event response function**
-
-26. **SetControlPlace:Sets the absolute or relative position of the control**
-
-27. **SetRootRoundRectangle:Set the fillet parameter of TK root, support cross platform. **
-
-28. **ReadFromFile:Read content from file.** 
-
-29. **WriteToFile:Writing content to a file.**
-
-30. **ReadStyleFile:Read style file**
+15. **SetSelectIndex:Set selected items for listbox and combobox。**
+16. **GetSelectIndex:Get the selected items of listbox and combobox。**
+17. **InitElementData:Initialize all control data.**
+18. **InitElementStyle:Initialize all control style.**
+19. **UpdateUIInputDataArray:Get all the entry data of an interface**
+20. **CenterDlg:Center a pop-up interface dialog box**
+21. **SetRoundedRectangle:Set the fillet properties of the control**
+22. **ShowRoundedRectangle:Set the fillet property of the control immediately.**
+23. **SetTransparencyFunction:Set the transparent value of the form. **
+24. **ExpandAllTreeItem:Expand or close tree items.**
+25. **MessageBox:Pop up a message dialog box**
+26. **InputBox:Pop up a input dialog box**
+27. **AskBox:Pop up a question dialog box,You need choose yes or no.**
+28. **WalkAllResFiles:Returns all the files in the directory**
+29. **EventFunction_Adaptor:Redefine the event response function**
+30. **SetControlPlace:Sets the absolute or relative position of the control**
+31. **SetRootRoundRectangle:Set the fillet parameter of TK root, support cross platform. **
+32. **ReadFromFile:Read content from file.** 
+33. **WriteToFile:Writing content to a file.**
+34. **ReadStyleFile:Read style file**
 
 
 
 ## Function explanation:
 
 1. **Register**: To register a control is to bind the name to the control entity. If you want to access the control entity by name, it must be registered. Here, the param 'uiName' is used to distinguish the controls belonging to which interface instance. Because there may be multiple interfaces in the project, the UI name is used to distinguish them.
+
+   Parameter 1: interface class name, parameter 2: control name, parameter 3: control.
 
    `def Register(uiName,elementName,element):
        if uiName not in G_UIElementArray:
@@ -104,6 +92,8 @@ Tkinterdesigner v1.4.6 currently includes below functions:
 
 2. **GetElement**: Access the control entity through the control name.
 
+   Parameter 1: interface class name, parameter 2: control name
+
    `def GetElement(uiName,elementName):
        global G_UIElementArray
        if uiName in G_UIElementArray:
@@ -117,6 +107,8 @@ Tkinterdesigner v1.4.6 currently includes below functions:
    
 
 3. **AddTKVariable**: Add a tkinter variable to control.
+
+   parameter 1: interface class name, parameter 2: control name, parameter 3: default value.
 
    `def AddTKVariable(uiName,elementName,defaultValue = None):
        if uiName not in G_UIElementVariableArray:
@@ -144,6 +136,8 @@ Tkinterdesigner v1.4.6 currently includes below functions:
 
 4. **SetTKVariable**: Set the tkinter variable value of the control.
 
+   Parameter 1: interface class name, parameter 2: control name, parameter 3: value.
+
    `
    def SetTKVariable(uiName,elementName,value):
        if uiName in G_UIElementVariableArray:
@@ -155,6 +149,8 @@ Tkinterdesigner v1.4.6 currently includes below functions:
    `Fun.SetTKVariable(className,'CheckButton_6',True)`
 
 5. **GetTKAttrib:** Get the tkinter attribute value of the control.
+
+   Parameter 1: interface class name, parameter 2: control name
 
    `def GetTKVariable(uiName,elementName):
        if uiName in G_UIElementVariableArray:
@@ -183,6 +179,8 @@ Tkinterdesigner v1.4.6 currently includes below functions:
 
 7. **SetUserData: Set the user data value of the control.**
 
+   Parameter 1: interface class name, parameter 2: control name, parameter 3 dataname is the data name, and parameter 4 datavalue is the data value.
+
    `def SetUserData(uiName,elementName,dataName,datavalue):
        global G_UIElementArray
        global G_UIElementUserDataArray
@@ -200,6 +198,8 @@ Tkinterdesigner v1.4.6 currently includes below functions:
    `Fun.AddUserData(className,'Label_7','AAA',888)`
 
 8. **GetUserData: Get the user data value of the control.**
+
+   Parameter 1: interface class name, parameter 2: control name, parameter 3 dataname is the data name.
 
    `def GetUserData(uiName,elementName,dataName):
        global G_UIElementUserDataArray
@@ -221,6 +221,8 @@ Tkinterdesigner v1.4.6 currently includes below functions:
 
 9. **SetTKAttrib: Set the tkinter attribute value of the control.**
 
+   Parameter 1: interface class name, parameter 2: control name, parameter 3: attribname is the property name, and parameter 4: attribvalue is the data value.
+
    `def SetTKAttrib(uiName,elementName,AttribName,attribValue):
        global G_UIElementArray
        if uiName in G_UIElementArray:
@@ -235,6 +237,8 @@ Tkinterdesigner v1.4.6 currently includes below functions:
 
 10. **GetTKAttrib: Get the tkinter attribute value of the control.**
 
+    Parameter 1: interface class name, parameter 2: control name, parameter 3: attribname is property name.
+
     `def GetTKAttrib(uiName,elementName,AttribName):
         global G_UIElementArray
         if uiName in G_UIElementArray:
@@ -248,6 +252,8 @@ Tkinterdesigner v1.4.6 currently includes below functions:
     `fgColor = Fun.GetTKAttrib(className,'Label_7','fg')`
 
 11. **SetText: Set the text of the control(label, button, entry and text)**
+
+    Parameter 1: interface class name, parameter 2: control name, parameter 3: text content.
 
     `def SetText(uiName,elementName,textValue):
         global G_UIElementArray
@@ -273,6 +279,8 @@ Tkinterdesigner v1.4.6 currently includes below functions:
 
 12. **GetText: Get the text of the control.**
 
+    Parameter 1: interface class name, parameter 2: control name
+
     `def GetText(uiName,elementName):
         global G_UIElementArray
         global G_UIElementVariableArray
@@ -294,6 +302,8 @@ Tkinterdesigner v1.4.6 currently includes below functions:
     `Name = Fun.GetText(className,'Entry_3')`
 
 13. **SetImage: Set the image of the control(Label,Button).**
+
+    Parameter 1: interface class name, parameter 2: control name, parameter 3: picture name.
 
     `def SetImage(uiName,elementName,imagePath):
         global G_UIElementVariableArray
@@ -324,6 +334,8 @@ Tkinterdesigner v1.4.6 currently includes below functions:
 
 14. **GetImage: Get the image file path of the control(Label,Button).**
 
+    Parameter 1: interface class name, parameter 2: control name.
+
     `def GetImage(uiName,elementName):
         global G_UIElementVariableArray
         if elementName.find('Label_') == 0 or elementName.find('Button_') == 0 :
@@ -339,8 +351,49 @@ Tkinterdesigner v1.4.6 currently includes below functions:
     **Example:**
 
     `bgImage = Fun.GetImage(className,'Label_2')`
+    
+15. **SetSelectIndex: Set the selected index values for listbox and ComboBox.**
 
-15. **InitElementData:Initialize all user binding data without manual call.**
+    Parameter 1: interface class name, parameter 2: control name, parameter 3: index value.
+    
+    `def SetSelectIndex(uiName,elementName,index):
+    	if uiName in G_UIElementAlias.keys() and elementName in G_UIElementAlias[uiName].keys():
+        	elementName = G_UIElementAlias[uiName][elementName]
+    	Control = GetElement(uiName,elementName)
+    	if Control != None:
+        	if elementName.find('ComboBox_') == 0 :
+            	Control.current(index)
+        	elif elementName.find('ListBox_') == 0 :
+            	Control.select_set(index)`
+
+    **Example:**
+    
+    `Fun.SetSelectIndex(className,'ComboBox_4',2)`
+    
+16. **GetSelectIndex: Get the selected index values for listbox and ComboBox.**
+
+    Parameter 1: interface class name, parameter 2: control name.
+
+    `def GetSelectIndex(uiName,elementName):
+    	if uiName in G_UIElementAlias.keys() and elementName in G_UIElementAlias[uiName].keys():
+        	elementName = G_UIElementAlias[uiName][elementName]
+    	Control = GetElement(uiName,elementName)
+    	if Control != None:
+        	if elementName.find('ComboBox_') == 0 :
+            	return Control.current()
+        	elif elementName.find('ListBox_') == 0 :
+            	currIndex = Control.curselection()
+            	if len(currIndex) > 0 and currIndex[0] >= 0:
+                	return currIndex[0]
+    	return -1
+
+    **Example:**
+
+    `index = Fun.GetSelectIndex(className,'ComboBox_4')`
+
+17. **InitElementData:Initialize all user binding data without manual call.**
+
+    Parameter 1: interface class name,
 
     `def InitElementData(uiName):
         global G_UIElementUserDataArray
@@ -353,7 +406,9 @@ Tkinterdesigner v1.4.6 currently includes below functions:
 
     
 
-16. **InitElementStyle:Initialize all control style without manual call. **
+18. **InitElementStyle:Initialize all control style without manual call. **
+
+    Parameter 1: interface class name; parameter 2: style name.
 
     `def InitElementStyle(uiName,Style):
         StyleArray = ReadStyleFile(Style+".py")
@@ -373,7 +428,9 @@ Tkinterdesigner v1.4.6 currently includes below functions:
                 except BaseException:
                     continue`
 
-17. **UpdateUIInputDataArray:Get all the entry data of an interface**
+19. **GetInputDataArray:Get all the entry data of an interface**
+
+    Parameter 1: interface class name,
 
     `def  GetInputDataArray(uiName):
         global G_UIElementArray
@@ -412,7 +469,9 @@ Tkinterdesigner v1.4.6 currently includes below functions:
 
      `print('Name:'+InputDataArray['Entry_5'][0])`
 
-18. **CenterDlg:Center a pop-up interface dialog box,Center a pop-up interface dialog box. If the parameter does not specify the width and height, use the width and height of the dialog box itself. If it is used before registering root, that is, the main window root is in the center, the center of the windows screen is in the center.**
+20. **CenterDlg:Center a pop-up interface dialog box,Center a pop-up interface dialog box. If the parameter does not specify the width and height, use the width and height of the dialog box itself. If it is used before registering root, that is, the main window root is in the center, the center of the windows screen is in the center.**
+
+    Parameter 1: interface class name, parameter 2: dialog form, parameter 3: form width, parameter 4: form height.
 
     `def CenterDlg(uiName,popupDlg,dw=0,dh=0):
         if dw == 0:
@@ -441,7 +500,9 @@ Tkinterdesigner v1.4.6 currently includes below functions:
 
      
 
-19. **SetRoundedRectangle:The rounded property of the control is called in the interface Layout Pyfile, but because the interface has not been created, it is necessary to call ShowRoundedRectangle two times later. Note: this function does not cross platform.**
+21. **SetRoundedRectangle:The rounded property of the control is called in the interface Layout Pyfile, but because the interface has not been created, it is necessary to call ShowRoundedRectangle two times later. Note: this function does not cross platform.**
+
+    Parameter 1: control, parameter 2: fillet width, parameter 3: fillet height.
 
     `def SetRoundedRectangle(control,WidthEllipse=20,HeightEllipse=20):
         if control != None:
@@ -451,7 +512,9 @@ Tkinterdesigner v1.4.6 currently includes below functions:
 
     `SetRoundedRectangle(Button_2,20,20)`
 
-20. **ShowRoundedRectangle: Set the fillet property of the control immediately.**
+22. **ShowRoundedRectangle: Set the fillet property of the control immediately.**
+
+    参数1：控件, 参数2:圆角宽度，参数3:圆角高度。
 
     `def ShowRoundedRectangle(control,WidthEllipse,HeightEllipse):
         import win32gui
@@ -462,7 +525,48 @@ Tkinterdesigner v1.4.6 currently includes below functions:
 
     `Fun.ShowRoundedRectangle(Button_2,20,20)`
 
-21. **MessageBox:Pop up a message dialog box**
+23. **SetTransparencyFunction: Sets the transparent value of the form。Sets the transparent value of the form.****Sets the transparent value of the form.
+
+    Parameter 1: control, parameter 2: transparency.
+
+    `def SetTransparencyFunction(root,alpha):
+    	if root != None:
+        	try :
+            	import ctypes
+            	from ctypes import windll
+            	hwnd = windll.user32.GetParent(root.winfo_id())
+            	_winlib = ctypes.windll.user32
+            	style = _winlib.GetWindowLongA( hwnd, 0xffffffec ) | 0x00080000
+            	_winlib.SetWindowLongA( hwnd, 0xffffffec, style )
+            	_winlib.SetLayeredWindowAttributes( hwnd, 0, alpha, 2 )
+        	except ImportError:
+            	pass`
+    **Example:**
+
+    `Fun.SetTransparencyFunction(root,128)`
+    
+24. **ExpandAllTreeItem: Expand or close tree items**
+
+    Parameter 1: target tree item, parameter 1: expand or close, parameter 3: recursive call, no need to pass in manually.
+
+    `def ExpandAllTreeItem(targetTree,isOpen,parentItem = None):
+    	ParentItemArray = [parentItem]
+    	if parentItem == None:
+        	ParentItemArray = targetTree.get_children()
+    	for Item in ParentItemArray:
+        	targetTree.item(Item,open=isOpen)
+        	for childItem in targetTree.get_children(Item):
+            	targetTree.item(childItem,open=isOpen)
+            	ExpandAllTreeItem(targetTree,isOpen,childItem)`
+    
+    **Example:**
+    
+    `Fun.ExpandAllTreeItem(TreeView_4,True)`
+
+
+25. **MessageBox:Pop up a message dialog box**
+
+    Parameter 1: the dialog box displays text.
 
     `def MessageBox(text):
         tkinter.messagebox.showwarning('info',text)`
@@ -471,7 +575,9 @@ Tkinterdesigner v1.4.6 currently includes below functions:
 
     `Fun.MessageBox("Thank you")`
 
-22. **InputBox:Pop up a input dialog box**
+26. **InputBox:Pop up a input dialog box**
+
+    Parameter 1: dialog box title text, parameter 2: dialog box default box input text.
 
     `def InputBox(title,text):
         res = tkinter.simpledialog.askstring(title,'Input Box',initialvalue=text)
@@ -481,7 +587,9 @@ Tkinterdesigner v1.4.6 currently includes below functions:
 
     `Fun.InputBox("Please input the name")`
 
-23. **AskBox:Pop up a question dialog box,You need choose yes or no.**
+27. **AskBox:Pop up a question dialog box,You need choose yes or no.**
+
+    Parameter 1: dialog title text, parameter 2: dialog display text.
 
     `def AskBox(title,text):
         res = tkinter.messagebox.askyesno(title,text)
@@ -495,7 +603,9 @@ Tkinterdesigner v1.4.6 currently includes below functions:
 
     ​	`....`
 
-24. **WalkAllResFiles:Returns all the files in the directory**
+28. **WalkAllResFiles:Returns all the files in the directory**
+
+    Parameter 1: directory name, parameter 2: enter subdirectory, parameter 3: whether there is extension filtering.
 
     `def WalkAllResFiles(parentPath,alldirs=True,extName=None):
         ResultFilesArray = []
@@ -524,7 +634,7 @@ Tkinterdesigner v1.4.6 currently includes below functions:
 
     `jsonFileArray = Fun.WalkAllResFiles(path,False,'json')`
 
-25. **EventFunction_Adaptor:Redefine the event response function to have the specified parameter.**
+29. **EventFunction_Adaptor:Redefine the event response function to have the specified parameter.**
 
     `def EventFunction_Adaptor(fun,  **params):
         return lambda event, fun=fun, params=params: fun(event, **params)`
@@ -533,7 +643,9 @@ Tkinterdesigner v1.4.6 currently includes below functions:
 
     `Button_7.configure(command=lambda:Project1_cmd.Button_7_onCommand(className,"Button_7"))`
 
-26. **SetControlPlace:Sets the absolute or relative position of the control**
+30 **SetControlPlace:Sets the absolute or relative position of the control**
+
+    Parameter 1: control, parameter 2: x position, parameter 3: y position, parameter 4: height, parameter 5: width.
 
     `def SetControlPlace(control,x,y,w,h):
         control.place(x=0,y=0,width=0,height=0)
@@ -589,7 +701,9 @@ Tkinterdesigner v1.4.6 currently includes below functions:
 
     `Fun.SetControlPlace(Button_1,10,10,100,24)`
 
-27. **SetRootRoundRectangle:Set the fillet parameter of TK root, support cross platform..**
+31. **SetRootRoundRectangle:Set the fillet parameter of TK root, support cross platform.**
+
+    Parameter 1: Canvas control, parameter 2: x position, parameter 3: y position, parameter 4: height, parameter 5: width, parameter 6: fillet radius.
 
     `def SetRootRoundRectangle(canvas,x1, y1, x2, y2, radius=25,**kwargs):
         points = [x1+radius, y1,
@@ -618,7 +732,9 @@ Tkinterdesigner v1.4.6 currently includes below functions:
 
     `Fun.SetControlPlace(Button_1,10,10,100,24)`
 
-28. **ReadFromFile:Read content from file.** 
+32. **ReadFromFile:Read content from file.** 
+
+    Parameter 1: file path.
 
     `def ReadFromFile(filePath):
         content = None
@@ -636,7 +752,9 @@ Tkinterdesigner v1.4.6 currently includes below functions:
 
     `print(content)`
 
-29. **WriteToFile:Writing content to a file**
+33. **WriteToFile:Writing content to a file**
+
+    Parameter 1: file path, parameter 2: written content.
 
     `def WriteToFile(filePath,content):
         if filePath != None:
@@ -654,7 +772,9 @@ Tkinterdesigner v1.4.6 currently includes below functions:
 
     `Fun.WriteToFile('test.txt',content)`
 
-30. **ReadStyleFile:Read style file**
+34. **ReadStyleFile:Read style file**
+
+    Parameter 1: file path.
 
     `def ReadStyleFile(filePath):
         StyleArray = {}

@@ -6,8 +6,8 @@
 
 | Author | Honghaier  |
 | -------: | ---------- |
-| Version | V1.5.5     |
-| Last Update Date | 2021-07-31 |
+| Version | V1.6.3    |
+| Last Update Date | 2021-12-05 |
 | Twitter: | honghaier_2020@Honghaier_game |
 | Email: | 285421210@qq.com |
 | QQ Group | 100180960 |
@@ -31,31 +31,28 @@ GitHub: https://github.com/honghaier-game/TKinterDesigner.git
 
 ## TKinterDesigner都有什么功能 ?
 
-Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
+Tkinterdesigner v1.6.3 版本包括以下十项主要功能:
 
+1. ###### 项目管理：创建、打开、保存项目，方便的管理它们。
 
+2. ###### 文件管理：创建界面、文件和导入项目资源，方便的管理它们。
 
-1. ###### 项目管理：创建并打开项目。
-
-2. ###### 文件管理：创建界面、创建文件和导入项目资源。
-
-3. ###### 界面设计：通过拖拽方式所见即所得的设计Tkinter界面。
+3. ###### 界面设计：通过对界面控件进行拖拽来方便快捷的设计界面。
 
 4. ###### 控件设置：对控件进行基本属性的设置。
 
 5. ###### 变量绑定：为Tkinter控件绑定自定义变量。
 
-6. ###### 事件响应：为Tkinter的控制建立事件和函数之间的映射。
+6. ###### 事件函数映射：为Tkinter的控制建立事件和函数之间的映射。
 
-7. ###### 逻辑编写：事件函数的逻辑代码编写。
+7. ###### 逻辑代码编写：事件函数的逻辑代码编写。
 
 8. ###### 调试运行：调用Python命令调试、运行项目。
 
 9. ###### 打包程序：调用Python命令为项目打包exe。
 
-10. ###### 自定义模块导入：导入并调用自定义模块。
+10. ###### 组件化与自定义模块导入：直接将当前界面功能保存为组件并灵活调用，或者导入并调用自定义模块。
 
-    
 
 ## TKinterDesigner启动：
 
@@ -199,21 +196,7 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 
 ![](http://www.tkinterdesigner.com/ReadMeImages/66.png)
 
-#### <4>."网络爬虫"项目
-
-​		![](http://www.tkinterdesigner.com/ReadMeImages/67.png)
-
-​	网络爬虫现在是一个热点方向，我们也把他放入到项目模版里了，在这个项目中，我们基于多文档的框架，实现了一个网络爬图片的工程。
-
-​		![](http://www.tkinterdesigner.com/ReadMeImages/68.png)
-
-
-
-​	为了更好的吸引人气，这里我们用一个下载美女图片的例子来演示，如果你有时候心情不太好，可以多放松一下眼睛。
-
-​		![](http://www.tkinterdesigner.com/ReadMeImages/69.png)
-
-​		以上就是四种新建项目的模版示例，虽然还不能满足所有的项目需求，但是我会继续努力扩增，也欢迎你提出宝贵的方向性建议，如果入选，我会将它增加到模版中提供出来。
+​		以上就是三种新建项目的模版示例，虽然还不能满足所有的项目需求，但是我会继续努力扩增，也欢迎你提出宝贵的方向性建议，如果入选，我会将它增加到模版中提供出来。
 
 
 
@@ -262,6 +245,14 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 8. **浏览器**：演示了如何开发一个自己的浏览器软件。
 
 ![](http://www.tkinterdesigner.com/ReadMeImages/56.png)
+
+​	9.**网络爬虫**：演示了如何开发一个自己的美女爬虫软件。
+
+​		![](http://www.tkinterdesigner.com/ReadMeImages/69.png)
+
+​	10.**PDF文件合并**：演示了如何对PDF文件进行操作，包括合并和拆分。
+
+​		![](http://www.tkinterdesigner.com/ReadMeImages/300.png)
 
 这些实例都是使用TKinterDesigner设计开发的，它让我们感到由衷的自豪，因为整个过程中，我们没有再为界面设计和事件处理花费多少时间，只把精力放在核心功能类上即可快速完成项目的开发。后面我们会加入更多的实例工程，以帮助大家更好的学习和掌握TKinterDesigner。
 
@@ -700,6 +691,8 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 
 ​    4.F11键，执行下一行，如果有函数，进入函数。
 
+
+
 ### 9. 打包EXE
 
 在完成我们自己的程序后，我们希望将程序打包为EXE并发布给用户。我们可以直接点击右上角的“发布”按钮，选择输出目录，然后输入要打包的EXE的名称。不过如果你未登录，是不能打包的。
@@ -714,11 +707,33 @@ Tkinterdesigner v1.5.1 版本包括以下十项主要功能:
 
 ​	![](http://www.tkinterdesigner.com/ReadMeImages/38.png)
 
-### 10. 自定义模块导入
+### 10. 组件化与自定义模块导入
+
+​	组件化是快速化开发过程中必不可少的手段，我们可以在开发过程中随时将界面中的全部或者一部分控件打包生成一个组件，并通过在工具条的”界面“栏里导入并使用。
+
+​	方法就是在右边的控件树项上右键，在弹出菜单里点击”组件化“，然后在弹出对话框里输入组件名称，点击”确定“即可生成组件。
+
+​	![](http://www.tkinterdesigner.com/ReadMeImages/302.png)
+
+​	![](http://www.tkinterdesigner.com/ReadMeImages/303.png)
+
+​	完成组件的生成后，我们可以在其它项目里进行导入和使用。
+
+​	![](http://www.tkinterdesigner.com/ReadMeImages/304.png)
+
+​	将组件化后的界面拖动到当前界面中，它会以一个独立的控件的形式存在，并具备原有逻辑。
+
+​	![](http://www.tkinterdesigner.com/ReadMeImages/305.png)
+
+​	运行起来，你就发现，这种方式可以大大的以组件化的形式提升你的开发，并使你的工程代码得到非常高效的可重用性。
+
+​	![](http://www.tkinterdesigner.com/ReadMeImages/306.png)
+
+
 
 ​	自定义模块是为了让开发者通过自编写的模块类与控件进行交互，完成相对独立的功能，您可以在界面设计器中将模块类导入，并轻松的设置模块类的属性，包括将接口控件作为参数传递给它。我们希望将来提供大量的可用模块给开发者使用，目前我们在”组件市场“提供了少许模块来验证这个方案，但前提是您得是注册账号才可以看到组件市场。
 
-![](http://www.tkinterdesigner.com/ReadMeImages/39.png)
+![](http://www.tkinterdesigner.com/ReadMeImages/309.png)
 
 ​	在”组件市场“面板里，我们可以看到Express 快递查询的组件，我们可以点击安装，安装成后后，它会被放置在当前工具目录的Market_com目录中。
 
@@ -819,7 +834,9 @@ class   Express:
 
 ![](http://www.tkinterdesigner.com/ReadMeImages/45.png)
 
+​		如果你想制作自已的组件，也可以参考组件文件的制作，并交提交到市场。
 
+![](http://www.tkinterdesigner.com/ReadMeImages/301.png)
 
 ## 关于美化：应用皮肤及自定义控件样式。
 
@@ -865,7 +882,9 @@ class   Express:
 
 ![](http://www.tkinterdesigner.com/ReadMeImages/83.png)
 
-​	
+​		如果你想制作自已的皮肤，也可以参考皮肤文件修改配色，交提交到市场。
+
+![](http://www.tkinterdesigner.com/ReadMeImages/310.png)
 
 ### 关于我
 
@@ -881,5 +900,5 @@ class   Express:
 
 ​                                                                                                           Honghaier
 
-​																											2021/07/07
+​																											2021/12/05
 

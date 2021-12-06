@@ -6,8 +6,8 @@
 
 | Author | Honghaier  |
 | -------: | ---------- |
-| Version | V1.5.1     |
-| Last Update Date | 2021-07-06 |
+| Version | V1.6.3     |
+| Last Update Date | 2021-12-05 |
 | Twitter: | honghaier_2020@Honghaier_game |
 | Email: | 285421210@qq.com |
 | Twitter: | honghaier_2020@Honghaier_game |
@@ -31,7 +31,7 @@ Tkinder designer is a development tool based on python, which is used to develop
 
 ## What are the functions of TK designer?
 
-Tkinder designer v1.5.1 includes the following ten main functions:
+TkinderDesigner  includes the following ten main functions:
 
 
 
@@ -53,7 +53,7 @@ Tkinder designer v1.5.1 includes the following ten main functions:
 
 9. ###### Package program: call Python command to package exe for the project.
 
-10. ###### Custom module import: import and call the custom module.
+10. ###### Componentization and user-defined module import: directly save the current interface functions as components and call them flexibly, or import and call user-defined modules.
 
     
 
@@ -179,22 +179,6 @@ In this example, we can see that when you click the tree item file on the left, 
 
 ![](http://www.tkinterdesigner.com/ReadMeImages_Cn/66.png)
 
-#### <4>."Web Crawler" project
-
-​		![](C:\Users\28542\Desktop\TKinterDesigner\67.png)
-
-Web crawler is now a hot direction, we also put it into the project template, in this project, we implemented a web crawler image project based on the multi document framework.
-
-​		![](http://www.tkinterdesigner.com/ReadMeImages_Cn/68.png)
-
-
-
-In order to attract more people, here we use an example of downloading beautiful pictures to demonstrate. If you are in a bad mood sometimes, you can relax your eyes more.
-
-​		![](http://www.tkinterdesigner.com/ReadMeImages_Cn/69.png)
-
-The above are the template examples of four new projects. Although they can not meet all the project requirements, I will continue to expand them. You are also welcome to put forward valuable directional suggestions. If you are selected, I will add them to the template and provide them.
-
 
 
 ### （2） Open project：
@@ -237,11 +221,17 @@ These cases include:
 
 7. **Stock price query**：demonstrates how to call the stock query interface for stock query.
 
-   ![](C:\Users\28542\Desktop\TKinterDesigner\55.png)
+   ![](http://www.tkinterdesigner.com/ReadMeImages_Cn/55.png)
 
 8. **Browser**：demonstrates how to develop your own browser software.
 
-![](C:\Users\28542\Desktop\TKinterDesigner\56.png)
+![](http://www.tkinterdesigner.com/ReadMeImages_Cn/56.png)
+
+9. **web crawler **: demonstrates how to develop your own beauty crawler software.
+![](http://www.tkinterdesigner.com/ReadMeImages_Cn/69.png)
+
+10. **Pdf file merge**: demonstrates how to merge and split PDF files.
+![](http://www.tkinterdesigner.com/ReadMeImages_Cn/300.png)
 
 These examples are designed and developed with TK inter designer, which makes us feel proud. In the whole process, we don't spend much time on interface design and event processing, but only focus on the core function class to quickly complete the development of the project. Later, we will add more example projects to help you better learn and master TK inter designer.
 
@@ -715,11 +705,31 @@ Click the OK button and tkinder designer will start calling the packer to packag
 
 ​	![](http://www.tkinterdesigner.com/ReadMeImages_Cn/38.png)
 
-### 10. Custom module import
+### 10. Componentization and custom module import
+
+Componentization is an indispensable means in the rapid development process. We can package all or part of the controls in the interface to generate a component at any time during the development process, and import and use it in the "interface" bar of the toolbar.
+
+The method is to right-click the control tree item on the right, click componentization in the pop-up menu, then enter the component name in the pop-up dialog box, and click OK to generate the component.
+
+![](http://www.tkinterdesigner.com/ReadMeImages_Cn/302.png)
+
+![](http://www.tkinterdesigner.com/ReadMeImages_Cn/303.png)
+
+After generating the component, we can import and use it in other projects.
+
+![](http://www.tkinterdesigner.com/ReadMeImages_Cn/304.png)
+
+Drag the componentized interface to the current interface. It will exist as an independent control with the original logic.
+
+![](http://www.tkinterdesigner.com/ReadMeImages_Cn/305.png)
+
+When running, you will find that this method can greatly improve your development in the form of component, and make your engineering code very efficient and reusable.
+
+![](http://www.tkinterdesigner.com/ReadMeImages_Cn/306.png)
 
 Custom module is designed to enable developers to interact with controls through self-designed module classes and complete relatively independent functions. You can import module classes in the interface designer and easily set the properties of module classes, including passing interface controls to it as parameters. We hope to provide a large number of available modules for developers in the future. At present, we provide a few modules in the "ModuleMarket" to verify this scheme, but only if you register your account number can you see the component market.
 
-![](http://www.tkinterdesigner.com/ReadMeImages_Cn/39.png)
+![](http://www.tkinterdesigner.com/ReadMeImages_Cn/309.png)
 
 we can see the components queried by express express. We can click Install. After installation, it will be placed in the market of the current tool Market_com directory
 
@@ -836,7 +846,7 @@ When finished, click "run" in the upper right corner to run it. We can see the p
 
 In most cases, the program we use Tkinter to create is not beautiful enough. Although it does not affect the function development, everyone has a love for beauty. It's best if we can make the program more beautiful. However, since most of our developers and users are programmers, it's best to simplify the beautification part. Therefore, I hope to provide a good color scheme as a skin for developers to make the program more beautiful. Therefore, we also launched the skin market, with only official skin for the time being, In the future, we will open up to the majority of developers and users to upload and submit, so as to provide better skin for everyone. But the premise is that you have to register an account to see the component market.
 
-![](http://www.tkinterdesigner.com/ReadMeImages_Cn/75.png)
+![](http://www.tkinterdesigner.com/ReadMeImages_Cn/310.png)
 
 ​	We can click the "not installed" text on the "black gold theme" icon here to complete the installation.
 
@@ -893,5 +903,5 @@ As you can see here, I believe the readers have worked very hard. In the process
 
 ​                                                                                                           Honghaier
 
-​																											2021/07/06
+​																											2021/12/05
 
