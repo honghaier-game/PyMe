@@ -92,7 +92,7 @@ def run(targetUrl, uiName,beginNUM, endNUM):
     Download(picLink, picAlt, nowpage)
     output = 'Finish！\n'
     Text_2.insert(tkinter.END,output)
-    output = 'Mext link:'+nextPageLink + '\n'
+    output = 'Next link:'+nextPageLink + '\n'
     Text_2.insert(tkinter.END,output)
     Text_2.see(tkinter.END)
     run(nextPageLink, uiName , beginNUM, endNUM)
