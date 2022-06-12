@@ -16,7 +16,7 @@ import java.util.TimerTask;
 
 
 public class SplashActivity extends AppCompatActivity implements View.OnClickListener{
-    private int recLen = 5;//跳过倒计时提示5秒
+    private int recLen = 2;//跳过倒计时提示5秒
     private TextView tv;
     Timer timer = new Timer();
     private Handler handler;
@@ -43,7 +43,7 @@ public class SplashActivity extends AppCompatActivity implements View.OnClickLis
                 startActivity(intent);
                 finish();
             }
-        }, 5000);//延迟5S后发送handler信息
+        }, 2000);//延迟2S后发送handler信息
     }
 
 
