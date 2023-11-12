@@ -1,0 +1,24 @@
+name=代码调试
+lessonid=10
+difficulty=简单
+reward=0
+introduction=掌握基本的代码调试方法。
+1=从左边工具条拖动一个输入框到窗体中。["Create_Entry"]
+2=从左边工具条拖动一个按钮到窗体中，放置在输入框右方或下方["Create_Button"]
+3=双击按钮，进入按钮点击事件响应函，编写代码“Value = int(Fun.GetText(uiName,'Entry_1'))”["BindEvent_Button_1_onCommand","WriteCode_Value = int(Fun.GetText(uiName,'Entry_1'))"]
+4=换行后编写代码“if Value < 10:”。["WriteCode_if Value < 10:"]
+5=换行后编写代码“    print('数字小于10')”。["WriteCode_print('数字小于10')"]
+4=换行后编写代码“else:”。["WriteCode_else:"]
+5=换行后编写代码“    print('数字大于等于10')”。["WriteCode_print('数字大于等于10')"]
+9=用鼠标在代码文本框左边，函数首行Value取值位置对应的行号位置单击，这时会出现一个红色小圆点，设定为断点。["BreakPoint_Add"]
+10=在代码编辑器里点击下方调试工具条中的蓝色三角形，启动调试运行。["Debug_Start"]
+11=在界面输入框中输入一个数字5，然后点击按钮，这时会在第一个红点处触发中断，单击调试右边的'单步执行'按钮，代码会执行一行，出现变量Value的值。["Debug_Step"]
+12=使用快捷键F10'单步执行'快速的执行完所有行代码，并切换到“输出”页观察打印结果。["Debug_Step","Debug_Step"]
+13=点击'停止调试'结束，在代码上部定义一个函数“def Lessthan10(Value):"["Debug_End","WriteCode_def Lessthan10(Value):"]
+14=换行后编写代码“if Value < 10:”。["WriteCode_if Value < 10:"]
+15=换行后编写代码“return True”。["WriteCode_return True"]
+16=换行后编写代码“return False”["WriteCode_return False"]
+17=然后把下面的if判断代码改成调用函数 if Lessthan10(Value) == True:["WriteCode_if Lessthan10(Value) == True:"]
+18=再次启动调试运行，输入20，点击按钮，按F10单步执行到调用Lessthan10函数的代码行，按F11进入函数。["Debug_Into"]
+19=当调试光标进入到Lessthan10函数，就可以在函数中继续调试了，我们点击'跳出函数'按钮返回上一层函数调用，并按F5继续执行。["Debug_GoOut","Debug_Continue"]
+20=点击'结束调试'完成本次调试。["Debug_End"]

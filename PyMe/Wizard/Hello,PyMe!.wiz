@@ -1,0 +1,8 @@
+name=Hello,PyMe!
+lessonid=1
+difficulty=简单
+reward=1
+introduction=了解从工具条拖动创建控件的方法以及快速设置文字内容的方法
+1=从左边工具条拖动创建一个Label控件到窗体。["Create_Label"]
+2=选中Label，按下Ctrl键 + 退格键清空文字内容。["Select_Label","ResetText_Label"]
+3=直接切换输入法，输入"Hello,PyMe!"。["Input_Hello,PyMe!"]

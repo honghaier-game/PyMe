@@ -1,0 +1,23 @@
+name=文件读写
+lessonid=13
+difficulty=简单
+reward=3
+introduction=了解文件读写的方法以及文本框的使用方法。
+1=选中Form_1，在右边属性栏设置窗口大小为1200x800。["SetSize_Form1_1200x800"]
+2=从左边工具条拖动创建一个Label控件到Form_1左上角，修改文字为“文件路径”。["Create_Label","SetText_文件路径"]
+3=从左边工具条拖动创建一个Entry控件到Label控件右边，用于显示文件路径。["Create_Entry"]
+4=从左边工具条拖动创建两个Button控件到Entry控件右边，分别修改文字为“打开文件”和“保存文件”。["Create_Button","SetText_打开文件","SetText_保存文件"]
+5=从左边工具条拖动创建一个Text控件到这些控件的下方，作为编辑用的文本框。["Create_Text"]
+6=双击“打开文件”按钮，进入点击事件响应函数，换行后鼠标右键单击，在“系统函数”中选择“调用打开文件框”。["BindEvent_Button_1_onCommand","FunctionMenu_openFile"]
+7=换行后编写代码“if openPath:”。["WriteCode_if openPath:"]
+8=换行后编写代码“Fun.SetText(uiName,'Entry_1',textValue=openPath)”。["WriteCode_Fun.SetText(uiName,'Entry_1',textValue=openPath)"]
+9=换行后编写代码“Content = Fun.ReadFromFile(openPath,'utf-8',False)”从文件中获取文本，最后一个参数如果为True代表自动执行Python文本。["WriteCode_Content = Fun.ReadFromFile(openPath,'utf-8',False)"]
+10=换行后编写代码“Fun.SetText(uiName,'Text_1',textValue=Content)”。["WriteCode_Fun.SetText(uiName,'Text_1',textValue=Content)"]
+11=在右侧助手栏缩略图中选择选择“保存文件”按钮，选中“点击事件”，并点击“绑定”按钮，进入函数右键单击，在“系统函数”中选择“调用保存文件框”。["BindEvent_Button_2_onCommand","FunctionMenu_saveFile"]
+12=换行后编写代码“if savePath:”。["WriteCode_if savePath:"]
+13=换行后编写代码“Content = Fun.GetText(uiName,'Text_1')”。["WriteCode_Content = Fun.GetText(uiName,'Text_1')"]
+14=换行后编写代码“if Fun.WriteToFile(savePath,Content,'utf-8') == True:”判断如果把Content写入文件执行成功。["WriteCode_if Fun.WriteToFile(savePath,Content,'utf-8') == True:"]
+15=换行后编写代码“Fun.MessageBox(text='保存成功!',title='提示',type='info',parent=None)”。["WriteCode_Fun.MessageBox(text='保存成功!',title='提示',type='info',parent=None)"]
+16=换行后编写代码“else:”。["WriteCode_else:"]
+17=换行后编写代码“Fun.MessageBox(text='保存失败!',title='提示',type='error',parent=None)”。["WriteCode_Fun.MessageBox(text='保存失败!',title='提示',type='error',parent=None)"]
+18=点击运行。["Run"]

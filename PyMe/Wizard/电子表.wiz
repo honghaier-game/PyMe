@@ -1,0 +1,17 @@
+name=电子表
+lessonid=2
+difficulty=简单
+reward=3
+introduction=掌握基本的控件设置，了解定时器组件的使用方法。
+1=选中Form_1，在设计视图右边的属性栏将窗体的布局方式改为“打包排布”。["SetLayout_Pack"]
+2=创建一个Label控件，在底部的布局栏将布局方式改为“打包排布”，填充设为“四周”。["Create_Label","SetLayout_Pack","SetLayout_Pack_Expand"]
+3=在顶部工具栏选择字体属性为黑体，大小为28。["ChooseFont_黑体_28_normal_roman_0"]
+4=从左边工具条的“其它”分类页拖拽创建一个Timer定时器组件。["Create_Timer"]
+5=双击Timer定时器组件，进入到定时器的onTimer函数。["BindEvent_Timer_1_onTimer"]
+6=换行后鼠标右键单击，在“系统函数”里选择“获取当前日期”。["FunctionMenu_Fun_GetCurrDate"]
+7=换行后鼠标右键单击，在“系统函数”里选择“获取当前时间”。["FunctionMenu_Fun_GetCurrTime"]
+8=换行后编写代码“showText = "日期:" + currDate + "时间:" + currTime”。["WriteCode_showText = \"日期:\" + currDate + \"时间:\" + currTime"]
+9=换行后编写代码“Fun.SetText(uiName,'Label_1',textValue=showText)”。["WriteCode_Fun.SetText(uiName,'Label_1',textValue=showText)"]
+10=按ESC键保存并返回设计视图，在右上角控件列表选择Form_1，右下事件响应页面双击Load事件项进入对应函数。["BindEvent_Form_1_onLoad"]
+11=换行后鼠标右键单击，在弹出菜单里的“界面函数”里找到“Timer”下的“Time_1”，选择“开始”菜单项。["FunctionMenu_Timer_Start"]
+12=点击运行。["Run"]

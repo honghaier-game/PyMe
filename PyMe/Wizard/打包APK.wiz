@@ -1,0 +1,9 @@
+name=打包APK
+lessonid=11
+difficulty=简单
+reward=0
+introduction=掌握基本的APK打包方法。
+1=从左侧工具条拖动创建一个Label，再拖动创建一个按钮，双击进入响应函数，编写代码“Fun.SetText(uiName,'Label_1',textValue='Hello,PyMe!')”。["Create_Label","Create_Button","BindEvent_Button_1_onCommand","WriteCode_Fun.SetText(uiName,'Label_1',textValue='Hello,PyMe!')"]
+2=在顶部栏右上角平台下拉列表框选择“android”，然后点击最右边的“发布”按钮。["Export_APK"]
+3=在弹出的“Android打包设置”对话框里，确认软件和作者名称，并确保安装JDK，ANDROID_SDK,NDK,GRADLE并按文本框说明设置环境变量，确认后点击“启动编译”按钮。["Export_Go_APK"]
+4=打包完成后，关闭打包对话框，将APK拷贝到手机上进行测试即可。["Export_Finish_APK"]

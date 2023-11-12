@@ -1,0 +1,12 @@
+name=备份与恢复
+lessonid=9
+difficulty=简单
+reward=3
+introduction=掌握基本的PyMe工程备份与恢复方法。
+1=在设计视图中对当前界面加入一些控件并随意放置，然后保存一下。["SaveFile_<%=UIName%>.py"]
+2=按着CTRL+B，这时会出备份工程对话框，输入一个备份名称"V1"，生成备份文件。["BackUp_Project"]
+3=继续加入一些控件或删除控件，并保存。["SaveFile_<%=UIName%>.py"]
+4=再次按着CTRL+B，输入一个备份名称"V2"，生成备份文件。["BackUp_Project"]
+5=双击“BackUp”目录,进入工程备份目录。["OpenDir_BackUp"]
+6=找到备份文件“V1”，然后双击，这时会提示"确定进入备份工程?"，选择“是”。就恢复到"V1"了。["Recover_Project"]
+7=按着CTRL+R，这时会提示"确定恢复到备份V2?"，选择“是”。就恢复到备份"V2"了。["Recover_Project"]

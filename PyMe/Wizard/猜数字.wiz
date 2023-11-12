@@ -1,0 +1,24 @@
+name=猜数字
+lessonid=3
+difficulty=一般
+reward=6
+introduction=了解从工具条拖动创建控件的方法以及快速设置文字内容的方法。
+1=从左边工具条拖动创建一个Label控件到窗体中央上方。["Create_Label"]
+2=用鼠标右键单击Label，在弹出菜单里点击“设置文字内容”，输入“猜数字“作为标题。["PopupMenu_SetText","SetText_猜数字"]
+3=在右部属性栏选择“字体”属性为黑体，大小为32，粗体。["ChooseFont_黑体_32_bold_roman_0"]
+4=再创建一个Label控件,双击右下角属性栏的文本属性，修改文字内容为“请输入0~100的数字”。["Create_Label","SetText_请输入0~100的数字"]
+5=从左边工具条拖动创建一个Entry控件到Label控件右边用于输入数字。["Create_Entry"]
+6=从左边工具条拖动创建一个Button控件到Entry控件下边，修改文字为“提交”用于提交数字。["Create_Button","SetText_提交"]
+7=在右上角控件列表选择Form_1，右下事件响应页面双击Load事件项进入对应函数。["BindEvent_Form_1_onLoad"]
+8=换行后鼠标右键单击，在“系统函数”里选择“获取当前一个0~100随机数”。["FunctionMenu_Fun_RandNumber"]
+9=换行后编写代码“Fun.AddUserData(uiName,'Form_1',dataName='随机数',datatype='int',datavalue=randNumber,isMapToText=0)”。["WriteCode_Fun.AddUserData(uiName,'Form_1',dataName='随机数',datatype='int',datavalue=randNumber,isMapToText=0)"]
+10=按ESC键保存并返回设计视图，双击“提交”按钮进入响应函数。["BindEvent_Button_1_onCommand"]
+11=换行后编写代码“随机数 = Fun.GetUserData(uiName,'Form_1','随机数')”。["WriteCode_随机数 = Fun.GetUserData(uiName,'Form_1','随机数')"]
+12=换行后编写代码“提交数 = int(Fun.GetText(uiName,'Entry_1'))”。["WriteCode_提交数 = int(Fun.GetText(uiName,'Entry_1'))"]
+13=换行后编写代码“if 提交数 == 随机数:”。["WriteCode_if 提交数 == 随机数:"]
+14=换行后编写代码“Fun.MessageBox(text='真棒，猜中啦！',title='info',type='info',parent=None)”。["WriteCode_Fun.MessageBox(text='真棒，猜中啦！',title='info',type='info',parent=None)"]
+15=换行后编写代码“elif 提交数 < 随机数:”。["WriteCode_elif 提交数 < 随机数:"]
+16=换行后编写代码“Fun.MessageBox(text='猜小了，请增大数字。',title='info',type='info',parent=None)”。["WriteCode_Fun.MessageBox(text='猜小了，请增大数字。',title='info',type='info',parent=None)"]
+17=换行后编写代码“else:”。["WriteCode_else:"]
+18=换行后编写代码“Fun.MessageBox(text='猜大了，请减小数字。',title='info',type='info',parent=None)”。["WriteCode_Fun.MessageBox(text='猜大了，请减小数字。',title='info',type='info',parent=None)"]
+19=点击运行。["Run"]
