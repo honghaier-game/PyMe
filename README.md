@@ -6,8 +6,8 @@
 
 | Author | Honghaier  |
 | -------: | ---------- |
-| Version | V1.6.3     |
-| Last Update Date | 2023-06-01 |
+| Version | V 1.3.5.4     |
+| Last Update Date | 2023-09-11 |
 | Twitter: | honghaier_2020@Honghaier_game |
 | Email: | 285421210@qq.com |
 | Twitter: | honghaier_2020@Honghaier_game |
