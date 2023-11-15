@@ -235,13 +235,13 @@
 
 ​	PyMe提供全套的可视化开发方式，从项目搭建、界面设计、控件属性、变量绑定到逻辑编写、调试运行、打包输出，可视化的编辑始终贯穿流程。这种体验类似Visual Basic，Visual C++，如果你有类似的经验，可以很快上手。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps1.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps1.jpg) 
 
 #### **二、低代码：**
 
 ​	PyMe通过可视化的方式，可以生成出项目的代码框架，并在此基础上建立简单、灵活的函数脚本编程机制，使得整个开发过程由复杂而繁琐的事情变得简单而有条理，大大降低了工作量。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps2.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps2.jpg) 
 
 #### 三、**跨平台：**
 
@@ -287,7 +287,7 @@ PyMe的官方QQ群共享：100180960
 
 ​	《Python跨平台应用软件开发实战》，机械工业出版社出版：
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps3.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps3.jpg) 
 
 #### 2、**B站的视频教程**
 
@@ -295,15 +295,15 @@ PyMe的官方QQ群共享：100180960
 
 ​	《PyMe基础使用入门课》 https://www.bilibili.com/video/BV1tF411d7kN
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps4.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps4.jpg) 
 
 《PyMe游戏开发入门课》 https://www.bilibili.com/video/BV1N94y1r77W
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps5.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps5.jpg) 
 
 ​	在PyMe中，也集成了这些教程，开发者可以通过“视频教程”页面来观看。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps6.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps6.jpg) 
 
 #### 3、**PyMe的向导教程**
 
@@ -313,21 +313,21 @@ PyMe的官方QQ群共享：100180960
 
 ***\*1.“新手入门”：\****开发者新建项目后点击顶部菜单“新手入门”菜单项，就可以选择对应的向导教程进行学习。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps7.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps7.jpg) 
 
 ​	点击相应的教程向导，即可开始运行步进式的教程，只需要一步一步跟着做即可学会相应的案例开发。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps8.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps8.jpg) 
 
 ​	2、***\*“模板项目”：\****新建的模版案例，会自带向导教程，双击文件与资源栏中的“向导教程”图标，即可进入向导教学。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps9.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps9.jpg) 
 
 ## **建议反馈：**
 
 ​	作为软件内置的一种沟通机制，在最后一页“建议反馈”里，开发者可以反馈发现的问题，建议，我在收到反馈后会进行解答和回复。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps10.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps10.jpg) 
 
 # **PyMe的角色类型**
 
@@ -363,13 +363,13 @@ PyMe的官方QQ群共享：100180960
 
 ​	双击启动PyMe.exe，首先进入的是项目管理界面，首先开发者可以根据在右上角需要选择所用语言，这里我们点击“简”选择简体中文。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps30.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps30.jpg) 
 
 图示：登录界面
 
 ​	默认情况下，开发者可以使用游客模式进行开发，如果想要使用平台功能，则需要点击图示中红框位置，进入到登录界面，在登录界面里，将可以注册新账号：
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps31.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps31.jpg) 
 
  
 
@@ -383,43 +383,43 @@ PyMe的官方QQ群共享：100180960
 
 **1、*****\*空界面项目\****：空白的界面项目框架，你可以随意的设计界面。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps32.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps32.jpg) 
 
 图示：空界面项目设计视图
 
 ***\*2、对话框项目\****：最简单的登录框，方便开发者了解界面控件的使用。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps33.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps33.jpg) 
 
 图示：对话框编辑运行演示
 
 ***\*3、单文档项目\****：单文档的Python代码编辑器项目，具备基本的代码文件的创建、打开、编写与运行。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps34.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps34.jpg) 
 
 图示：单文档运行演示
 
 ***\*4、多文档项目\****：简单的多文档的Python项目IDE，包括对一个简单Python项目进行多文件编辑、运行、打包的功能。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps35.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps35.jpg) 
 
 图示：多文档运行演示
 
 ***\*5、DBMS项目\****：简单的小型数据库管理软件，展示了基本的数据库管理软件框架和数据库组件的使用。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps36.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps36.jpg) 
 
 图示：数据库框架设计演示
 
 ***\*6、2D游戏项目\****：2D的游戏开发框架，提供了动画、粒子、角色、界面、场景等编辑器的功能。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps37.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps37.jpg) 
 
 图示：2D游戏中场景编辑演示
 
 ***\*7、3D游戏项目\****：3D的引擎开发框架，目前只有部分底层库，工具尚不完善。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps38.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps38.jpg) 
 
 图示：3D游戏中场景编辑演示
 
@@ -433,7 +433,7 @@ PyMe的官方QQ群共享：100180960
 
  
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps39.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps39.jpg) 
 
 图示：“打开项目”选项页中的最近项目
 
@@ -445,17 +445,17 @@ PyMe的官方QQ群共享：100180960
 
  
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps40.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps40.jpg) 
 
 图示：“实例项目”页面中展示了从开发者商店下载的案例
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps41.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps41.jpg) 
 
 图示：开发者商店中展示的可下载案例。
 
  
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps42.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps42.jpg) 
 
 图示：案例的详细介绍。
 
@@ -467,29 +467,29 @@ PyMe的官方QQ群共享：100180960
 
 **UIData**:界面嵌入演示，演示了如何在一个对话框中嵌入另一个界面，并访问它们的数据。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps43.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps43.jpg) 
 
 **PDFTool**:演示了PDF文件拆分与合并工具的开发。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps44.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps44.jpg) 
 
 **批量发票识别导出*****\*：\****对发票图片进行识别并整理成表格，方便财务快速统计。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps45.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps45.jpg) 
 
 **计算器**：一个简单的计算器案例，演示了控件变量的绑定和使用。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps46.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps46.jpg) 
 
 **五子棋**:一个基于画布的绘图功能制作的五子棋游戏。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps47.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps47.jpg) 
 
  
 
 人脸识别：通过人脸识别库来对摄像头采集的图像进行人脸识别。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps48.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps48.jpg) 
 
  
 
@@ -499,7 +499,7 @@ PyMe的官方QQ群共享：100180960
 
 在“新建项目”页面选择“空界面”，然后设定项目路径后，点击“确定”按钮。这时会进入到空界面的设计视图。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps49.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps49.jpg) 
 
 图示：空界面项目设计视图说明
 
@@ -525,7 +525,7 @@ PyMe的官方QQ群共享：100180960
 
 ​	下面以计算器软件项目来介绍如何进行界面设计，我们在主视计区用鼠标选中窗体，它的边框的八个方向会显示一个可以拖拽的橙色小方块，我们用鼠标点击它后拖拽到合适的大小即可。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps50.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps50.jpg) 
 
 在设置好窗体的大小后，我们可以在右边的属性编辑面板对窗体进行相应的设置。“设置属性”一栏里罗列了当前窗体的基本属性设置：
 
@@ -551,7 +551,7 @@ PyMe的官方QQ群共享：100180960
 
 系统托盘：当前项目的托盘管理器，用于编辑运行项目时显示在WINDOWS系统任务栏的托盘菜单，比如下图就属于系统托盘。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps51.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps51.jpg) 
 
  WINDOWS上的系统托盘图标
 
@@ -573,31 +573,31 @@ PyMe的官方QQ群共享：100180960
 
 ​	一般来说，计算器软件包括一个数值展示标签和一些按钮，比如这样：
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps52.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps52.jpg) 
 
 ​	在PyMe中有两种方法来创建控件，第一种方式是通过从控件和组件工具条进行拖拽来创建。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps53.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps53.jpg) 
 
 ​	第二种方式是通过在窗体上用鼠标右键单击，然后在“创建控件”菜单项下选择对应的控件类型来创建。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps54.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps54.jpg) 
 
 ​	下面来选中这个Label，这时我们可以直接通过拖拽控件以及橙色小方块来调整它的位置和大小。在默认情况下，控件采用“数值定位”，数值可以使用像素位置或百分比，在选中控件的情况下，在设计区下部的绘图工具条之上，会有一条布局设置工具条，在这里我们可以设置相应的布局方式，以及控件的X、Y、宽度和高度等数值。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps55.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps55.jpg) 
 
   					图示：布局设置工具条。 
 
 ​	在这里，我们将Label设置X位置0像素，Y位置0像素，宽度为100%，高度为30像素，并在右边的属性栏中选择“背景”属性为深灰色，字体为32大小的System字体，文字色为白色，并设置右对齐，也可以通过顶部的快捷按钮来进行设置。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps56.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps56.jpg) 
 
 ​	设置好Label之后，我们来创建按钮。
 
 ​	从工具条中拖动创建一个Button或者通过右键菜单来创建一个Button，放置到Label下方靠左位置，调整大小，作为数字“1”按钮。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps57.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps57.jpg) 
 
 ​	下面我们来修改一下按钮的文字内容，对于控件的文字，PyMe同样提供了多样化的修改方式：
 
@@ -607,11 +607,11 @@ PyMe的官方QQ群共享：100180960
 
 3、选中控件后按CTRL+退格键来消除“文本”属性，然后直接输入文字。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps58.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps58.jpg) 
 
 ​	然后我们通过属性栏和顶部栏对控件字体进行设置，也可以通过属性栏和顶部快捷栏来设置字体与大小。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps59.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps59.jpg) 
 
  
 
@@ -625,13 +625,13 @@ PyMe的官方QQ群共享：100180960
 
  
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps60.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps60.jpg) 
 
 ​	图示：通过ALT键拖动控件方式复制控件。
 
 ​	通过控制复制和快速设置文字，我们可以快速的制作出界面的所有控件。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps61.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps61.jpg) 
 
 ​            图示：所有的界面控件
 
@@ -643,7 +643,7 @@ PyMe的官方QQ群共享：100180960
 
 ​	属性设置主要通过右边的属性栏来进行，在上面的界面设计中，我们已经完成了基本的界面可视化创建和控件的基本属性设置，在这里我们可以再细致的调节一下相关属性。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps62.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps62.jpg) 
 
 ​	Label的属性包括：
 
@@ -673,7 +673,7 @@ PyMe的官方QQ群共享：100180960
 
  
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps63.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps63.jpg) 
 
 ​	Button的属性包括：
 
@@ -713,15 +713,15 @@ PyMe的官方QQ群共享：100180960
 
 在这里，我们创建一个MyStyle的TButton样式，并设定一些样式属性。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps64.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps64.jpg) 
 
 ​	编辑好之后点击“保存样式”，就可以在界面设计视图应用了，只需要在对应的控件上用鼠标右键单击，然后在弹出的菜单里找到“选择样式”菜单项，然后在其子菜单项中选择样式，或者选择为同类控件应用此样式，就可以快速化的设定控件使用编辑好的样式了。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps65.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps65.jpg) 
 
 ​	点击“同类型应用MyStyle.TButton”后即可完成对所有按钮的样式设置。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps66.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps66.jpg) 
 
  
 
@@ -731,7 +731,7 @@ PyMe的官方QQ群共享：100180960
 
 ​	“变量绑定”的作用是为界面或控件设置一些变量，以方便开发者随时存取和设置。比如在当前的计算器界面上，我们还需要设定三个变量值，包括被操作数、操作符号与操作数。我们在当前界面上用鼠标右键在Label上单击，在弹出的菜单中选择“变量绑定”。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps67.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps67.jpg) 
 
 ​	这时弹出“Label_1”的绑定数据编辑区对话框，这个对话框左边是一个数据项列表，右边是输入和操作按钮。我们输入以下三个数据项：
 
@@ -743,7 +743,7 @@ PyMe的官方QQ群共享：100180960
 
 
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps68.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps68.jpg) 
 
 ​	创建完成后，点击“确定”按钮，Label_1控件上就绑定了我们设定的用户变量。我们可以在代码中访问和设置。
 
@@ -751,7 +751,7 @@ PyMe的官方QQ群共享：100180960
 
 ​	下面我们来为按钮点击事件绑定一个函数，这样我们就可以在函数中编写代码来完成对应的逻辑处理。在按钮“1”上用鼠标右键单击，选择菜单项“事件响应”，进入到事件响应处理编辑区对话框。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps69.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps69.jpg) 
 
 ​	弹出的“Button_1”的事件响应处理编辑区对话框，我们可以看到左边有一个事件列表，罗列了常用的控件事件，在右边有一个输入框，显示了默认的函数名称，我们也可以修改它。
 
@@ -775,11 +775,11 @@ PyMe的官方QQ群共享：100180960
 
  
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps70.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps70.jpg) 
 
 ​	在这里，我们选择“Command”事件后点击“编辑函数代码”按钮，进入按钮控件Button_1的Command事件的函数代码编辑区。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps71.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps71.jpg) 
 
 ​	这样我们就可以开始准备为Button_1在触发点击事件后的响应函数编写函数。
 
@@ -789,11 +789,11 @@ PyMe的官方QQ群共享：100180960
 
 ​	2、双击控件，可迅速绑定首个事件的响应函数并进入代码编辑。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps72.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps72.jpg) 
 
 ​	3、在代码编辑器右侧的助手栏中，选中控件，并在下部的控件事件类型列表中选择相应的事件后，点击“绑定函数”进行绑定，在这里也可以点击“解绑函数”来删除响应函数。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps73.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps73.jpg) 
 
 ## 6. **逻辑编写**
 
@@ -805,15 +805,15 @@ PyMe的官方QQ群共享：100180960
 
 ​	1、直接输入“***\*Fun. ”\****，通过智能提示来选择函数。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps74.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps74.jpg) 
 
 ​	2、通过鼠标右键菜单，在“界面函数”菜单项下找到对应控件的功能函数菜单项，来快速生成函数，这种方式非常适合初学者快速掌握控件的功能调用。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps75.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps75.jpg) 
 
 ​	如果想要了解函数的实现，可以按着CTRL键，然后将鼠标移动到控件上，这时会浮现出函数的解释和代码实现。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps76.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps76.jpg) 
 
  
 
@@ -834,11 +834,11 @@ PyMe的官方QQ群共享：100180960
 
 这段代码实现了将当前值由0变为1，再按一次变为11的实现。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps77.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps77.jpg) 
 
 在完成按钮“1”的代码实现后，我们在右侧助手栏选择按钮“2”，在下面的控件事件类型列表中选择“点击事件”，点击“绑定函数”，为Button_2生成点击事件的响应函数。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps78.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps78.jpg) 
 
  
 
@@ -860,7 +860,7 @@ def Button_4_onCommand(uiName,widgetName):
   Fun.SetUserData(uiName,'Label_1','当前值',0.0)
 ```
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps79.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps79.jpg) 
 
 ​	采用同样的方式，我们继续完成“减法”、“乘法”、“除法”按钮的逻辑实现。只是对操作类型变为2，3，4。然后是“C”按钮的处理，“C”是“CLS”的缩写，代表了重置操作。我们在其中加入代码：
 
@@ -916,7 +916,7 @@ def Button_15_onCommand(uiName,widgetName):
   Fun.SetUserData(uiName,'Label_1','当前值',结果)
 ```
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps80.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps80.jpg) 
 
 ## 7. **调试运行**
 
@@ -924,7 +924,7 @@ def Button_15_onCommand(uiName,widgetName):
 
 ​	如果没有错误，我们将可以看到当前运行的结果。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps81.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps81.jpg) 
 
 
 
@@ -936,9 +936,9 @@ def Button_15_onCommand(uiName,widgetName):
 
 | ***\*第一步：点击“5”，作为被操作数\****                      | ***\*第二步：点击“X”，设置运算符号\****                      |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps82.jpg) | ![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps83.jpg) |
+| ![img](http://www.py-me.com/mkdoc_images/wps82.jpg) | ![img](http://www.py-me.com/mkdoc_images/wps83.jpg) |
 | ***\*第三步：点击“2”和“0”，作为操作数\****                   | ***\*第四步：点击“=”，得出结果\****                          |
-| ![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps84.jpg) | ![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps85.jpg) |
+| ![img](http://www.py-me.com/mkdoc_images/wps84.jpg) | ![img](http://www.py-me.com/mkdoc_images/wps85.jpg) |
 
  
 
@@ -946,39 +946,39 @@ def Button_15_onCommand(uiName,widgetName):
 
  
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps86.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps86.jpg) 
 
  
 
 ​	在调试工具条中，共包括了一个启动窗口和六个按钮。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps87.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps87.jpg) 
 
 启动窗口代表启动调试从哪个窗口开始运行。后面的六个按钮分别为：
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps88.jpg) 启动调试，快捷键为F5。
+![img](http://www.py-me.com/mkdoc_images/wps88.jpg) 启动调试，快捷键为F5。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps89.jpg) 逐行执行，如果有函数，不进入函数，快捷键为F10。
+![img](http://www.py-me.com/mkdoc_images/wps89.jpg) 逐行执行，如果有函数，不进入函数，快捷键为F10。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps90.jpg) 逐行执行，如果有函数，进入函数，快捷键为F11。
+![img](http://www.py-me.com/mkdoc_images/wps90.jpg) 逐行执行，如果有函数，进入函数，快捷键为F11。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps91.jpg) 跳出函数，转到下一行。
+![img](http://www.py-me.com/mkdoc_images/wps91.jpg) 跳出函数，转到下一行。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps92.jpg) 重启调试。
+![img](http://www.py-me.com/mkdoc_images/wps92.jpg) 重启调试。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps93.jpg) 停止调试。
-
- 
-
-​	在这里我们点击“![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps94.jpg)”启动调试，当我们再次进行计算，并点击“=”按钮后，我们将看到中断。
+![img](http://www.py-me.com/mkdoc_images/wps93.jpg) 停止调试。
 
  
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps95.jpg) 
+​	在这里我们点击“![img](http://www.py-me.com/mkdoc_images/wps94.jpg)”启动调试，当我们再次进行计算，并点击“=”按钮后，我们将看到中断。
 
  
 
-​	中断响应后，我们可以点击“![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps96.jpg)”逐行执行，在需要进入函数的时候点击“![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps97.jpg)”。并查看下部的变量值，这样就可以对代码进行调试了。结束调试后点击“![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps98.jpg)”即可。
+![img](http://www.py-me.com/mkdoc_images/wps95.jpg) 
+
+ 
+
+​	中断响应后，我们可以点击“![img](http://www.py-me.com/mkdoc_images/wps96.jpg)”逐行执行，在需要进入函数的时候点击“![img](http://www.py-me.com/mkdoc_images/wps97.jpg)”。并查看下部的变量值，这样就可以对代码进行调试了。结束调试后点击“![img](http://www.py-me.com/mkdoc_images/wps98.jpg)”即可。
 
 ## 8. **皮肤美化**
 
@@ -986,21 +986,21 @@ def Button_15_onCommand(uiName,widgetName):
 
 首先，注册并登录账户，然后选择“皮肤商店”页面，在这个页里里，罗列了一些官方提供的皮肤样式，可以付费购买。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps99.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps99.jpg) 
 
 ​	购买后，将会安装到PyMe中，然后我们进入到“打开项目”页，再次进入到我们的计算器项目。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps100.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps100.jpg) 
 
 ​	在主题样式选择所安装的样式文件，计算器瞬间变了样：
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps101.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps101.jpg) 
 
  
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps102.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps102.jpg) 
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps103.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps103.jpg) 
 
 ## 9. **打包发布**
 
@@ -1018,17 +1018,17 @@ def Button_15_onCommand(uiName,widgetName):
 
 3、加密文件：默认情况下，pyinstaller打包应用软件，并不能保护好代码被破解，在这里可以选择“使用加密”，这是一项VIP功能，可以对Python代码进行C转码后编译成pyd再进行打包，大大保护了项目源码。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps104.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps104.jpg) 
 
 ​	点击“启动打包”后，将会在文本框输出相应的打包信息，等待一小段时间，即可看到打包完成的提示。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps105.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps105.jpg) 
 
 ​	进入打包输出的目录，可以看到打包好的可执行文件。
 
  
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps106.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps106.jpg) 
 
 ​	Nuitka也是一种加密式的打包工具，它会将Python代码先转为C再进行编译，但目前Nuitka打包方式仍存在一些BUG，暂不推荐，有能力的开发者可以尝试。
 
@@ -1036,33 +1036,33 @@ def Button_15_onCommand(uiName,widgetName):
 
 ​	PyMe致力于推动Python在移动设备的打包能力，在这里我们可以选择平台为“android”，然后点击“运行”按钮，这时会弹出分辨率对话框。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps107.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps107.jpg) 
 
 ​	这时，会弹出一个窗口，模拟了移动设备的显示效果。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps108.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps108.jpg) 
 
 ​	如果没有问题，再点击“发布”按钮，这时会进入到Android平台的打包对话框：
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps109.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps109.jpg) 
 
  
 
 ​	在Android打包设置对话框中，我们需要设置好相关的SDK和系统变量，在下部的文本框中罗列了具体的步骤，需要逐一进行设置和确认。
 
-​    ![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps110.jpg)
+​    ![img](http://www.py-me.com/mkdoc_images/wps110.jpg)
 
  
 
 ​	完成相应的设置后，点击“启动编译”，PyMe将开始进行Android打包。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps111.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps111.jpg) 
 
 ​	完成打包后会显示“Android打包成功”的提示，这时我们可以在输出目录里看到生成的APK文件。
 
  
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps112.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps112.jpg) 
 
 我们将可以将APK安装到手机上进行测试。
 
@@ -1078,17 +1078,17 @@ def Button_15_onCommand(uiName,widgetName):
 
 #### 一、**实例项目：提供各种基于PyMe的小型案例项目。**
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps113.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps113.jpg) 
 
 ***\*实例项目商店\****目前包括界面基础、文件操作、表格处理、网络数据、图形图像、机器学习、游戏开发、数字孪生、智能硬件、其它工具等分类。通过点击右边的“获取”或“价格”按钮即可购买并下载安装。
 
 下载安装后，将会出现以“我的实例”页面，以方便打开。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps114.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps114.jpg) 
 
 打开“WIFI密码破解”项目后的视图。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps115.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps115.jpg) 
 
 通过这样的方式，开发者将可以学习到作者是如何创作相关的软件。
 
@@ -1096,19 +1096,19 @@ def Button_15_onCommand(uiName,widgetName):
 
 #### 二、**组件商店：提供具有单一功能的组件类。**
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps116.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps116.jpg) 
 
 ​	组件商店同样也包括一些分类，开发者下载后可以在项目中使用，只需要点击“其它”页下面的“导入模块”后，会打开“Market_com”目录，选择相应的组件即可。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps117.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps117.jpg) 
 
 ​	这里我们以组件“MultiPage”为例，点击“确定”后，组件会出现在工具条上。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps118.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps118.jpg) 
 
 ​	设置好后，我们准备几张图片，放置到Resources目录下。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps119.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps119.jpg) 
 
 ​	然后为Form_1绑定Load事件函数，我们编写代码：
 
@@ -1128,7 +1128,7 @@ def Form_1_onLoad(uiName):
 
 ​	完成后，点击“运行”，可以看到组件MultiPage的运行效果，它实现了多页的切换卡效果。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps120.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps120.jpg) 
 
 #### 三、**皮肤商店：**
 
@@ -1140,15 +1140,15 @@ def Form_1_onLoad(uiName):
 
 在“我是UP主”页面，开发者可以提交申请，成为UP主。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps121.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps121.jpg) 
 
 ​	点击“申请成为UP主”按钮，将弹出“申主成功UP主”的信息提交对话框，在这里需要提交个人信息，以确保享有所发布的产品收益，并担任相应的法律责任（包括版权和病毒、木马风险传播责任）。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps122.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps122.jpg) 
 
 ​	提交后，审核通过将会收到邮件，便可以在“我是UP主”页面提交工程案例、组件和皮肤，作品通过审核后，将会发布在开发者商店。
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps123.jpg) 
+![img](http://www.py-me.com/mkdoc_images/wps123.jpg) 
 
 **写在最后：**
 
@@ -1162,7 +1162,7 @@ def Form_1_onLoad(uiName):
 
  
 
-![img](file:///C:\Users\28542\AppData\Local\Temp\ksohtml7000\wps124.png) 
+![img](http://www.py-me.com/mkdoc_images/wps124.png) 
 
  
 
