@@ -1,0 +1,16 @@
+name=浏览器控制
+lessonid=16
+difficulty=简单
+reward=3
+introduction=了解使用Selenium组件进行浏览器控制的基本方法。
+1=从工具条的“其它”页里找到Selenium组件拖动到Form中。["Create_Selenium"]
+2=选中Selenium_1,在右边的属性栏里设置“浏览器类型”为“Chrome”，网址设为“http://www.baidu.com”。["SetDriverType_Chrome","SetURL_http://www.baidu.com"]
+3=从工具条的“控件”页里拖动一个按钮到Form中。["Create_Button"]
+4=双击按钮，进入到按钮的点击事件响应函数，用鼠标右键在函数中单击，在弹出菜单的“界面函数”项找到“Selenium_1”的子菜单项“通过Name取得对应元素”。["FunctionMenu_Fun_FindElementByName"]
+5=在生成的代码中修改FindElement_By_Name的参数name='wd'。["WriteCode_element=Selenium_1.FindElement_By_Name(name='wd')"]
+6=换行后输入代码“Selenium_1.RunAction(element,"send_keys","PyMe是什么?")”向搜索栏输入查询文字。["WriteCode_Selenium_1.RunAction(element,'send_keys','PyMe是什么?')"]
+7=换行后，用鼠标右键在函数中单击，在弹出菜单的“界面函数”项找到“Selenium_1”的子菜单项“通过ID取得对应元素”。["FunctionMenu_Fun_FindElementByID"]
+5=在生成的代码中修改FindElement_By_ID的参数id='su'，找点“百度一下”按钮。["WriteCode_element=Selenium_1.FindElement_By_ID(id='su')"]
+8=换行后输入代码“Selenium_1.RunAction(element,'click',None)”点击查询按钮。["WriteCode_Selenium_1.RunAction(element,'click',None)"]
+9=换行后输入代码“Selenium_1.AddActionToChains(element,'perform',None)”执行查询。["WriteCode_Selenium_1.AddActionToChains(element,'perform',None)"]
+10=点击运行，在弹出浏览器和窗口界面后，点击按钮，查看查询结果。["Run"]

@@ -1,0 +1,15 @@
+name=图表使用
+lessonid=16
+difficulty=简单
+reward=3
+introduction=了解如何在图表上绘制统计图的方法。
+1=选中Form_1，在右边属性栏设置窗口大小为1200x800。["SetSize_Form1_1200x800"]
+2=在左边工具条的“图表”分类页下选择“Line”图表，并拖动到Form_1中。["Create_Line"]
+3=选中图表，在右边的属性栏中设置X轴名称为“月份”,Y轴名称为“数量”。["SetXAxisName_月份","SetYAxisName_数量"]
+4=在左边工具条拖动创建一个Button到Form_1中。["Create_Button"]
+5=双击Button,进入到点击事件响应函数，删除“pass”后编写代码x = [1,2,3,4,5]。["BindEvent_Button_1_onCommand","WriteCode_x = [1,2,3,4,5]"]
+6=换行后编写代码“y = [30,20,10,20,8]”。["WriteCode_y = [30,20,10,20,8]"]
+7=换行后编写代码“Fun.UpdateChartData(uiName,'Line_1',x,y)”,这样就可以将数据更新到图表中。["WriteCode_Fun.UpdateChartData(uiName,'Line_1',x,y)"]
+8=在代码编辑器右侧助手栏选择"Line_1”控件，然后在事件类型列表中选择“点击图表XY值”事件，点击“绑定”按钮。["BindEvent_Line_1_onClickXY"]
+9=换行后编写代码“print("Line_1_onClickXY:"+str(xdata)+","+str(ydata))”,打印点击图表的X,Y值。["WriteCode_print('Line_1_onClickXY:'+str(xdata)+','+str(ydata))"]
+10=点击运行，点击按钮，查看图表数据变化，并用鼠标点击图表查看输出的X,Y值。["Run"]
