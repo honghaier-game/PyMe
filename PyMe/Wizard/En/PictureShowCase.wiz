@@ -1,0 +1,19 @@
+name=Picture showcase
+lessonid=13
+difficulty=Simple
+reward=3
+introduction=Understand the function of using components to develop image display windows.
+stepindex=13
+1=Log in to PyMe and enter the developer store. Download the "MultiPage" component from the "Component Store" and prepare three images: 1. png, 2. png, and 3. png. Place them in the Resources directory of the project and re-enter the current project. Drag the left toolbar to create a Canvas control and place it in the Form_ In 1, set the size to 800x600 pixels.["Create_Canvas","SetW_Canvas_1_800","SetH_Canvas_1_600"]
+2=Click "Import Module" from the "Other" category on the left toolbar, select the MultiPage component in the pop-up dialog box, and drag the MultiPage component into Form_1 after importing.["Create_MultiPage"]
+3=Select the MultiPage component, drag the tree item "Canvas_1" from the control tree in the upper right corner to the "Canvas" property value bar of the current MultiPage component, and press Ctrl+S to save the current interface.["DragToAttribute_Canvas_Canvas_1","SaveFile_<%=ProjName%>.py"]
+4=Enter the startup interface of the current project again, in the Form_ Right click on the mouse and select "Event Response" from the pop-up menu. Edit the event function for the "Load" event, enter the code editor, and write the code "MultiPage_1=Fun. GetElement (uiName,'MultiPage_1 ')".["WriteCode_MultiPage_1 = Fun.GetElement(uiName,'MultiPage_1')"]
+5=Write code "MultiPage_1.SetTitleLeft(left=40)" after line breaks to set the left margin of the title to 40 pixels.["WriteCode_MultiPage_1.SetTitleLeft(left=40)"]
+6=Write code "MultiPage_1.SetTitleTop (top=-40)" after line breaks to set the margin of the title below to 40 pixels.["WriteCode_MultiPage_1.SetTitleTop(top=-40)"]
+7=Write code "MultiPage_1.SetProgressBarLeft(left=-130)" after line breaks to set the right margin of the switching dots to 130 pixels.["WriteCode_MultiPage_1.SetProgressBarLeft(left=-130)"]
+8=Write code "MultiPage_1. SetProgressBarTop(top=-40)" after line breaks to set the margin between the switching dots and the bottom to 40 pixels.["WriteCode_MultiPage_1.SetProgressBarTop(top=-40)"]
+9=Write code "MultiPage_1.AddPage(TitleText='Google', ImageFile='1.png', itemPage='http://www.google.com' Item Index='end') after line breaks.["WriteCode_MultiPage_1.AddPage(TitleText='Google',ImageFile='1.png',ItemPage='http://www.google.com',ItemIndex='end')"]
+13=Write code "MultiPage_1.AddPage(TitleText='Apple',ImageFile='2.png',ItemPage='http://www.apple.com',ItemIndex='end')”。["WriteCode_MultiPage_1.AddPage(TitleText='Apple',ImageFile='2.png',ItemPage='http://www.apple.com',ItemIndex='end')"]
+14=Write code "MultiPage_1.AddPage(TitleText='Microsoft',ImageFile='3.png',ItemPage='http://www.microsoft.com',ItemIndex='end')”。["WriteCode_MultiPage_1.AddPage(TitleText='Microsoft',ImageFile='3.png',ItemPage='http://www.microsoft.com',ItemIndex='end')"]
+16=Write code “MultiPage_1.Play(switchDelay=4000)”Set to update the page every 4000 milliseconds and start playing.["WriteCode_MultiPage_1.Play(switchDelay=4000)"]
+17=Click on Run.["Run"]

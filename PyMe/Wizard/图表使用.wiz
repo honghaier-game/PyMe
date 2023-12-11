@@ -1,8 +1,9 @@
 name=图表使用
 lessonid=16
 difficulty=简单
-reward=3
+reward=0
 introduction=了解如何在图表上绘制统计图的方法。
+stepindex=10
 1=选中Form_1，在右边属性栏设置窗口大小为1200x800。["SetSize_Form1_1200x800"]
 2=在左边工具条的“图表”分类页下选择“Line”图表，并拖动到Form_1中。["Create_Line"]
 3=选中图表，在右边的属性栏中设置X轴名称为“月份”,Y轴名称为“数量”。["SetXAxisName_月份","SetYAxisName_数量"]

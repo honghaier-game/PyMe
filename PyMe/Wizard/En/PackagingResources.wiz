@@ -1,0 +1,11 @@
+name=PackagingResources
+lessonid=23
+difficulty=Simple
+reward=0
+introduction=Master the method of packaging control background images into EXE.
+stepindex=5
+1=Go to the "PackageRes" directory in the file resource bar at the bottom, right-click on the blank space, select the pop-up menu item "Import File", search for "welcome. png" in the Ico directory of PyMe, and import it to the "PackageRes" directory.["Import_Resources"]
+2=Drag from the left toolbar to create a Label, double-click on the "Image" attribute in the right property bar, search for "welcome. png" in the "PackageRes" directory, and set the image as the background image.["Create_Label","SetImage_welcome.png"]
+3=Place the Label in the appropriate position and size, then select "Windows" from the platform drop-down list box in the top right corner of the top bar, and click the "Publish" button on the far right.["Export_WIN"]
+4=In the pop-up "Packaging Settings" dialog box, set the packaging type to "Package as File", and finally click "Start Packaging" or "Complete Compilation" to wait for packaging to complete.["Export_SingleFile","Export_Go_Full"]
+5=After packaging, remove the images from the "PackageRes" directory, click "Run Program", and the images in the "PackageRes" directory will be packaged into EXE. Check if the images are displayed properly.["Export_Run"]

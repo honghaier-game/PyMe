@@ -1,0 +1,24 @@
+name=Code debugging
+lessonid=10
+difficulty=Simple
+reward=0
+introduction=Master basic code debugging methods.
+1=Drag an input box from the left toolbar onto the form.["Create_Entry"]
+2=Drag a button from the left toolbar onto the form and place it to the right or below the input box.["Create_Button"]
+3=Double click the button, enter the button, click on the event response letter, and write the code “Value = int(Fun.GetText(uiName,'Entry_1'))”["BindEvent_Button_1_onCommand","WriteCode_Value = int(Fun.GetText(uiName,'Entry_1'))"]
+4=Write code after line breaks “if Value < 10:”。["WriteCode_if Value < 10:"]
+5=Write code after line breaks “    print('Number less than 10')”。["WriteCode_print('Number less than 10')"]
+4=Write code after line breaks “else:”。["WriteCode_else:"]
+5=Write code after line breaks “    print('Numbers greater than or equal to 10')”。["WriteCode_print('Numbers greater than or equal to 10')"]
+9=Using the mouse on the left side of the code text box, click on the line number corresponding to the value position in the first line of the function, and a small red dot will appear, set as a breakpoint.["BreakPoint_Add"]
+10=Click on the blue triangle in the debugging toolbar below in the code editor to start debugging.["Debug_Start"]
+11=Enter a number 5 in the input box of the interface, then click the button. At this point, an interrupt will be triggered at the first red dot. Click the 'Step' button on the right side of debugging, and the code will execute one line, displaying the value of the variable Value.["Debug_Step"]
+12=Use the shortcut F10 'Step by Step' to quickly execute all lines of code and switch to the 'Output' page to observe the printed results.["Debug_Step","Debug_Step"]
+13=Click 'Stop Debugging' to end, define a function at the top of the code “def Lessthan10(Value):"["Debug_End","WriteCode_def Lessthan10(Value):"]
+14=Write code after line breaks “if Value < 10:”。["WriteCode_if Value < 10:"]
+15=Write code after line breaks “return True”。["WriteCode_return True"]
+16=Write code after line breaks “return False”["WriteCode_return False"]
+17=Change the code to“ if Lessthan10(Value) == True:”["WriteCode_if Lessthan10(Value) == True:"]
+18=Start debugging again, enter 20, click the button, press F10 to step into the line of code that calls the Lessthan10 function, and press F11 to enter the function.["Debug_Into"]
+19=When the debugging cursor enters the Lessthan10 function, we can continue debugging in the function. We click the 'Jump Function' button to return to the previous function call and press F5 to continue executing.["Debug_GoOut","Debug_Continue"]
+20=Click 'End Debugging' to complete this debugging.["Debug_End"]

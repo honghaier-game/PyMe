@@ -1,0 +1,9 @@
+name=Hello,PyMe!
+lessonid=1
+difficulty=simple
+reward=1
+introduction=Understand the method of creating controls by dragging from the toolbar and the quick way to set up text content.
+stepindex=3
+1=Drag from the left toolbar to create a Label control onto the Form_1.["Create_Label"]
+2=Select the Label and press Ctrl+Backspace to clear the text content.["Select_Label","ResetText_Label"]
+3=Switch the input method directly and enter "Hello, PyMe!".["Input_Hello,PyMe!"]

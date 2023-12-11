@@ -1,0 +1,10 @@
+name=PackagingAPK
+lessonid=11
+difficulty=Simple
+reward=0
+introduction=Master the basic APK packaging methods.
+stepindex=1
+1=Drag to create a Label from the left toolbar, then drag to create a button, double-click to enter the response function, and write code “Fun.SetText(uiName,'Label_1',textValue='Hello,PyMe!')”。["Create_Label","Create_Button","BindEvent_Button_1_onCommand","WriteCode_Fun.SetText(uiName,'Label_1',textValue='Hello,PyMe!')"]
+2=Select "Android" from the platform dropdown list box in the upper right corner of the top bar, and then click the "Publish" button on the far right.["Export_APK"]
+3=In the pop-up "Android Packaging Settings" dialog box, confirm the software and author name, and ensure that JDK and ANDROID are installed_ SDK, NDK, GRADLE, and set the environment variables according to the text box instructions. After confirmation, click the "Start Compilation" button.["Export_Go_APK"]
+4=After packaging is completed, close the packaging dialog box and copy the APK to your phone for testing.["Export_Finish_APK"]

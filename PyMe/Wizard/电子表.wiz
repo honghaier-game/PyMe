@@ -3,6 +3,7 @@ lessonid=2
 difficulty=简单
 reward=3
 introduction=掌握基本的控件设置，了解定时器组件的使用方法。
+stepindex=12
 1=选中Form_1，在设计视图右边的属性栏将窗体的布局方式改为“打包排布”。["SetLayout_Pack"]
 2=创建一个Label控件，在底部的布局栏将布局方式改为“打包排布”，填充设为“四周”。["Create_Label","SetLayout_Pack","SetLayout_Pack_Expand"]
 3=在顶部工具栏选择字体属性为黑体，大小为28。["ChooseFont_黑体_28_normal_roman_0"]

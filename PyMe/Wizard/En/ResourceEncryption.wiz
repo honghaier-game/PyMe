@@ -1,0 +1,12 @@
+name=ResourceEncryption
+lessonid=24
+difficulty=Simple
+reward=0
+introduction=Master the methods of resource encryption and decryption (requires a VIP member account)。
+stepindex=5
+1=Go to the "Resources" directory in the file resource bar at the bottom, right-click on the blank space, select the pop-up menu item "Import Files", search for "welcome. png" in the Ico directory of PyMe, and import it into the "Resources" directory.["Import_Resources"]
+2=Right click on the image file, click "Generate Encrypted File" in the pop-up menu, use password encryption, and enter the key "1111" to generate an encrypted file for the image.["Encrypt_welcome.png"]
+3=Drag from the left toolbar to create a Label, double-click on the "Image" attribute in the right property bar, search for "welcome. png" in the "Resources" directory, and set the image as the background image.["Create_Label","SetImage_welcome.png"]
+4=Then select "Windows" from the platform dropdown list box in the upper right corner of the top bar, and click the "Publish" button on the far right.["Export_WIN"]
+5=In the pop-up "Packaging Settings" dialog box, set the PM key "1111". If you click the "Save" button, the encrypted and decrypted files will automatically use this key. Finally, click "Complete Compilation" and wait for packaging to complete.["Export_Go_Full","Export_Success"]
+6=After packaging, remove the "welcome. png" image from the "Resources" directory, click "Run Program", and the program will read the encrypted PME file to check if the image is displayed properly.["Export_Run"|"Run"]

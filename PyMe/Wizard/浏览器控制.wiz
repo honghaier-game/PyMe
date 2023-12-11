@@ -3,6 +3,7 @@ lessonid=16
 difficulty=简单
 reward=3
 introduction=了解使用Selenium组件进行浏览器控制的基本方法。
+stepindex=11
 1=从工具条的“其它”页里找到Selenium组件拖动到Form中。["Create_Selenium"]
 2=选中Selenium_1,在右边的属性栏里设置“浏览器类型”为“Chrome”，网址设为“http://www.baidu.com”。["SetDriverType_Chrome","SetURL_http://www.baidu.com"]
 3=从工具条的“控件”页里拖动一个按钮到Form中。["Create_Button"]

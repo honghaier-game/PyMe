@@ -1,0 +1,14 @@
+name=菜单制作
+lessonid=25
+difficulty=普通
+reward=0
+introduction=了解菜单的制作方法。
+stepindex=8
+1=选中“Form_1”，双击“窗口菜单”属性，弹出的菜单编辑区对话框，在右边输入文字“文件”，快捷键选择“Ctrl+F”,点击“增加顶层菜单项”。["CreatMainMenu","AddMenuItem_文件"]
+2=选中“文件”菜单项，在右边输入文字“新建”，快捷键选择“Ctrl+N”,点击“增加子菜单项”。["AddMenuChildItem_文件_新建"]
+3=依次在“文件”菜单项下完成“打开”、“保存”、“另存为”、“退出”等子菜单项的创建。["AddMenuChildItem_文件_打开","AddMenuChildItem_文件_保存","AddMenuChildItem_文件_另存为","AddMenuChildItem_文件_退出"]
+4=继续创建顶层菜单项“编辑”、“运行”、“帮助”及子菜单项（可略过）,完成后点击“确定”。["AddMenuItem_编辑","AddMenuItem_运行","AddMenuItem_帮助"]
+5=关闭对话框后，双击界面的cmd文件进入界面逻辑代码，可以看到PyMe自动创建了菜单项的响应函数,进入“Menu_新建”函数换行后编写代码“print("新建")”。["WriteCode_print('新建')"]
+6=找到Menu_打开函数，换行后鼠标右键单击，在“系统函数”中选择“调用打开文件框”。["FunctionMenu_openFile"]
+7=换行后编写代码“print(openPath)”。["WriteCode_print(openPath)"]
+8=完善其它菜单函数代码，完成后点击“运行”。["Run"]

@@ -1,0 +1,17 @@
+name=Browser Control
+lessonid=16
+difficulty=Simple
+reward=3
+introduction=Understand the basic methods of using Selenium components for browser control.
+stepindex=11
+1=Drag the Selenium component from the "Other" page of the toolbar to the Form.["Create_Selenium"]
+2=Select Selenium_1. Set "Browser Type" to "Chrome" in the property bar on the right, and set the website address to “ http://www.baidu.com ”.["SetDriverType_Chrome","SetURL_http://www.baidu.com"]
+3=Drag a button from the "Control" page of the toolbar to the Form.["Create_Button"]
+4=Double click the button to enter the click event response function of the button. Right click on the function and find the submenu item "Get corresponding element through Name" in the "Interface Functions" section of the pop-up menu.["FunctionMenu_Fun_FindElementByName"]
+5=Modify FindElement in the generated code_ By_ The parameter name for Name is' wd '.["WriteCode_element=Selenium_1.FindElement_By_Name(name='wd')"]
+6=After line breaking, enter the code "Selenium_1.RunAction(element,"send_keys","What is PyMe?")" and enter the query text into the search bar.["WriteCode_Selenium_1.RunAction(element,'send_keys','What is PyMe?')"]
+7=After line breaking, right-click in the function and find the submenu item "Get corresponding element through ID" for "Selenium1" in the "Interface Functions" section of the pop-up menu.["FunctionMenu_Fun_FindElementByID"]
+5=Modify FindElement in the generated code_By_ The parameter id='su' for ID, click on the "Search" button.["WriteCode_element=Selenium_1.FindElement_By_ID(id='su')"]
+8=Enter code after line break “Selenium_1.RunAction(element,'click',None)”Click the query button.["WriteCode_Selenium_1.RunAction(element,'click',None)"]
+9=Enter code after line break “Selenium_1.AddActionToChains(element,'perform',None)”Execute the query.["WriteCode_Selenium_1.AddActionToChains(element,'perform',None)"]
+10=Click Run, and after the browser and window interface pop up, click the button to view the query results.["Run"]

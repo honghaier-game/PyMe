@@ -1,0 +1,12 @@
+name=BackupAndRecovery
+lessonid=9
+difficulty=Simple
+reward=3
+introduction=Master basic PyMe engineering backup and recovery methods.
+1=Add some controls to the current interface in the design view and freely place them, then save them.["SaveFile_<%=UIName%>.py"]
+2=Press CTRL+B, and a backup project dialog box will appear. Enter a backup name "V1" to generate a backup file.["BackUp_Project"]
+3=Continue adding or deleting controls, and save.["SaveFile_<%=UIName%>.py"]
+4=Press CTRL+B again, enter a backup name "V2", and generate a backup file.["BackUp_Project"]
+5=Double click on the "BackUp" directory to enter the project backup directory.["OpenDir_BackUp"]
+6=Find the backup file "V1", then double-click it. At this time, a prompt will appear "Are you sure you want to enter the backup project?" Select "Yes". It has been restored to "V1".["Recover_Project"]
+7=Pressing CTRL+R will prompt "Are you sure you want to restore to backup V2?" and select "Yes". It has been restored to backup "V2".["Recover_Project"]

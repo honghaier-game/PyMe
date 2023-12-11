@@ -1,0 +1,19 @@
+name=Embedding
+lessonid=15
+difficulty=Simple
+reward=3
+introduction=Master the use of commonly used container controls.
+1=Select Form_ 1. Set the window size to 1600x1000 in the property bar on the right.["SetSize_Form1_1600x1000"]
+2=Drag from the left toolbar to create a Frame control and drop it onto From_ In the upper left corner of 1, set the XY values to 0 and the size to 800x500 pixels.["Create_Frame","SetXYWH_Frame_1_0_0_800x500"]
+3=Drag from the toolbar to create a LabelFrame control and drop it onto From_ In the upper right corner of 1, set the X value to 800, the Y value to 0, and the size to 800x500 pixels.["Create_LabelFrame","SetXYWH_LabelFrame_1_800_0_800x500"]
+4=Continue dragging from the toolbar to create a NoteBook control and drop it onto From_ At the bottom left corner of 1, set the X value to 0, the Y value to 500, and the size to 800x500 pixels.["Create_NoteBook","SetXYWH_NoteBook_1_0_500_800x500"]
+5=Continue dragging from the toolbar to create a PanedWindow control and drop it onto From_ In the lower right corner of 1, set the X value to 800, Y value to 500, and size to 800x500 pixels. Save it.["Create_PanedWindow","SetXYWH_PanedWindow_1_800_500_800x500","SaveFile_<%=ProjName%>.py"]
+6=Right click on the file and resource bar, create a new window "Window1" in the pop-up menu, and enter Window 1. Drag some controls at will and save.["Create_UI_Widnow1","SaveFile_Window1.py"]
+7=Right click on the file and resource bar, create a new window "Window2" in the pop-up menu, and enter Window 2. Drag some controls at will and save.["Create_UI_Window2","SaveFile_Window2.py"]
+8=Double click on the icon file in the resource bar to return to the initial interface, select Frame_1. Find the "Import Interface" field in the properties bar and double-click. Select "Window1" to embed it into the Frame_ 1.["LoadPage_Window1.py"]
+9=Select "Form_1" in the control tree in the upper right corner, then double-click on the Load event in the "Event Response" page at the bottom to enter Form_1_onLoad function, input "Fun.LoadUIDialog(uiName,"LabelFrame_1","Window1")".["BindEvent_Form_1_onLoad","WriteCode_Fun.LoadUIDialog(uiName,'LabelFrame_1','Window1')"]
+10=Press the ESC key to save and return to the design view, select NoteBook, then double-click "Page Management" in the properties bar, enter the page title "Window1" in the pop-up dialog box, call the interface file location, click "browse" to import "Window1", and then click "add page".["AddPage_Window1"]
+11=Enter the page title "Window2", call the interface file location, click "Browse" to import "Window2", then click "Add Page" and click "OK" button. This will embed the two windows as two pages in NoteBook.["AddPage_Window2"]
+12=Select the "PanedWindow" control, select the direction as "Vertical" in the property bar, double-click the "Upper Interface" column, and import "Window1.py".["LoadPage1_Window1.py"]
+12=Double click on the "Lower Interface" column, import "Window2.py" and save it.["LoadPage2_Window2.py","SaveFile_<%=ProjName%>.py"]
+13=Double click on the cmd file in the file resource bar, then right-click to view the relevant embedded functions of each control in the interface function, and write code exercises. After completion, click the "Run" button.["Run"]

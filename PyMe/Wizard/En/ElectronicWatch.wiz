@@ -1,0 +1,18 @@
+name=Electronic watch
+lessonid=2
+difficulty=Simple
+reward=3
+introduction=Master basic control settings and understand the usage of timer components.
+stepindex=12
+1=Select Form_ 1. Change the layout of the form to "Pack and Arrange" in the property bar on the right side of the design view.["SetLayout_Pack"]
+2=Create a Label control and change the layout to "Pack and Arrange" and fill to "Surround" in the layout bar at the bottom.["Create_Label","SetLayout_Pack","SetLayout_Pack_Expand"]
+3=Select the font attribute as Arial and the size as 28 in the top toolbar.["ChooseFont_Arial_28_normal_roman_0"]
+4=Drag and drop from the "Other" category page of the left toolbar to create a Timer component.["Create_Timer"]
+5=Double click on the Timer component to enter the onTimer function of the timer.["BindEvent_Timer_1_onTimer"]
+6=Right click on the new line and select "Get Current Date" in the "System Functions" section.["FunctionMenu_Fun_GetCurrDate"]
+7=Right click on the new line and select "Get Current Time" in the "System Functions" section.["FunctionMenu_Fun_GetCurrTime"]
+8=Write code after line breaks “showText = "Date:" + currDate + "Time:" + currTime”。["WriteCode_showText = \"Date:\" + currDate + \"Time:\" + currTime"]
+9=Write code after line breaks “Fun.SetText(uiName,'Label_1',textValue=showText)”。["WriteCode_Fun.SetText(uiName,'Label_1',textValue=showText)"]
+10=Press ESC to save and return to design view, select Form from the control list in the upper right corner. Double click on the Load event item on the bottom right event response page to enter the corresponding function.["BindEvent_Form_1_onLoad"]
+11=After line breaking, right-click the mouse and find "Time_1" under "Timer" in the "Interface Functions" pop-up menu. Select the "Start" menu item.["FunctionMenu_Timer_Start"]
+12=Click on Run.["Run"]

@@ -1,0 +1,25 @@
+name=Management System Login
+lessonid=19
+difficulty=Simple
+reward=3
+introduction=Learn how to develop a full screen management system login interface.
+stepindex=19
+1=Select Form_ 1. Set the window size to 1600x1000 in the property bar on the right.["SetSize_Form1_1600x1000"]
+2=Select Form_ 1. Double click on the "Image" item in the property bar, find "System. png" in the Ico directory of PyMe, set it as the current background image, and set "Maximize Window" to True. Save the current file.["SetImage_System.png","ShowMaxUI","SaveFile_<%=ProjName%>.py"]
+3=Right click on the file and resource bar and create a new window "Login" in the pop-up menu.["Create_UI_Login"]
+4=Double click to enter the window Login and select the Form_ Set the window size to 420x430.["SetSize_Form1_420x430"]
+5=Select an image in the drawing toolbar and select it in the Form_ Create an image in 1, right-click on the image, select the "Replace Image File" menu item, find "Title. png" in the Ico directory of PyMe, and place it at the top of the window.["PopupMenu_SetImage_Title.png"]
+6=Drag from the left toolbar to create a Label and an Entry, and modify the label text to "username".["Create_Label","Create_Entry","SetText_username"]
+7=Create a Label and an Entry again, change the label text to "password", and set the display character to "*".["Create_Label|CopyCreate_Label_2","Create_Entry|CopyCreate_Entry_2","SetText_password","SetShowChar_Entry_2_*"]
+8=Drag from the left toolbar to create a LabelButton, right-click, select "Use preset button image" from the pop-up menu, change the button style, and modify the text to "Login". After positioning, save the interface.["Create_LabelButton","SetText_Login","SaveFile_Login.py"]
+9=Right click on the file resource bar at the bottom, select "New SQLite Database" from the pop-up menu, enter the name "MyDB", and click OK.["Create_DB_MyDB.db"]
+10=Double click on the generated "MyDB. db" file, right-click on the "Data Table List" on the left side of the pop-up "Edit Database" interface, and create the data table "User".["DB_CreateTable_User"]
+11=Select the table name item in the left tree item, right-click, and add the character text type field names "username" and "password". After completing, click OK.["DB_AddColumn_username_string","DB_AddColumn_password_string"]
+12=Select the table name tree item, select "Add a record" in the SQL statement on the right, enter the SQL statement "Insert INTO User (username, password) Values ('admin ','123456')", and click the "Run" button.["ExeSQL_INSERT INTO User(username,password) VALUES('admin','123456')"]
+13=Find the "DataBase" component under the "Other" category in the left toolbar, and drag it to the Form_ On the right side of the property bar, select "Data Type" as "SQLITE", double-click "Data File or Memory", select "File Name", and find the "MyDB. db" file.["DB_SetFileName_MyDB.db"]
+14=Right click on the "Login" button, select the "Event Response" menu item in the pop-up dialog box, select the "Command" event, and click the "Call Database Operation" button on the right.["BindEvent_Command_SubmitForm"]
+15=In the pop-up "Call Database Operation" dialog box, the current database component will be selected, and the database table "User" will be selected. We will select the submission type as "Login Judgment".["DB_SetSubmitType_Login Judgment"]
+16=Select the "username" column in the "Data Field Name List", and then select "Entry" under "Current Form Input Control" on the right side_ 1. Click "Bind Data Fields".["DB_BindingField_username_Entry_1"]
+17=Select the "password" column in the "Data Field Name List", and then select "Entry" under "Current Form Input Control" on the right side_ 2. Click "Bind Data Fields".["DB_BindingField_password_Entry_2"]
+18=After clicking OK, return to the startup interface, drag and create a Frame control from the left toolbar and place it in the middle of the window. In the layout toolbar below, set the size to 420x430 pixels and the reference position to "center". In the properties bar, find the "Import Interface" field and double-click, select the "Login" window, and set the "Drag Window" to True.["Create_Frame","LoadPage_Login.py","SetDragWindow_Frame_1"]
+19=Click on Run.["Run"]

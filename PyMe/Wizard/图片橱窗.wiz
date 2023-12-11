@@ -1,0 +1,19 @@
+name=图片橱窗
+lessonid=13
+difficulty=简单
+reward=3
+introduction=了解使用组件开发图片橱窗的功能。
+stepindex=13
+1=登录PyMe进入开发者商店，在“组件商店”下载“MultiPage”组件，准备三张图片1.png,2.png,3.png放到工程的Resources目录下，重新进入当前工程，从左边工具条拖动创建一个Canvas控件放到Form_1中，设置大小为800x600像素。["Create_Canvas","SetW_Canvas_1_800","SetH_Canvas_1_600"]
+2=从左边工具条的“其它”分类中点击“导入模块"，在弹出的对话框中选择MultiPage组件，导入后将MultiPage组件拖入到Form_1中。["Create_MultiPage"]
+3=选中MultiPage组件，从右上角的控件树中把树项“Canvas_1”拖动到当前“MultiPage”组件的“Canvas”属性值栏中，按Ctrl+S保存当前界面。["DragToAttribute_Canvas_Canvas_1","SaveFile_<%=ProjName%>.py"]
+4=再次进入到当前工程的启动界面，在Form_1上单击鼠标右键，在弹出菜单选中“事件响应”，为“Load”事件编辑事件函数，进入代码编辑器，并编写代码“MultiPage_1 = Fun.GetElement(uiName,'MultiPage_1')”。。["WriteCode_MultiPage_1 = Fun.GetElement(uiName,'MultiPage_1')"]
+5=换行后编写代码“MultiPage_1.SetTitleLeft(left=40)”设置标题的左边距为40像素。["WriteCode_MultiPage_1.SetTitleLeft(left=40)"]
+6=换行后编写代码“MultiPage_1.SetTitleTop(top=-40)”设置标题离下方的边距为40像素。["WriteCode_MultiPage_1.SetTitleTop(top=-40)"]
+7=换行后编写代码“MultiPage_1.SetProgressBarLeft(left=-130)”设置切换圆点的右边边距为130像素。["WriteCode_MultiPage_1.SetProgressBarLeft(left=-130)"]
+8=换行后编写代码“MultiPage_1.SetProgressBarTop(top=-40)”设置切换圆点离下方的边距为40像素。["WriteCode_MultiPage_1.SetProgressBarTop(top=-40)"]
+9=换行后编写代码“MultiPage_1.AddPage(TitleText='百度一下',ImageFile='1.png',ItemPage='http://www.baidu.com',ItemIndex='end')”。["WriteCode_MultiPage_1.AddPage(TitleText='百度一下',ImageFile='1.png',ItemPage='http://www.baidu.com',ItemIndex='end')"]
+13=换行后编写代码“MultiPage_1.AddPage(TitleText='QQ欢迎你',ImageFile='2.png',ItemPage='http://www.qq.com',ItemIndex='end')”。["WriteCode_MultiPage_1.AddPage(TitleText='QQ欢迎你',ImageFile='2.png',ItemPage='http://www.qq.com',ItemIndex='end')"]
+14=换行后编写代码“MultiPage_1.AddPage(TitleText='网易',ImageFile='3.png',ItemPage='http://www.163.com',ItemIndex='end')”。["WriteCode_MultiPage_1.AddPage(TitleText='网易',ImageFile='3.png',ItemPage='http://www.163.com',ItemIndex='end')"]
+16=换行后编写代码“MultiPage_1.Play(switchDelay=4000)”设置4000毫秒更新一次页面并开始播放。["WriteCode_MultiPage_1.Play(switchDelay=4000)"]
+17=点击运行。["Run"]

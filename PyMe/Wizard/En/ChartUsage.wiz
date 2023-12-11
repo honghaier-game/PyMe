@@ -1,0 +1,16 @@
+name=ChartUsage
+lessonid=16
+difficulty=Simage
+reward=0
+introduction=Learn how to draw statistical charts on charts.
+stepindex=10
+1=Select Form_ 1. Set the window size to 1200x800 in the property bar on the right.["SetSize_Form1_1200x800"]
+2=Select the "Line" chart under the "Chart" category page in the left toolbar and drag it to the Form_1.["Create_Line"]
+3=Select the chart and set the X-axis name to "Month" and the Y-axis name to "Quantity" in the property bar on the right.["SetXAxisName_Month","SetYAxisName_Quantity"]
+4=Drag the left toolbar to create a Button on the Form_ 1.["Create_Button"]
+5=Double click on the Button to enter the click event response function, delete "pass" and write code x=[1,2,3,4,5].["BindEvent_Button_1_onCommand","WriteCode_x = [1,2,3,4,5]"]
+6=Write code "y=[30,20,10,20,8]" after line breaks.["WriteCode_y = [30,20,10,20,8]"]
+7=Write code "Fun. UpdateChartData (uiName,'Line_1 ', x, y)" after line breaks to update the data into the chart.["WriteCode_Fun.UpdateChartData(uiName,'Line_1',x,y)"]
+8=Select the "Line_1" control in the right-hand assistant bar of the code editor, then select the "Click Chart XY Value" event in the event type list, and click the "Bind" button.["BindEvent_Line_1_onClickXY"]
+9=Write code "print (" Line_1 onClickXY: "+str (xdata)+", "+str (ydata))" after line breaks, and print the X and Y values of the clicked chart.["WriteCode_print('Line_1_onClickXY:'+str(xdata)+','+str(ydata))"]
+10=Click Run, click the button, view the changes in chart data, and use the mouse to click on the chart to view the output X and Y values.["Run"]

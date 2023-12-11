@@ -5,7 +5,7 @@ reward=0
 introduction=掌握基本的代码调试方法。
 1=从左边工具条拖动一个输入框到窗体中。["Create_Entry"]
 2=从左边工具条拖动一个按钮到窗体中，放置在输入框右方或下方["Create_Button"]
-3=双击按钮，进入按钮点击事件响应函，编写代码“Value = int(Fun.GetText(uiName,'Entry_1'))”["BindEvent_Button_1_onCommand","WriteCode_Value = int(Fun.GetText(uiName,'Entry_1'))"]
+3=双击按钮，进入按钮点击事件响应函，编写代码“Value = int(Fun.GetText(uiName,'Entry_1'))”。["BindEvent_Button_1_onCommand","WriteCode_Value = int(Fun.GetText(uiName,'Entry_1'))"]
 4=换行后编写代码“if Value < 10:”。["WriteCode_if Value < 10:"]
 5=换行后编写代码“    print('数字小于10')”。["WriteCode_print('数字小于10')"]
 4=换行后编写代码“else:”。["WriteCode_else:"]

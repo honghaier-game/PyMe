@@ -1,0 +1,25 @@
+name=管理系统登录
+lessonid=19
+difficulty=简单
+reward=3
+introduction=了解如何开发一个全屏效果的管理系统登录界面。
+stepindex=19
+1=选中Form_1，在右边属性栏设置窗口大小为1600x1000。["SetSize_Form1_1600x1000"]
+2=选中Form_1，在属性栏中双击“图片”项，找到PyMe的Ico目录下的“System.png”设置为当前背景图片，并设置“最大化窗口”为True，保存一下当前文件。["SetImage_System.png","ShowMaxUI","SaveFile_<%=ProjName%>.py"]
+3=在文件与资源栏里用鼠标右键单击，在弹出菜单里创建新窗口“Login”。["Create_UI_Login"]
+4=双击进入窗口Login，把Form_1窗口大小设置为420x430。["SetSize_Form1_420x430"]
+5=在绘图工具条中选择图片，在Form_1中创建一个图片，并右键单击图片，选择“更换图片文件”菜单项，找到PyMe的Ico目录下的“Title.png”，放置在窗口顶部。["PopupMenu_SetImage_Title.png"]
+6=从左边工具条拖动创建一个Label和一个Entry，修改Label文字为“用户名”。["Create_Label","Create_Entry","SetText_用户名"]
+7=再次创建一个Label和一个Entry，修改Label文字为“密码”，设置显示字符为“*”。["Create_Label|CopyCreate_Label_2","Create_Entry|CopyCreate_Entry_2","SetText_密码","SetShowChar_Entry_2_*"]
+8=从左边工具条拖动创建一个LabelButton，右键单击，在弹出菜单中选择“使用预设按钮图片”，更换一款按钮样式，并修改文字为“登录”，摆放好位置后保存界面。["Create_LabelButton","SetText_登录","SaveFile_Login.py"]
+9=在下部的文件资源栏右键单击，在弹出菜单选择“新建SQLite数据库”,输入名称“MyDB”点击确定。["Create_DB_MyDB.db"]
+10=双击生成的“MyDB.db”文件，在弹出的“编辑数据库”界面的左边“数据表列表”中右键单击，创建数据表“User”。["DB_CreateTable_User"]
+11=在左边树项中选中表名项，右键单击，增加字符文本类型字段名“username”,"password"，完成后点击确定。["DB_AddColumn_username_string","DB_AddColumn_password_string"]
+12=选中表名树项，在右边的SQL语句中选择“增加一条记录”，输入SQL 语句“INSERT INTO User(username,password) VALUES('admin','123456')”，点击“运行”按钮。["ExeSQL_INSERT INTO User(username,password) VALUES('admin','123456')"]
+13=在左边工具条“其它”分类下找到“DataBase”组件，拖动到Form_1上，在右边属性栏选择“数据类型”为“SQLITE”，双击“数据文件或内存”，选择“filename”，找到“MyDB.db”文件。["DB_SetFileName_MyDB.db"]
+14=在“登录”按钮上用鼠标右键单击，在弹出对话框中选择“事件响应”菜单项，选中“Command”事件，并在右边点击“调用数据库操作”按钮。["BindEvent_Command_SubmitForm"]
+15=在弹出的“调用数据库操作”对话框中，这时会选中当前数据库组件，并且选中数据库表“User”，我们选择提交类型为“登录判断”。["DB_SetSubmitType_登录判断"]
+16=在“数据字段名称列表”中选中“username”一栏，然后在右边的“当前表单输入控件”下选择Entry_1，点击“绑定数据字段”。["DB_BindingField_username_Entry_1"]
+17=在“数据字段名称列表”中选中“password”一栏，然后在右边的“当前表单输入控件”下选择Entry_2，点击“绑定数据字段”。["DB_BindingField_password_Entry_2"]
+18=点击确定后，返回启动界面，从左边工具条拖动创建一个Frame控件放到窗口中间，在下方布局工具条中设置大小为420x430像素，参考位置设为“居中”，在属性栏里找到“导入界面”栏位并双击，选中“Login”窗口，并“拖拽窗口”茂设为True。["Create_Frame","LoadPage_Login.py","SetDragWindow_Frame_1"]
+19=点击运行。["Run"]

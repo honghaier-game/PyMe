@@ -1,0 +1,25 @@
+name=GuessingNumbers
+lessonid=3
+difficulty=Normal
+reward=6
+introduction=Understand the method of creating controls by dragging from the toolbar and the quick way to set up text content.
+stepindex=19
+1=Drag from the left toolbar to create a Label control above the center of the form.["Create_Label"]
+2=Right click on the Label with the mouse, click on "Set Text Content" in the pop-up menu, and enter "Guess Number" as the title.["PopupMenu_SetText","SetText_Guess Number"]
+3=Select the "Font" attribute in Arial, size 32, and bold in the right attribute bar.["ChooseFont_Arial_32_bold_roman_0"]
+4=Create another Label control, double-click on the text properties in the bottom right corner of the property bar, and modify the text content to "Please enter numbers between 0 and 100".["Create_Label","SetText_Please enter numbers between 0 and 100"]
+5=Drag from the left toolbar to create an Entry control to the right of the Label control for entering numbers.["Create_Entry"]
+6=Drag from the left toolbar to create a Button control below the Entry control, and modify the text to "Submit" for submitting numbers.["Create_Button","SetText_Submit"]
+7=Select Form from the control list in the upper right corner. Double click on the Load event item on the bottom right event response page to enter the corresponding function.["BindEvent_Form_1_onLoad"]
+8=After line breaking, right-click and select "Get Current 0-100 Random Numbers" in the "System Functions" section.["FunctionMenu_Fun_RandNumber"]
+9=Write code after line breaks“Fun.AddUserData(uiName,'Form_1',dataName='RandNumber',datatype='int',datavalue=randNumber,isMapToText=0)”。["WriteCode_Fun.AddUserData(uiName,'Form_1',dataName='RandNumber',datatype='int',datavalue=randNumber,isMapToText=0)"]
+10=Press the ESC key to save and return to the design view, double-click the "Submit" button to enter the response function.["BindEvent_Button_1_onCommand"]
+11=Write code after line breaks“RandNumber = Fun.GetUserData(uiName,'Form_1','RandNumber')”。["WriteCode_RandNumber = Fun.GetUserData(uiName,'Form_1','RandNumber')"]
+12=Write code after line breaks“Submissions = int(Fun.GetText(uiName,'Entry_1'))”。["WriteCode_Submissions = int(Fun.GetText(uiName,'Entry_1'))"]
+13=Write code after line breaks“if Submissions == RandNumber:”。["WriteCode_if Submissions == RandNumber:"]
+14=Write code after line breaks“Fun.MessageBox(text='Great, you guessed it right!',title='info',type='info',parent=None)”。["WriteCode_Fun.MessageBox(text='Great, you guessed it right!',title='info',type='info',parent=None)"]
+15=Write code after line breaks“elif Submissions < RandNumber:”。["WriteCode_elif Submissions < RandNumber:"]
+16=Write code after line breaks“Fun.MessageBox(text='Too small, please increase the number.',title='info',type='info',parent=None)”。["WriteCode_Fun.MessageBox(text='Too small, please increase the number.',title='info',type='info',parent=None)"]
+17=Write code after line breaks“else:”。["WriteCode_else:"]
+18=Write code after line breaks“Fun.MessageBox(text='Too big, please reduce the number.',title='info',type='info',parent=None)”。["WriteCode_Fun.MessageBox(text='Too big, please reduce the number.',title='info',type='info',parent=None)"]
+19=点击运行。["Run"]

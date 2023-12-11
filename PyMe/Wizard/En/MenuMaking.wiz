@@ -1,0 +1,14 @@
+name=Menu making
+lessonid=25
+difficulty=Normal
+reward=0
+introduction=Understand the method of making menus.
+stepindex=8
+1=Select "Form_1", double-click the "Window Menu" attribute, and a dialog box will pop up in the menu editing area. Enter the text "File" on the right, select "Ctrl+F" with the shortcut key, and click "Add Top Level Menu Item".["CreatMainMenu","AddMenuItem_File"]
+2=Select the "File" menu item, enter the text "New" on the right, use the shortcut key to select "Ctrl+N", and click "Add submenu item".["AddMenuChildItem_File_New"]
+3=Complete the creation of submenu items such as "Open", "Save", "SaveAs", and "Exit" under the "File" menu item in sequence.["AddMenuChildItem_File_Open","AddMenuChildItem_File_Save","AddMenuChildItem_File_SaveAs","AddMenuChildItem_File_Exit"]
+4=Continue to create top-level menu items such as "Edit", "Run", "Help", and submenu items (can be skipped), and click "OK" when finished.["AddMenuItem_Edit","AddMenuItem_Run","AddMenuItem_Help"]
+5=After closing the dialog box, double-click the cmd file on the interface to enter the interface logic code. You can see that PyMe has automatically created a response function for the menu item. After entering the "Menu New" function, write the code "print (" New ")".["WriteCode_print('New')"]
+6=Find Menu_ Open the function, right-click after line wrapping, and select "Call Open File Box" in "System Functions".["FunctionMenu_openFile"]
+7=Write code after line breaks “print(openPath)”。["WriteCode_print(openPath)"]
+8=Improve the code for other menu functions, and click "Run" after completion.["Run"]

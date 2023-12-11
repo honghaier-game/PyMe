@@ -1,0 +1,23 @@
+name=File read and write
+lessonid=13
+difficulty=Simple
+reward=3
+introduction=Understand the methods of reading and writing files, as well as the usage of text boxes.
+1=Select Form_ 1. Set the window size to 1200x800 in the property bar on the right.["SetSize_Form1_1200x800"]
+2=Drag from the left toolbar to create a Label control onto the Form_ In the upper left corner, change the text to "File Path".["Create_Label","SetText_FilePath"]
+3=Drag from the left toolbar to create an Entry control to the right of the Label control, which displays the file path.["Create_Entry"]
+4=Drag and create two Button controls from the left toolbar to the right of the Entry control, and modify the text to "Open File" and "Save File" respectively.["Create_Button","SetText_Open File","SetText_Save File"]
+5=Drag from the left toolbar to create a Text control below these controls as an editing text box.["Create_Text"]
+6=Double click the "Open File" button to enter the click event response function. After line breaking, right-click and select "Call Open File Box" in the "System Functions".["BindEvent_Button_1_onCommand","FunctionMenu_openFile"]
+7=Write code "if openPath:" after line breaks.["WriteCode_if openPath:"]
+8=Write code "Fun.SetText (uiName, 'Entry1', textValue=openPath)" after line breaks.["WriteCode_Fun.SetText(uiName,'Entry_1',textValue=openPath)"]
+9=Write code "Content=Fun.ReadFromFile(openPath, 'utf-8', False)" after line breaks to retrieve text from the file. If the last parameter is True, it will automatically execute Python text.["WriteCode_Content = Fun.ReadFromFile(openPath,'utf-8',False)"]
+10=Write code "Fun.SetText(uiName,'Text_1',textValue=Content)" after line breaks.["WriteCode_Fun.SetText(uiName,'Text_1',textValue=Content)"]
+11=Select the "Save File" button in the thumbnail of the right-hand assistant bar, select "Click Event", and click the "Bind" button. Right click on the function and select "Call Save File Box" in the "System Functions".["BindEvent_Button_2_onCommand","FunctionMenu_saveFile"]
+12=Write code "if savePath:" after line breaks.["WriteCode_if savePath:"]
+13=Write code "Content=Fun.GetText(uiName,'Text_1')" after line breaks.["WriteCode_Content = Fun.GetText(uiName,'Text_1')"]
+14=Write code after line breaks“if Fun.WriteToFile(savePath,Content,'utf-8') == True:”Determine if the Content is successfully written to the file for execution.["WriteCode_if Fun.WriteToFile(savePath,Content,'utf-8') == True:"]
+15=Write code after line breaks“Fun.MessageBox(text='Save successful!',title='Hint',type='info',parent=None)”。["WriteCode_Fun.MessageBox(text='Save successful!',title='Hint',type='info',parent=None)"]
+16=Write code after line breaks“else:”。["WriteCode_else:"]
+17=Write code after line breaks“Fun.MessageBox(text='Save failed!',title='Hint',type='error',parent=None)”。["WriteCode_Fun.MessageBox(text='Save failed!',title='Hint',type='error',parent=None)"]
+18=Click on Run.["Run"]

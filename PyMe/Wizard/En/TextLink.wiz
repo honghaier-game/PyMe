@@ -1,0 +1,14 @@
+name=TextLink
+lessonid=22
+difficulty=Simple
+reward=0
+introduction=Learn cursor settings and how to create a text link.
+1=Drag from the left toolbar to create a Label control above the center of the form.["Create_Label"]
+2=Right click on the Label with the mouse, click on "Set Text Content" in the pop-up menu, and enter "Google".["PopupMenu_SetText","SetText_Google"]
+3=Select "Font" in the right attribute bar as Arial font, size 16, and use underline.["ChooseFont_Arial_16_normal_roman_1"]
+4=Right click on the Label with the mouse, click on "Event Response" in the pop-up menu, select the mouse to enter the "Enter" event, select "Set Cursor" on the right, and then select "hand2" cursor in the cursor list diagram.["BindEvent_Label_1_onMouseEnter_SetCursor_hand2"]
+5=Select the mouse to leave the "Leave" event, select "Set Cursor" on the right, and then select the "arrow" cursor in the cursor list diagram.["BindEvent_Label_1_onMouseLeave_SetCursor_arrow"]
+6=Select the "Button 1" event and select "Edit Function Code" on the right to enter the event response function.["BindEvent_Label_1_onButton1"]
+7=After line breaking, right-click with the mouse and select "Call browser to open web page" under "Access web page" in "Quick functions".["FunctionMenu_Fun_OpenWeb"]
+8=Fill in the website address“ https://www.google.com ”.["WriteCode_webbrowser.open('https://www.google.com')"]
+9=Click on Run.["Run"]
