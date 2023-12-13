@@ -1,10 +1,14 @@
-# **PyMe****一站式开发工具 介绍手册**
 
+
+# **PyMe****一站式开发工具 介绍手册**
+#* * PyMe * * One Stop Development Tool Introduction Manual**
 ​            
 
 ​	               																			版本: v 1.1
+																					Version: v 1.1
 
 ​	               																			作者: 火云红孩儿
+																					Author: Honghaier
 
  
 
@@ -20,331 +24,347 @@
  
 
 # **PyMe是什么？**
-
+#What is PyMe**
 ## **“写在前面的一点感悟”：**
-
+##"A little insight written at the beginning":**
  
 
 ​	朋友，你好，我是PyMe的作者火云红孩儿，一位热爱编程的程序员，在开始介绍这个项目前前，我想先讲一点我对于Python和PyMe的看法，或许不正确，或许脑洞有点大，但我觉得有必要讲出来，这样才能得到各位专家和开发者的指正。
+        Hello friend, I am Huoyun Honghaier, the author of PyMe and a programmer who loves programming. Before introducing this project, I would like to share some of my views on Python and PyMe. Perhaps it is incorrect or my imagination is a bit broad, but I think it is necessary to speak up so that I can receive guidance from experts and developers.
 
 ​	这个项目是在四年前开始的，当时我关注到Python连续占据最受欢迎的编程语言榜首，所以我计划系统的学习一下Python，在此之前我有十五年以上的C++游戏开发经验，因为我从事的是游戏引擎和工具链的开发工作，所以我对于工具软件尤为重视，在学习Python的过程中，我有一种强烈的感觉：“Python的工具链薄弱程度与Python语言的受欢迎程度不匹配”。在2023年的今天，开发工具市场的产品已经发展的越来越强大，越来越人性化。而Python作为当今耀眼的明星，居然没有一款可视化、流程化、人性化的开发工具。
+        This project started four years ago, when I noticed that Python had consistently ranked first among the most popular programming languages. Therefore, I planned to systematically study Python. Prior to this, I had more than fifteen years of experience in C++game development. As I worked in the development of game engines and toolchains, I attached great importance to tool software. In the process of learning Python, I have a strong feeling that the weakness of Python's toolchain does not match the popularity of the Python language. Today in 2023, the products in the development tool market have become increasingly powerful and user-friendly. As a dazzling star today, Python surprisingly lacks a visual, procedural, and user-friendly development tool.
 
 ​	所以，我尝试着自已做，并逐步使它成为一个独立的技术创业项目。
+        So, I tried to do it myself and gradually make it an independent technology entrepreneurship project.
 
 ***\*最初\****，我只是尝试着写一个简单的界面编辑器，它基于tkinter，提供简单的控件拖拽设计和代码生成，可以直接运行，并通过pyinstaller打包成EXE。我将它命名为“TkinterDesigner”，并在github上提交了可执行程序，很快，就有人关注，并成为了第一批用户。于是，我利用工作之余，不断的完善它，加入了变量绑定、事件响应函数映射与代码编辑，并加入了一些预设的工程案例模版，使它看起来像VisualBasic一样简单而易用。
+***\*At first\****, I was just trying to write a simple interface editor based on tkiner, which provides simple control drag and drop design and code generation, can be run directly, and packaged into EXE through pyinstaller. I named it "TkinterDesigner" and submitted an executable program on GitHub. Soon, someone followed and became one of the first users. So, in my spare time, I constantly improved it by adding variable binding, event response function mapping, and code editing, as well as adding some preset engineering case templates, making it look simple and user-friendly like Visual Basic.
 
 ***\*很快，\****“TkinterDsigner”成长为一个可视化的桌面应用开发工具，在这个过程中，我熟练的掌握了Python的编程，但我并没有打算结束它，而是有了一些更大的想法。
-
+***\*Quickly\****, "TkinterDsigner" grew into a visual desktop application development tool. During this process, I became proficient in Python programming, but I had no intention of ending it. Instead, I had some bigger ideas.
  
 
 ​	因为我逐渐的认知到，随着Python语言在全世界的广泛学习和应用，***\*未来Python有机会成为像英语一样的通用语言！\****
-
+        Because I gradually realized that with the widespread learning and application of Python language around the world, there is a chance for Python to become a universal language like English in the future\****
 ​	我意识到：随着网络和科技的不断发展，人的价值，会越来越回归到数字化的体现，即：
-
+        I realize that with the continuous development of the internet and technology, human value will increasingly return to the manifestation of digitization, namely:
  
 
 ***\*人的价值 = 积累的经验素材 + 处理事情的方法 = 数据 + 算法\****
-
+***\*Human value=accumulated experience materials+methods of handling things=data+algorithms\****
  
 
 ***\*比如：\****
-
+***\*For example:\****
 ​	厨师的价值 = 能做的菜品的数量（***\*数据）\**** +  对菜品做法的追求（***\*算法）\****
-
+        The value of a chef=the quantity of dishes that can be cooked (* * * \ * data) \ * * *+the pursuit of dish preparation (* * * \ * algorithm)\****
 ​	能做的菜品的数量 = 做的菜品越多，对各种菜品背后的食材，营养搭配，配料，炊具，火候，味觉感受，视觉感受的熟悉和归纳越丰富。
-
+        The number of dishes one can cook=the more dishes one can cook, the richer the familiarity and induction of the ingredients, nutritional combinations, ingredients, cooking utensils, heat, taste perception, and visual perception behind various dishes.
 ​	对菜品做法的追求 = 对食材、烹饪的关系越了解，越能够在最恰当的情况下选择最恰当的烹饪方式和流程，能给与食客最满意的结果。
-
+        The pursuit of dish preparation means that the more you understand the relationship between ingredients and cooking, the more you can choose the most appropriate cooking method and process in the most appropriate situation, and give diners the most satisfactory results.
  
 
 ***\*再比如：\****
-
+***\*For example:\****
 ​	律师的价值 = 案件经手的数量（***\*数据）\**** +  处理案件的方法（***\*算法）\****
-
+        The value of a lawyer=the number of cases handled (* * * \ * data)+the method of handling the case (* * * \ * algorithm)\****
 ​	案件经手的数量 = 做的案件越多，数据越多，律师对对法律在实际适用情况越熟悉，案件越有把握和信心。
-
+        The number of cases handled=the more cases and data done, the more familiar the lawyer is with the actual application of the law, and the more confident and confident the case is.
 ​	处理案件的方法 = 对当事人线索调查方法越熟悉，越能够找到突破口。
-
+        The method of handling a case=the more familiar the investigation method of the parties involved, the more able they are to find a breakthrough point.
 ​	虽然我不是厨师，更不是律师，但本质上，各行各业的人，都一样。我们的人生价值，都是在积累数据和改善方法。而我们的薪水，本质上反映的是我们对于“工作数据的丰富和深度 + 处理方法的熟练和恰当”。
-
+        Although I am not a chef, let alone a lawyer, fundamentally, people from all walks of life are the same. Our life value is all about accumulating data and improving methods. And our salary essentially reflects our proficiency and appropriateness in the richness and depth of work data and processing methods.
 ​	人的价值，其实可以被提炼为一段包含数据和算法的代码，但需要一个通用化的编程语言。
-
+        The value of human beings can actually be distilled into a piece of code containing data and algorithms, but it requires a universal programming language.
 
 
 ***\*这门编程语言，我相信就是Python。\****
-
+***\*I believe this programming language is Python\****
 ***\*为什么？\****
-
+***\*Why\****
 ***\*因为它具有三个特点，是其它语言无法比拟的。\****
-
+***\*Because it has three characteristics that cannot be compared to other languages\****
 
 
 **1、*****\*语法简单，最接近自然语言，学习成本最低，可以让最多的人群了解和掌握。\****
-
+**1. ****** \ * The grammar is simple, closest to natural language, with the lowest learning cost, and can be understood and mastered by the largest audience\****
 **2、*****\*功能库安装简单，别人写的功能库快速即插即用，可以让大量的价值被方便的交换。\****
-
+**2. ****** \ * The installation of the feature library is simple, and the feature library written by others is quickly plug and play, which can facilitate the exchange of a large amount of value\****
 **3、*****\*一次编写，到处运行，不受平台的限制，使得价值可以体现在更主流的应用场景。\****
-
+**3. ***** \ * Write once, run everywhere, not limited by the platform, allowing value to be reflected in more mainstream application scenarios\****
  
 
 ​	而要想实现这个目标，还需要完成三件事：***\*更广泛的应用领域、统一的开发流程\****和***\*交换的平台\****。
-
+        To achieve this goal, three more things need to be accomplished: a wider range of application areas, a unified development process, and a platform for exchange.
 **1、*****\*更广泛的应用领域\****
-
+**1. ****** \ * Wider application areas\****
 ​	目前Python语言在许多方面取得了令人瞩目的成绩，但在拥有最广泛开发者的桌面应用开发、移动应用开发、游戏开发、嵌入式等方面，还裹足不前。许多开发者告诉我，这不是Python擅长的事情，但如果Python要成为最通用的代码交换手段，必须保证Python在这些大的方向和领域占据主流开发语言的地位。
-
+        At present, Python language has achieved remarkable results in many aspects, but it still lags behind in areas such as desktop application development, mobile application development, game development, and embedded development, which have the widest range of developers. Many developers have told me that this is not something Python is good at, but if Python is to become the most common code exchange tool, it must ensure that Python occupies the mainstream development language position in these major directions and fields.
 **2、*****\*统一的开发流程\****
-
+**2. ****** \ * Unified development process\****
 ​	目前Python语言缺乏标准化的开发流程，从而导致大家使用基于代码编辑器类开发工具（VSCode,PyCharm）写代码在风格太过于自由，流程和设计模式上太过于凌乱，有一定阅读和理解成本。我们需要一个流程，来将所有的Python开发者资源案例以一种科学而流程化的方式重新整理，才能够在未来方便的交换。
-
+        At present, the Python language lacks a standardized development process, which leads to people using code editor based development tools (VSCode, PyCharm) to write code in a style that is too free, and the process and design patterns are too messy, resulting in a certain cost of reading and understanding. We need a process to reorganize all Python developer resource cases in a scientific and procedural manner in order to facilitate future exchanges.
  
 
 **3、*****\*交换的平台\****
-
+**3. ****** \ * Exchange platform\****
  
 
 ​	需要建立一个平台，将开发者的代码能够上传到平台中发布，这样才能实现价值的交换和竞争。
-
+        We need to establish a platform where developers can upload their code for publication, in order to achieve value exchange and competition.
  
 
 ​	于是，《PyMe》诞生了。它不仅是一个拥有界面设计器的Python代码编辑工具，更在下面三个事情上立下目标：
-
+        So, PyMe was born. It is not only a Python code editing tool with an interface designer, but also sets goals for the following three things:
 1、推动Python的桌面应用开发，移动应用开发和游戏开发，PyMe内置了一键打包APK，并内置了Pygame游戏引擎和工具链，同时在建设PyOpenGL的3D游戏引擎和工具链。
-
+1. Promoting desktop application development, mobile application development, and game development in Python, PyMe has built-in one click packaging APK and Pygame game engine and toolchain, while also building a 3D game engine and toolchain for PyOpenGL.
 2、推动建立从项目搭建到界面场景设计、组件编辑、代码编写、打包发布的全套开发流程，希望通过这套流程使人类的价值成果有一个流程标准，降低其它繁琐事务对问题本质的干扰，辅助开发者对代码的理解。
-
+2. Promote the establishment of a complete development process from project construction to interface scene design, component editing, code writing, packaging and publishing, hoping to establish a process standard for human value achievements through this process, reduce the interference of other tedious tasks on the essence of problems, and assist developers in understanding the code.
 3、推动建设一个开发者平台，将标准化的案例开源代码发布到其上，促进各行各业价值的交换和竞争。
-
- 
+3. Promote the construction of a developer platform, publish standardized case open source code on it, and promote the exchange and competition of value across various industries.
 
 ​	截止到目前，PyMe的开发完成了其中少量的工作，以下是基本的进度情况：
+        As of now, PyMe's development has completed a small amount of work, and the following is the basic progress:
 
 
-
-（1）Python桌面应用开发  -- 60% ，基本具备了一套完整的开发流程。
-
-（2）Python移动应用打包  -- 40% ，实现了有限的一键打包APK，但不稳定。
-
-（3）Python 2D游戏开发   -- 40%，实现了大量基础的常用引擎工具。
-
-（4）Python 3D 游戏开发   -- 20%，实现了基础的3D引擎功能。
-
+(1)Python桌面应用开发  -- 60% ，基本具备了一套完整的开发流程。
+(1) Python desktop application development -60%, basically equipped with a complete development process.
+(2) Python移动应用打包  -- 40% ，实现了有限的一键打包APK，但不稳定。
+(2) Python mobile application packaging -40%, achieving limited one click packaging APK, but unstable.
+(3)Python 2D游戏开发   -- 40%，实现了大量基础的常用引擎工具。
+(3) Python 2D game development -40%, implementing a large number of basic commonly used engine tools.
+(4) Python 3D 游戏开发   -- 20%，实现了基础的3D引擎功能。
+(4) Python 3D game development -20%, achieving basic 3D engine functionality.
  
 
 ​	《PyMe》的口号就是“我用Python创世界！”，这也是我存在的意义和目标，我希望每个Python开发者，都能使用《PyMe》创造出自已心中美好的世界。
-
+         The slogan of PyMe is "I create the world with Python!", which is also the meaning and goal of my existence. I hope that every Python developer can use PyMe to create a beautiful world from their own hearts.
 ## **“说人话”：**
-
+##* * "Talking to People":**
 ​	你是否想学习Python，却找不到好的学习路径？
-
+        Do you want to learn Python, but cannot find a good learning path?
 ​	你是否掌握了Python语言，但却连最简单的界面都难以实现？
-
+        Have you mastered the Python language, but find it difficult to implement even the simplest interface?
 ​	你是否想要使用Python开发游戏，甚至是可以运行在手机上的3D游戏？
-
+        Do you want to develop games using Python, or even 3D games that can run on your phone?
  
 
 ***\*如果答案是Yes，你需要了解这个项目： 《PyMe》\****
-
+***\*If the answer is Yes, you need to understand this project: PyMe\****
 ​	长期以来，Python开发者往往会陷入到一种迷茫中，经过一段时间的Python学习，似乎学会了，掌握了一个个知识点和小案例，但	却越来越失去方向。这是为什么呢？
-
+        For a long time, Python developers have often fallen into a state of confusion. After a period of Python learning, they seem to have learned and mastered various knowledge points and small cases, but they are increasingly losing direction. Why is this?
  
 
 ***\*因为Python缺乏体系化的编程工具！\****
-
+***\*Because Python lacks systematic programming tools\****
 ​	对于绝大部分开发者来说，编程学习需要语言学习和实践练习才能深入掌握。
-
+        For the vast majority of developers, programming learning requires language learning and practical practice to gain a deeper understanding.
 ​	所谓实践练习，就是应用场景，这其中IDE功不可没。
-
+        The so-called practical exercises refer to application scenarios, in which IDE plays an indispensable role.
  
 
 ​	***\*VB，XCode，VC++，Escplise\****等知名IDE，不仅仅提供代码的编写，更是一个集成化，图形化，流程化的软件工程实践工具。他们保证了开发者可以在一个易懂的、可视化的、工程化的开发流程中逐渐沉淀经验，并得到良好的正向反馈。
-
- 
+        ***\*Famous IDEs such as VB, XCode, VC++, Escplise, etc\****. not only provide code writing, but also serve as integrated, graphical, and procedural software engineering practice tools. They ensure that developers can gradually accumulate experience and receive positive feedback in an easy to understand, visual, and engineering development process.
 
 ​	IDE中“项目的搭建，多文件的组织关系，可视化的界面设计，界面与逻辑的绑定关系，界面与数据的绑定关系，项目的调试与运行，打包与输出。”等功能从零散的具体功能，有机的组合成一个流畅的开发流程，这套工作流是实践练习的基础，也是承载了具体工作产业化的基础。
+        The functions of "project construction, multi file organization, visual interface design, interface logic binding, interface data binding, project debugging and operation, packaging and output" in IDE are organically combined from scattered specific functions into a smooth development process. This workflow is the foundation of practical practice and also carries the foundation of industrialization of specific work.
 
 ​	不巧的是，***\*Python没有这样的开发流程，\****大多数人只能选择Pycharm，VScode两款工具软件进行开发。而这两款工具并没有完整的开发流程，严重依赖程序员自己来建立开发流程。而开发流程的建立，则需要多年的经验。这也导致了许许多多Python初学者，只会基于Python零散的大量的知识点，在控制台模式下写写爬虫，数据处理，AI训练，量化脚本等脚本，而无法完成一个完整的软件。
-
+        Unfortunately, ***\*PythonPython does not have such a development process\****, and most people can only choose Python and VScode tools for development. However, these two tools do not have a complete development process and heavily rely on programmers to establish their own development process. The establishment of development processes requires years of experience. This has also led to many Python beginners only being able to write web crawlers, data processing, AI training, quantification scripts, and other scripts in console mode based on a large amount of scattered knowledge points in Python, and unable to complete a complete software.
 ​	如果你想改变这种状况，那么你需要一款提供完整工作流的开发工具。
-
+        If you want to change this situation, then you need a development tool that provides a complete workflow.
  
 
 ***\*《PyMe》\****就是为此而生。
-
+***\*PyMe\**** was born for this.
  
 
 以下是《PyMe》的基本定义：
-
+The following is the basic definition of PyMe:
  
 
 ***\*《PyMe》\*******\*是一款基于\**** ***\*Python\**** ***\*的流程化的项目开发工具软件\*******\*，主要用于流程化、可视化、组件化的设计与开发应用和游戏项目。\****
-
+***\*PyMe\*******\* is a process oriented project development tool software \**** ***\*based on Python\**** ***\*. It is mainly used for process oriented, visual, and component-based design and development of applications and game projects\****
  
 
 # **PyMe都有什么功能？**
-
+# **What are the functions of PyMe**
 ***\*PyMe\**** 的功能分为两部分：***\*开发功能\****和***\*平台功能\****。
-
+The functions of ***\*PyMe\****  are divided into two parts: development functions and platform functions.
 #### 一、**开发功能** 
-
+####1、 * * Development features**
 ​	PyMe中的开发功能分为应用开发和游戏开发两部分，其中应用开发主要包括以下十项基本功能:
-
+        The development functions in PyMe are divided into two parts: application development and game development. Application development mainly includes the following ten basic functions:
 **1.** ***\*项目管理\****:通过预设的模版工程进行项目的创建与打开。
-
+**1.** ***\*Project Management\****: Create and open projects through preset template engineering.
 **2.** ***\*文件管理\****:对于项目进行窗体，文件的创建和资源的导入。
-
+**2.** ***\*File Management\****: Create forms, files, and import resources for projects.
 **3.** ***\*界面设计\****:通过拖拽式的操作快速的制作界面。
-
+**3.** ***\*Interface Design\****: Quickly create an interface through drag and drop operations.
 **4.** ***\*控件设置\****:对控件进行常用的属性编辑。
-
+**4.** ***\*Control Settings\****: Perform common property editing on controls.
 **5.** ***\*变量绑定\****:对控件进行用户变量的创建与编辑。
-
+**5.** ***\*Variable Binding\****: Create and edit user variables for the control.
 **6.** ***\*事件响应\****:在控件事件与函数之间快速的建立映射函数。
-
+**6.** ***\*Event Response\****: Quickly establish a mapping function between control events and functions.
 **7.** ***\*逻辑编写\****:内置了代码编辑器，提供函数智能提示。
-
+**7.** ***\*Logic Writing\****: Built in code editor, providing intelligent function prompts.
 **8.** ***\*调试运行\****:可对工程进行调试和运行。
-
+**8.** ***\*Debugging and Running\****: Can debug and run the project.
 **9.** ***\*编译打包\****:提供一键实现打包功能，支持转c编译加密，打包APK。
-
+**9.** ***\*Compilation and Packaging\****: Provides one click packaging function, supports C conversion, compilation, encryption, and packaging of APK..
 **10.** ***\*界面美化\****:对界面进行样式设计编辑和快速应用。
-
+**10.** ***\*Interface Beautification\****: Style design, editing, and quick application of the interface.
  
 
 ***\*游戏开发\****功能与***\*应用开发\****功能的区别在于，关注点从界面转向了游戏开发流程，***\*这部分的功能介绍将会有专门的文档进行解释说明\****，不在这里进行展开。
+The difference between ***\*game development\**** and ***\*application development\**** is that the focus has shifted from the interface to the game development process.***\* There will be a dedicated document to explain and explain the features in this section\****, which will not be elaborated here.
 
 #### 二、**平台功能** 
+#### 2、**Platform features** 
 
 ***\*平台功能\****以***\*资源交换\****服务为主，致立于建设一个丰富、有价值的资源生态，主要包括以下项基本服务：
+***\*The platform functions\**** mainly focus on ***\*resource exchange\**** services, aiming to build a rich and valuable resource ecosystem, including the following basic services:
 
 **1.** ***\*案例下载\****：提供各类型的PyMe应用案例开源代码。
+**1.** ***\*Case Download\****: Provide open-source code for various types of PyMe application cases.
 
-**2.** ***\*组件下载\****：提供各种具有特定功能的组件，用于项目开发，
+**2.** ***\*组件下载\****：提供各种具有特定功能的组件，用于项目开发。
+**2.** ***\*Component Download\****: Provides various components with specific functions for project development.
 
 **3.** ***\*皮肤下载\****：提供各种风格的界面皮肤样式。
+**3.** ***\*Skin Download\****: Provides various styles of interface skin styles.
 
 **4.** ***\*项目外包\****：提供一些项目甲方发包信息，方便开发者接单。
+**4.** ***\*Project Outsourcing\****: Provide some project contracting information from Party A to facilitate developers in accepting orders.
 
 **5.** ***\*申请UP主\****：开发者可申请成为UP主，在开发者平台发布作品并获得有效下载收益分成。
+**5.** ***\*Apply for UP Master\****: Developers can apply to become UP masters, publish their works on the developer platform, and receive effective download revenue sharing.
 
 # **PyMe都有什么特点？**
-
+# **What are the characteristics of PyMe**
 ​	PyMe的主要特点是：**可视化**、**低代码**、**跨平台**。
-
+        The main features of PyMe are: **visualization**, **Low code**, and**Cross platform**.
 #### **一、可视化：**
+####1. Visualization:**
 
 ​	PyMe提供全套的可视化开发方式，从项目搭建、界面设计、控件属性、变量绑定到逻辑编写、调试运行、打包输出，可视化的编辑始终贯穿流程。这种体验类似Visual Basic，Visual C++，如果你有类似的经验，可以很快上手。
-
+        PyMe provides a complete set of visual development methods, from project construction, interface design, control properties, variable binding to logic writing, debugging and running, packaging and output, visual editing always runs through the process. This experience is similar to Visual Basic, Visual C++, and if you have similar experience, you can get started quickly.
 ![img](http://www.py-me.com/mkdoc_images/wps1.jpg) 
 
 #### **二、低代码：**
-
+#### **2. Low code: **
 ​	PyMe通过可视化的方式，可以生成出项目的代码框架，并在此基础上建立简单、灵活的函数脚本编程机制，使得整个开发过程由复杂而繁琐的事情变得简单而有条理，大大降低了工作量。
-
+        PyMe can generate the code framework of a project through visualization and establish a simple and flexible function script programming mechanism on this basis, making the entire development process simple and organized from complex and tedious tasks, greatly reducing workload.
 ![img](http://www.py-me.com/mkdoc_images/wps2.jpg) 
 
 #### 三、**跨平台：**
+#### 3、**Cross platform:**
 
 ​	PyMe提供多平台的编辑、运行与打包能力，可以帮助开发者在Window,Mac,Linux上建立符合自身需要的跨平台应用，更可以打包出APK和IOS移动应用和游戏。
-
+        PyMe provides multi platform editing, running, and packaging capabilities, which can help developers build cross platform applications that meet their needs on Windows, Mac, and Linux. It can also package APK and IOS mobile applications and games.
 # **PyMe面向什么用户人群？**
+# **What user group does PyMe target **
 
 PyMe的主要用户包括以下一些群体：
+The main users of PyMe include the following groups:
 
 1. Python初学者：帮助他们建立良好的开发流程和工程化的开发思想。
+1. Python beginners: Help them establish good development processes and engineering development ideas.
 2. 应用开发者：帮助他们可以使用PyMe快速化的进行应用软件开发。
+2. Application developers: Help them develop application software quickly using PyMe.
 3. 游戏爱好者：帮助非专业游戏开发者和独立制作者能够使用Python开发游戏。
-
+3. Game enthusiasts: Help non professional game developers and independent creators to develop games using Python.
  
 
 # **PyMe的下载、使用与教程、反馈**
-
+# **PyMe downloads, usage, tutorials, and feedback**
 ​	目前我提供了三种下载方式，你可以在其中找到PyMe的文件包并下载使用。
-
+        At present, I have provided three download methods, where you can find the PyMe file package and download it for use.
  
 
 PyMe的官方网址：[www.py-me.com](http://www.py-me.com)
-
+PyMe's official website: [www.py-me.com](http://www.py-me.com)
 PyMe的官方Github: https://github.com/honghaier-game/PyMe
-
 PyMe的官方QQ群共享：100180960 
 
 ## **版本说明：**
-
+## **Version Description:**
 ​	目前版本只支持***\*win64\**** ，其它平台如Mac,Linux请静待我的推进，也希望您能告诉我您的需要，因为目前的主要用户群是windows开发者，所有在精力有限的情况下，以windows版本为主。
-
+        The current version only supports***\*win64\****. For other platforms such as Mac and Linux, please wait for my progress and let me know your needs. The main user group at present is Windows developers, so with limited energy, the Windows version is the main version.
  
 
 ​	要注意的是：***\*PyMe不开源，它是一款工具产品，但PyMe中你生成的所有工程代码，包括内置的Fun函数库和游戏引擎底层源码，都是公开的。~\****
-
+        It should be noted that ***\*PyMe is not open-source and is a tool product. However, all the engineering code generated in PyMe, including the built-in Fun library and the underlying source code of the game engine, is publicly available~\****
  
 
 ## **官方教程：**
-
+## **Official Tutorial:**
 ​	目前PyMe的教程包括三方面的内容：
-
+        At present, PyMe's tutorials include three aspects of content:
 #### 1、**作者的书**
-
+#### 1、**Author's book**
 ​	《Python跨平台应用软件开发实战》，机械工业出版社出版：
-
+        《Practical Development of Python Cross Platform Application Software》, published by China Machinery Industry Press:
 ![img](http://www.py-me.com/mkdoc_images/wps3.jpg) 
 
 #### 2、**B站的视频教程**
-
+#### 2. Video tutorials for Bilibili**
 ​	目前的视频教程分为两部分：
-
+        The current video tutorial is divided into two parts:
 ​	《PyMe基础使用入门课》 https://www.bilibili.com/video/BV1tF411d7kN
-
+        《Introduction to PyMe Basic Usage Course》 https://www.bilibili.com/video/BV1tF411d7kN
 ![img](http://www.py-me.com/mkdoc_images/wps4.jpg) 
 
 《PyMe游戏开发入门课》 https://www.bilibili.com/video/BV1N94y1r77W
-
+《PyMe Game Development Beginner Course 》https://www.bilibili.com/video/BV1N94y1r77W
 ![img](http://www.py-me.com/mkdoc_images/wps5.jpg) 
 
 ​	在PyMe中，也集成了这些教程，开发者可以通过“视频教程”页面来观看。
-
+        In PyMe, these tutorials are also integrated, and developers can watch them through the "Video Tutorial" page.
 ![img](http://www.py-me.com/mkdoc_images/wps6.jpg) 
 
 #### 3、**PyMe的向导教程**
-
+#### 3、**PyMe Wizard Tutorial**
 ​	PyMe中加入了一步一步渐进式的操作向导，开发者可以跟着向导教程在具体的实例练习中快速的学会整个开发过程。
-
+        PyMe has added a step-by-step step-by-step operation guide, allowing developers to quickly learn the entire development process through specific instance exercises.
 而向导教程也贯穿于两个方面：
-
+And the guide tutorial also runs through two aspects:
 ***\*1.“新手入门”：\****开发者新建项目后点击顶部菜单“新手入门”菜单项，就可以选择对应的向导教程进行学习。
-
+***\*1. "Beginner's Guide"\****: After creating a new project, developers can click on the "Beginner's Guide" menu item at the top to select the corresponding guide tutorial for learning.
 ![img](http://www.py-me.com/mkdoc_images/wps7.jpg) 
 
 ​	点击相应的教程向导，即可开始运行步进式的教程，只需要一步一步跟着做即可学会相应的案例开发。
-
+        Click on the corresponding tutorial guide to start running the step-by-step tutorial. Simply follow step by step to learn the corresponding case development.
 ![img](http://www.py-me.com/mkdoc_images/wps8.jpg) 
 
 ​	2、***\*“模板项目”：\****新建的模版案例，会自带向导教程，双击文件与资源栏中的“向导教程”图标，即可进入向导教学。
-
+        2. ***\"Template Project":\****新 The newly created template case will come with a wizard tutorial. Double click the "Wizard Tutorial" icon in the file and resource bar to enter the wizard tutorial.
 ![img](http://www.py-me.com/mkdoc_images/wps9.jpg) 
 
 ## **建议反馈：**
-
+## **Suggested feedback:**
 ​	作为软件内置的一种沟通机制，在最后一页“建议反馈”里，开发者可以反馈发现的问题，建议，我在收到反馈后会进行解答和回复。
-
+        As a communication mechanism built into the software, on the last page of "Suggestion Feedback", developers can provide feedback on discovered issues and suggestions. After receiving feedback, I will provide answers and replies.
 ![img](http://www.py-me.com/mkdoc_images/wps10.jpg) 
 
 # **PyMe的角色类型**
-
+# **PyMe's Role Types**
 ​	PyMe并不强制要求登录使用，但只有注册账号才能够打包软件和访问开发者平台。注册账号分为免费账号和专业开发者账号。免费账号可以进行软件打包和访问开发者平台，但目前有几个功能是提供给专业开发者账号才能使用和享有。
-
+        PyMe does not require mandatory login for use, but only by registering an account can software be packaged and access the developer platform be accessed. Registered accounts are divided into free accounts and professional developer accounts. Free accounts can package software and access developer platforms, but currently there are several features that are only available for professional developer accounts to use and enjoy.
 
 
 ​	专业开发者账号所享有的这些功能包括以下几个方面：
-
+        The features enjoyed by professional developer accounts include the following aspects:
 
 
 **1、*****\*加密功能\****：帮助开发者可以将Python工程先转成C再编译成pyd文件后再进行打包，最大程度的保护源代码。
-
+**1、*****\*Encryption Function \****: Helps developers convert Python projects into C, compile them into pyd files, and then package them, maximizing source code protection.
 **2、*****\*解除水印\****：普通账号在打包时，会在界面右上角显示PyMe字样的文字，专业开发者账号可以去除。
-
+**2、*****\*Remove Watermark \*****: When packaging a regular account, the text "PyMe" will be displayed in the upper right corner of the interface, which can be removed by professional developer accounts.
 **3、*****\*窗口数量\****：普通账号在同一个项目内可以创建五个窗口数量以内（包含五个窗口），专业开发者账号不受窗口数量限制。
-
+**3、*****\*Window Quantity\****：: A regular account can create up to five windows (including five windows) within the same project, while a professional developer account is not limited by the number of windows.
 **4、*****\*原生调用\****：专业开发者将可以在移动设备上进行原生接口调用，比如相册、摄像头、蓝牙等功能。（暂时尚不完善，无法正常使用）
 
  
