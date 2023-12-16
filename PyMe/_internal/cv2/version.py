@@ -1,5 +1,5 @@
 opencv_version = "4.8.1.78"
-contrib = False
+contrib = True
 headless = False
 rolling = False
 ci_build = True
