@@ -543,185 +543,185 @@ Figure: Detailed introduction of the case.
  
 
 ***\*实例工程\****包括了不同分类下的数十个案例，比如：
-
+***\*Example engineering\**** includes dozens of cases under different classifications, such as:
 **UIData**:界面嵌入演示，演示了如何在一个对话框中嵌入另一个界面，并访问它们的数据。
-
+**UIData**:Interface Embedding Demonstration, demonstrating how to embed another interface in a dialog box and access their data.
 ![img](http://www.py-me.com/mkdoc_images/wps43.jpg) 
 
 **PDFTool**:演示了PDF文件拆分与合并工具的开发。
-
+**PDFTool**:Demonstrated the development of a PDF file splitting and merging tool.
 ![img](http://www.py-me.com/mkdoc_images/wps44.jpg) 
 
 **批量发票识别导出*****\*：\****对发票图片进行识别并整理成表格，方便财务快速统计。
-
+**批量发票识别导出*****\*：\****Identify and organize invoice images into tables for quick financial statistics。
 ![img](http://www.py-me.com/mkdoc_images/wps45.jpg) 
 
 **计算器**：一个简单的计算器案例，演示了控件变量的绑定和使用。
-
+**计算器**：A simple calculator case that demonstrates the binding and use of control variables。
 ![img](http://www.py-me.com/mkdoc_images/wps46.jpg) 
 
 **五子棋**:一个基于画布的绘图功能制作的五子棋游戏。
-
+**五子棋**:A Gomoku game based on canvas drawing function.
 ![img](http://www.py-me.com/mkdoc_images/wps47.jpg) 
 
  
 
 人脸识别：通过人脸识别库来对摄像头采集的图像进行人脸识别。
-
+Facial recognition: Using a facial recognition library to perform facial recognition on images captured by cameras.
 ![img](http://www.py-me.com/mkdoc_images/wps48.jpg) 
 
  
 
 工程案例比较多，感兴趣的开发者可以从开发者商店进行下载体验。
-
+There are many engineering cases, and interested developers can download and experience them from the developer store.
 ## 2. **界面设计**
 
 在“新建项目”页面选择“空界面”，然后设定项目路径后，点击“确定”按钮。这时会进入到空界面的设计视图。
-
+On the "New Project" page, select "Empty Interface", then set the project path and click the "OK" button. At this point, you will enter the design view of the empty interface.
 ![img](http://www.py-me.com/mkdoc_images/wps49.jpg) 
 
 图示：空界面项目设计视图说明
-
+Figure: Explanation of the design view for the empty interface project
 #### **一、视区讲解：**
 
 界面设计视图分为以下七个部分，具体说明如下：
-
+The interface design view is divided into the following seven parts, with specific instructions as follows:
 **1、*****\*顶部菜单\****：PyMe工具的基本设置、新手入门向导教程和独立的实用工具。
-
+**1、*****\*Top menu \****: Basic settings for PyMe tools, beginner's guide tutorials, and independent utility tools.
 **2、*****\*控件与界面的快捷功能按钮\****：每个控件的常用设置项。
-
+**2. *****\*Shortcut buttons for controls and interfaces \*****: Common settings for each control.
 **3、*****\*控件与组件创建工具条\****：提供可以拖拽到界面上使用的控件与各种组件。
-
+**3.*****\* Control and Component Creation Toolbar \****: Provides controls and various components that can be dragged and dropped onto the interface.
 **4、*****\*主设计区\****：对界面及控件进行摆放和调整的设计区域。
-
+**4. *****\*Main Design Area\****: A design area for placing and adjusting interfaces and controls.
 **5、*****\*控件树与属性编辑面板\****：罗列当前界面已创建的所有控件和组件。 
-
+**5. *****\*Control Tree and Property Editing Panel \****: List all controls and components that have been created on the current interface.
 **6、*****\*绘图工具条\****：用于在画布中进行图形绘制的工具条。
-
+**6. *****\*Drawing toolbar\****: A toolbar used for drawing graphics on the canvas.
 **7、*****\*项目文件与文件夹列表栏\****：用于访问项目的文件与文件夹。
-
+**7. *****\*Project Files and Folder List Bar\****: Used to access files and folders for the project.
  
 
 ​	下面以计算器软件项目来介绍如何进行界面设计，我们在主视计区用鼠标选中窗体，它的边框的八个方向会显示一个可以拖拽的橙色小方块，我们用鼠标点击它后拖拽到合适的大小即可。
-
+Below is a calculator software project to introduce how to design an interface. We select a form in the main view area with the mouse, and an orange small square that can be dragged will be displayed in eight directions of its border. We click on it with the mouse and drag it to the appropriate size.
 ![img](http://www.py-me.com/mkdoc_images/wps50.jpg) 
 
 在设置好窗体的大小后，我们可以在右边的属性编辑面板对窗体进行相应的设置。“设置属性”一栏里罗列了当前窗体的基本属性设置：
-
+After setting the size of the form, we can make corresponding settings for the form in the property editing panel on the right. The "Set Properties" column lists the basic property settings for the current form:
 宽：窗体窗度
-
+Width: window width of the form
 高：窗体高度
-
+High: Form height
 布局方式：窗体采用“打包排布”、“表格排布”还是“数值定位”。
-
+Layout method: Whether the form is arranged in a "packed layout", "table layout", or "numerical positioning".
 背景：当前窗体背景色
-
+Background: Current form background color
 图片：当前窗体的背景图片
-
+Image: Background image of the current form
 标题：当前窗体的标题栏文字
-
+Title: The title bar text for the current form
 窗口菜单：当前窗体菜单管理器，用于编辑菜单。
-
+Window Menu: The current form menu manager, used to edit menus.
 程序图标：当前项目的程序图标
-
+Program icon: The program icon for the current project
 有标题栏：设置是否使用标题栏
-
+With a title bar: Set whether to use a title bar
 可调整大小：设置窗体是否可以通过边缘拖动进行大小调整
-
+Resizable: Set whether the form can be resized by dragging edges
 系统托盘：当前项目的托盘管理器，用于编辑运行项目时显示在WINDOWS系统任务栏的托盘菜单，比如下图就属于系统托盘。
-
+System tray: The tray manager for the current project, used to edit the tray menu displayed in the Windows system taskbar when running the project. For example, the following image belongs to the system tray.
 ![img](http://www.py-me.com/mkdoc_images/wps51.jpg) 
 
  WINDOWS上的系统托盘图标
-
+System tray icon on Windows
 拖拽边框宽度：拖拽窗口边缘时的区域宽度。
-
+Drag border width: The width of the area when dragging the window edge.
 拖拽边缘颜色：拖拽窗口边缘时的区域显示颜色。
-
+Drag Edge Color: The color displayed in the area when dragging window edges.
 主题样式：当前窗体使用的皮肤样式。
-
+Theme Style: The skin style used by the current form.
 始终居前：设置当前窗体是否始终运行在当前桌面的最前面。
-
+Always Front: Set whether the current form always runs at the forefront of the current desktop.
 透明色值：设置是否对窗体进行关键色镂空的设置，用于制作一些类似以下效果的窗体。
-
+Transparent color value: Set whether to use key color hollowing on the form, used to create forms with similar effects.
 圆角半径：设置窗体是否进行圆角设置。
-
+Rounding radius: Set whether the form should be rounded.
 透明度：设置窗体是否使用透明效果，用于制作半透明窗体。
-
+Transparency: Set whether the form uses transparency effects to create a semi transparent form.
 #### **二、控件创建：**
-
+#### **2. Control Creation:**
 ​	一般来说，计算器软件包括一个数值展示标签和一些按钮，比如这样：
-
+Generally speaking, calculator software includes a numerical display label and some buttons, such as:
 ![img](http://www.py-me.com/mkdoc_images/wps52.jpg) 
 
 ​	在PyMe中有两种方法来创建控件，第一种方式是通过从控件和组件工具条进行拖拽来创建。
-
+There are two ways to create controls in PyMe. The first way is to create them by dragging and dropping from the controls and component toolbars.
 ![img](http://www.py-me.com/mkdoc_images/wps53.jpg) 
 
 ​	第二种方式是通过在窗体上用鼠标右键单击，然后在“创建控件”菜单项下选择对应的控件类型来创建。
-
+The second method is to create it by right clicking on the form and selecting the corresponding control type under the "Create Control" menu item.
 ![img](http://www.py-me.com/mkdoc_images/wps54.jpg) 
 
 ​	下面来选中这个Label，这时我们可以直接通过拖拽控件以及橙色小方块来调整它的位置和大小。在默认情况下，控件采用“数值定位”，数值可以使用像素位置或百分比，在选中控件的情况下，在设计区下部的绘图工具条之上，会有一条布局设置工具条，在这里我们可以设置相应的布局方式，以及控件的X、Y、宽度和高度等数值。
-
+Next, let's select this Label. At this point, we can directly adjust its position and size by dragging the control and the orange small square. By default, the control adopts "numerical positioning", and the values can use pixel position or percentage. With the control selected, there will be a layout setting toolbar above the drawing toolbar in the lower part of the design area. Here, we can set the corresponding layout method, as well as the values of the control's X, Y, width, and height.
 ![img](http://www.py-me.com/mkdoc_images/wps55.jpg) 
 
   					图示：布局设置工具条。 
 
 ​	在这里，我们将Label设置X位置0像素，Y位置0像素，宽度为100%，高度为30像素，并在右边的属性栏中选择“背景”属性为深灰色，字体为32大小的System字体，文字色为白色，并设置右对齐，也可以通过顶部的快捷按钮来进行设置。
-
+Here, we will set the Label to 0 pixels in X position, 0 pixels in Y position, 100% width, and 30 pixels in height. In the right property bar, select the "Background" attribute as dark gray, the font as a 32 size System font, and the text color as white. We will also set it to right alignment, which can also be set through the shortcut button at the top.
 ![img](http://www.py-me.com/mkdoc_images/wps56.jpg) 
 
 ​	设置好Label之后，我们来创建按钮。
-
+After setting up the Label, let's create the button.
 ​	从工具条中拖动创建一个Button或者通过右键菜单来创建一个Button，放置到Label下方靠左位置，调整大小，作为数字“1”按钮。
-
+Drag to create a Button from the toolbar or create a Button through the right-click menu, place it in the left position below the Label, adjust the size, and use it as the number "1" button.
 ![img](http://www.py-me.com/mkdoc_images/wps57.jpg) 
 
 ​	下面我们来修改一下按钮的文字内容，对于控件的文字，PyMe同样提供了多样化的修改方式：
-
+Next, let's modify the text content of the button. PyMe also provides diverse ways to modify the text of the control:
 1、通过双击右边属性栏的“文本”属性，在弹出对话框中进行修改。
-
+1. By double clicking on the "Text" attribute in the property bar on the right, make modifications in the pop-up dialog box.
 2、在控件上用鼠标右键点击，在弹出菜单中选择“设置文字内容”菜单项。
-
+2. Right click on the control and select the "Set Text Content" menu item from the pop-up menu.
 3、选中控件后按CTRL+退格键来消除“文本”属性，然后直接输入文字。
-
+3. Select the control and press CTRL+Backspace to eliminate the "text" attribute, then enter the text directly.
 ![img](http://www.py-me.com/mkdoc_images/wps58.jpg) 
 
 ​	然后我们通过属性栏和顶部栏对控件字体进行设置，也可以通过属性栏和顶部快捷栏来设置字体与大小。
-
+Then we set the font of the control through the property bar and top bar, or we can set the font and size through the property bar and top shortcut bar.
 ![img](http://www.py-me.com/mkdoc_images/wps59.jpg) 
 
  
 
 #### **三、控件复制：**
-
+#### **III. Control Copying:**
 ​	在完成按钮“1”之后，我们还需要创建出其它按钮，这时可以通过控件的复制功能来快速的创建。控件的复制有两种方法：
-
+After completing button "1", we also need to create other buttons, which can be quickly created through the copy function of the control. There are two methods for copying controls:
 1、选中控件按CTRL键+C键进行复制，然后按CTRL键+V键进行粘贴。
-
+1. Select the control and press CTRL+C to copy, then press CTRL+V to paste.
 2、按着ALT键拖动控件。
-
+2. Press the ALT key to drag the control.
  
 
 ![img](http://www.py-me.com/mkdoc_images/wps60.jpg) 
 
 ​	图示：通过ALT键拖动控件方式复制控件。
-
+Figure: Copying a control by dragging it with the ALT key.
 ​	通过控制复制和快速设置文字，我们可以快速的制作出界面的所有控件。
-
+By controlling copying and quickly setting text, we can quickly create all the controls on the interface.
 ![img](http://www.py-me.com/mkdoc_images/wps61.jpg) 
 
 ​            图示：所有的界面控件
-
+Figure: All interface controls
 ## 3. **控件设置**
-
+## 3. **Control settings**
 ​	控件的设置分为属性设置和样式设置两方面：
-
+The setting of controls can be divided into two aspects: property setting and style setting:
 #### **一、属性设置：**
-
+#### **1. Attribute settings:**
 ​	属性设置主要通过右边的属性栏来进行，在上面的界面设计中，我们已经完成了基本的界面可视化创建和控件的基本属性设置，在这里我们可以再细致的调节一下相关属性。
-
+The property settings are mainly done through the property bar on the right. In the interface design above, we have completed the basic interface visualization creation and the basic property settings of controls. Here, we can further adjust the relevant properties in detail.
 ![img](http://www.py-me.com/mkdoc_images/wps62.jpg) 
 
 ​	Label的属性包括：
