@@ -39,7 +39,7 @@ This project started four years ago, when I noticed that Python had consistently
 
 ​	所以，我尝试着自已做，并逐步使它成为一个独立的技术创业项目。
 
-        So, I tried to do it myself and gradually make it an independent technology entrepreneurship project.
+So, I tried to do it myself and gradually make it an independent technology entrepreneurship project.
 
 ***\*最初\****，我只是尝试着写一个简单的界面编辑器，它基于tkinter，提供简单的控件拖拽设计和代码生成，可以直接运行，并通过pyinstaller打包成EXE。我将它命名为“TkinterDesigner”，并在github上提交了可执行程序，很快，就有人关注，并成为了第一批用户。于是，我利用工作之余，不断的完善它，加入了变量绑定、事件响应函数映射与代码编辑，并加入了一些预设的工程案例模版，使它看起来像VisualBasic一样简单而易用。  
 
@@ -52,10 +52,10 @@ This project started four years ago, when I noticed that Python had consistently
 
 ​	因为我逐渐的认知到，随着Python语言在全世界的广泛学习和应用，***\*未来Python有机会成为像英语一样的通用语言！\****  
 
-        Because I gradually realized that with the widespread learning and application of Python language around the world, there is a chance for Python to become a universal language like English in the future\****
+Because I gradually realized that with the widespread learning and application of Python language around the world, there is a chance for Python to become a universal language like English in the future\****
 ​	我意识到：随着网络和科技的不断发展，人的价值，会越来越回归到数字化的体现，即：  
 
-        I realize that with the continuous development of the internet and technology, human value will increasingly return to the manifestation of digitization, namely:
+I realize that with the continuous development of the internet and technology, human value will increasingly return to the manifestation of digitization, namely:
  
 
 ***\*人的价值 = 积累的经验素材 + 处理事情的方法 = 数据 + 算法\****
@@ -65,23 +65,23 @@ This project started four years ago, when I noticed that Python had consistently
 ***\*比如：\****
 ***\*For example:\****
 ​	厨师的价值 = 能做的菜品的数量（***\*数据）\**** +  对菜品做法的追求（***\*算法）\****
-        The value of a chef=the quantity of dishes that can be cooked (* * * \ * data) \ * * *+the pursuit of dish preparation (* * * \ * algorithm)\****
+The value of a chef=the quantity of dishes that can be cooked (* * * \ * data) \ * * *+the pursuit of dish preparation (* * * \ * algorithm)\****
 ​	能做的菜品的数量 = 做的菜品越多，对各种菜品背后的食材，营养搭配，配料，炊具，火候，味觉感受，视觉感受的熟悉和归纳越丰富。
-        The number of dishes one can cook=the more dishes one can cook, the richer the familiarity and induction of the ingredients, nutritional combinations, ingredients, cooking utensils, heat, taste perception, and visual perception behind various dishes.
+The number of dishes one can cook=the more dishes one can cook, the richer the familiarity and induction of the ingredients, nutritional combinations, ingredients, cooking utensils, heat, taste perception, and visual perception behind various dishes.
 ​	对菜品做法的追求 = 对食材、烹饪的关系越了解，越能够在最恰当的情况下选择最恰当的烹饪方式和流程，能给与食客最满意的结果。
-        The pursuit of dish preparation means that the more you understand the relationship between ingredients and cooking, the more you can choose the most appropriate cooking method and process in the most appropriate situation, and give diners the most satisfactory results.
+ The pursuit of dish preparation means that the more you understand the relationship between ingredients and cooking, the more you can choose the most appropriate cooking method and process in the most appropriate situation, and give diners the most satisfactory results.
  
 
 ***\*再比如：\****
 ***\*For example:\****
 ​	律师的价值 = 案件经手的数量（***\*数据）\**** +  处理案件的方法（***\*算法）\****
-        The value of a lawyer=the number of cases handled (* * * \ * data)+the method of handling the case (* * * \ * algorithm)\****
+The value of a lawyer=the number of cases handled (* * * \ * data)+the method of handling the case (* * * \ * algorithm)\****
 ​	案件经手的数量 = 做的案件越多，数据越多，律师对对法律在实际适用情况越熟悉，案件越有把握和信心。
-        The number of cases handled=the more cases and data done, the more familiar the lawyer is with the actual application of the law, and the more confident and confident the case is.
+The number of cases handled=the more cases and data done, the more familiar the lawyer is with the actual application of the law, and the more confident and confident the case is.
 ​	处理案件的方法 = 对当事人线索调查方法越熟悉，越能够找到突破口。
-        The method of handling a case=the more familiar the investigation method of the parties involved, the more able they are to find a breakthrough point.
+The method of handling a case=the more familiar the investigation method of the parties involved, the more able they are to find a breakthrough point.
 ​	虽然我不是厨师，更不是律师，但本质上，各行各业的人，都一样。我们的人生价值，都是在积累数据和改善方法。而我们的薪水，本质上反映的是我们对于“工作数据的丰富和深度 + 处理方法的熟练和恰当”。
-        Although I am not a chef, let alone a lawyer, fundamentally, people from all walks of life are the same. Our life value is all about accumulating data and improving methods. And our salary essentially reflects our proficiency and appropriateness in the richness and depth of work data and processing methods.
+Although I am not a chef, let alone a lawyer, fundamentally, people from all walks of life are the same. Our life value is all about accumulating data and improving methods. And our salary essentially reflects our proficiency and appropriateness in the richness and depth of work data and processing methods.
 ​	人的价值，其实可以被提炼为一段包含数据和算法的代码，但需要一个通用化的编程语言。
         The value of human beings can actually be distilled into a piece of code containing data and algorithms, but it requires a universal programming language.
 
@@ -103,15 +103,15 @@ This project started four years ago, when I noticed that Python had consistently
  
 
 ​	而要想实现这个目标，还需要完成三件事：***\*更广泛的应用领域、统一的开发流程\****和***\*交换的平台\****。
-        To achieve this goal, three more things need to be accomplished: a wider range of application areas, a unified development process, and a platform for exchange.
+To achieve this goal, three more things need to be accomplished: a wider range of application areas, a unified development process, and a platform for exchange.
 **1、*****\*更广泛的应用领域\****
 **1. ****** \ * Wider application areas\****
 ​	目前Python语言在许多方面取得了令人瞩目的成绩，但在拥有最广泛开发者的桌面应用开发、移动应用开发、游戏开发、嵌入式等方面，还裹足不前。许多开发者告诉我，这不是Python擅长的事情，但如果Python要成为最通用的代码交换手段，必须保证Python在这些大的方向和领域占据主流开发语言的地位。
-        At present, Python language has achieved remarkable results in many aspects, but it still lags behind in areas such as desktop application development, mobile application development, game development, and embedded development, which have the widest range of developers. Many developers have told me that this is not something Python is good at, but if Python is to become the most common code exchange tool, it must ensure that Python occupies the mainstream development language position in these major directions and fields.
+At present, Python language has achieved remarkable results in many aspects, but it still lags behind in areas such as desktop application development, mobile application development, game development, and embedded development, which have the widest range of developers. Many developers have told me that this is not something Python is good at, but if Python is to become the most common code exchange tool, it must ensure that Python occupies the mainstream development language position in these major directions and fields.
 **2、*****\*统一的开发流程\****
 **2. ****** \ * Unified development process\****
 ​	目前Python语言缺乏标准化的开发流程，从而导致大家使用基于代码编辑器类开发工具（VSCode,PyCharm）写代码在风格太过于自由，流程和设计模式上太过于凌乱，有一定阅读和理解成本。我们需要一个流程，来将所有的Python开发者资源案例以一种科学而流程化的方式重新整理，才能够在未来方便的交换。
-        At present, the Python language lacks a standardized development process, which leads to people using code editor based development tools (VSCode, PyCharm) to write code in a style that is too free, and the process and design patterns are too messy, resulting in a certain cost of reading and understanding. We need a process to reorganize all Python developer resource cases in a scientific and procedural manner in order to facilitate future exchanges.
+At present, the Python language lacks a standardized development process, which leads to people using code editor based development tools (VSCode, PyCharm) to write code in a style that is too free, and the process and design patterns are too messy, resulting in a certain cost of reading and understanding. We need a process to reorganize all Python developer resource cases in a scientific and procedural manner in order to facilitate future exchanges.
  
 
 **3、*****\*交换的平台\****
@@ -119,11 +119,11 @@ This project started four years ago, when I noticed that Python had consistently
  
 
 ​	需要建立一个平台，将开发者的代码能够上传到平台中发布，这样才能实现价值的交换和竞争。
-        We need to establish a platform where developers can upload their code for publication, in order to achieve value exchange and competition.
+We need to establish a platform where developers can upload their code for publication, in order to achieve value exchange and competition.
  
 
 ​	于是，《PyMe》诞生了。它不仅是一个拥有界面设计器的Python代码编辑工具，更在下面三个事情上立下目标：
-        So, PyMe was born. It is not only a Python code editing tool with an interface designer, but also sets goals for the following three things:
+So, PyMe was born. It is not only a Python code editing tool with an interface designer, but also sets goals for the following three things:
 1、推动Python的桌面应用开发，移动应用开发和游戏开发，PyMe内置了一键打包APK，并内置了Pygame游戏引擎和工具链，同时在建设PyOpenGL的3D游戏引擎和工具链。
 1. Promoting desktop application development, mobile application development, and game development in Python, PyMe has built-in one click packaging APK and Pygame game engine and toolchain, while also building a 3D game engine and toolchain for PyOpenGL.
 2、推动建立从项目搭建到界面场景设计、组件编辑、代码编写、打包发布的全套开发流程，希望通过这套流程使人类的价值成果有一个流程标准，降低其它繁琐事务对问题本质的干扰，辅助开发者对代码的理解。
@@ -132,7 +132,7 @@ This project started four years ago, when I noticed that Python had consistently
 3. Promote the construction of a developer platform, publish standardized case open source code on it, and promote the exchange and competition of value across various industries.
 
 ​	截止到目前，PyMe的开发完成了其中少量的工作，以下是基本的进度情况：
-        As of now, PyMe's development has completed a small amount of work, and the following is the basic progress:
+As of now, PyMe's development has completed a small amount of work, and the following is the basic progress:
 
 
 (1)Python桌面应用开发  -- 60% ，基本具备了一套完整的开发流程。
@@ -146,41 +146,41 @@ This project started four years ago, when I noticed that Python had consistently
  
 
 ​	《PyMe》的口号就是“我用Python创世界！”，这也是我存在的意义和目标，我希望每个Python开发者，都能使用《PyMe》创造出自已心中美好的世界。
-         The slogan of PyMe is "I create the world with Python!", which is also the meaning and goal of my existence. I hope that every Python developer can use PyMe to create a beautiful world from their own hearts.
+The slogan of PyMe is "I create the world with Python!", which is also the meaning and goal of my existence. I hope that every Python developer can use PyMe to create a beautiful world from their own hearts.
 ## **“说人话”：**
 ##* * "Talking to People":**
 ​	你是否想学习Python，却找不到好的学习路径？
-        Do you want to learn Python, but cannot find a good learning path?
+Do you want to learn Python, but cannot find a good learning path?
 ​	你是否掌握了Python语言，但却连最简单的界面都难以实现？
-        Have you mastered the Python language, but find it difficult to implement even the simplest interface?
+Have you mastered the Python language, but find it difficult to implement even the simplest interface?
 ​	你是否想要使用Python开发游戏，甚至是可以运行在手机上的3D游戏？
-        Do you want to develop games using Python, or even 3D games that can run on your phone?
+Do you want to develop games using Python, or even 3D games that can run on your phone?
  
 
 ***\*如果答案是Yes，你需要了解这个项目： 《PyMe》\****
 ***\*If the answer is Yes, you need to understand this project: PyMe\****
 ​	长期以来，Python开发者往往会陷入到一种迷茫中，经过一段时间的Python学习，似乎学会了，掌握了一个个知识点和小案例，但	却越来越失去方向。这是为什么呢？
-        For a long time, Python developers have often fallen into a state of confusion. After a period of Python learning, they seem to have learned and mastered various knowledge points and small cases, but they are increasingly losing direction. Why is this?
+For a long time, Python developers have often fallen into a state of confusion. After a period of Python learning, they seem to have learned and mastered various knowledge points and small cases, but they are increasingly losing direction. Why is this?
  
 
 ***\*因为Python缺乏体系化的编程工具！\****
 ***\*Because Python lacks systematic programming tools\****
 ​	对于绝大部分开发者来说，编程学习需要语言学习和实践练习才能深入掌握。
-        For the vast majority of developers, programming learning requires language learning and practical practice to gain a deeper understanding.
+For the vast majority of developers, programming learning requires language learning and practical practice to gain a deeper understanding.
 ​	所谓实践练习，就是应用场景，这其中IDE功不可没。
-        The so-called practical exercises refer to application scenarios, in which IDE plays an indispensable role.
+The so-called practical exercises refer to application scenarios, in which IDE plays an indispensable role.
  
 
 ​	***\*VB，XCode，VC++，Escplise\****等知名IDE，不仅仅提供代码的编写，更是一个集成化，图形化，流程化的软件工程实践工具。他们保证了开发者可以在一个易懂的、可视化的、工程化的开发流程中逐渐沉淀经验，并得到良好的正向反馈。
         ***\*Famous IDEs such as VB, XCode, VC++, Escplise, etc\****. not only provide code writing, but also serve as integrated, graphical, and procedural software engineering practice tools. They ensure that developers can gradually accumulate experience and receive positive feedback in an easy to understand, visual, and engineering development process.
 
 ​	IDE中“项目的搭建，多文件的组织关系，可视化的界面设计，界面与逻辑的绑定关系，界面与数据的绑定关系，项目的调试与运行，打包与输出。”等功能从零散的具体功能，有机的组合成一个流畅的开发流程，这套工作流是实践练习的基础，也是承载了具体工作产业化的基础。
-        The functions of "project construction, multi file organization, visual interface design, interface logic binding, interface data binding, project debugging and operation, packaging and output" in IDE are organically combined from scattered specific functions into a smooth development process. This workflow is the foundation of practical practice and also carries the foundation of industrialization of specific work.
+The functions of "project construction, multi file organization, visual interface design, interface logic binding, interface data binding, project debugging and operation, packaging and output" in IDE are organically combined from scattered specific functions into a smooth development process. This workflow is the foundation of practical practice and also carries the foundation of industrialization of specific work.
 
 ​	不巧的是，***\*Python没有这样的开发流程，\****大多数人只能选择Pycharm，VScode两款工具软件进行开发。而这两款工具并没有完整的开发流程，严重依赖程序员自己来建立开发流程。而开发流程的建立，则需要多年的经验。这也导致了许许多多Python初学者，只会基于Python零散的大量的知识点，在控制台模式下写写爬虫，数据处理，AI训练，量化脚本等脚本，而无法完成一个完整的软件。
-        Unfortunately, ***\*PythonPython does not have such a development process\****, and most people can only choose Python and VScode tools for development. However, these two tools do not have a complete development process and heavily rely on programmers to establish their own development process. The establishment of development processes requires years of experience. This has also led to many Python beginners only being able to write web crawlers, data processing, AI training, quantification scripts, and other scripts in console mode based on a large amount of scattered knowledge points in Python, and unable to complete a complete software.
+Unfortunately, ***\*PythonPython does not have such a development process\****, and most people can only choose Python and VScode tools for development. However, these two tools do not have a complete development process and heavily rely on programmers to establish their own development process. The establishment of development processes requires years of experience. This has also led to many Python beginners only being able to write web crawlers, data processing, AI training, quantification scripts, and other scripts in console mode based on a large amount of scattered knowledge points in Python, and unable to complete a complete software.
 ​	如果你想改变这种状况，那么你需要一款提供完整工作流的开发工具。
-        If you want to change this situation, then you need a development tool that provides a complete workflow.
+If you want to change this situation, then you need a development tool that provides a complete workflow.
  
 
 ***\*《PyMe》\****就是为此而生。
@@ -202,7 +202,7 @@ The functions of ***\*PyMe\****  are divided into two parts: development functio
 #### 一、**开发功能** 
 ####1、 * * Development features**
 ​	PyMe中的开发功能分为应用开发和游戏开发两部分，其中应用开发主要包括以下十项基本功能:
-        The development functions in PyMe are divided into two parts: application development and game development. Application development mainly includes the following ten basic functions:
+The development functions in PyMe are divided into two parts: application development and game development. Application development mainly includes the following ten basic functions:
 **1.** ***\*项目管理\****:通过预设的模版工程进行项目的创建与打开。
 **1.** ***\*Project Management\****: Create and open projects through preset template engineering.
 **2.** ***\*文件管理\****:对于项目进行窗体，文件的创建和资源的导入。
@@ -257,20 +257,20 @@ The difference between ***\*game development\**** and ***\*application developme
 ####1. Visualization:**
 
 ​	PyMe提供全套的可视化开发方式，从项目搭建、界面设计、控件属性、变量绑定到逻辑编写、调试运行、打包输出，可视化的编辑始终贯穿流程。这种体验类似Visual Basic，Visual C++，如果你有类似的经验，可以很快上手。
-        PyMe provides a complete set of visual development methods, from project construction, interface design, control properties, variable binding to logic writing, debugging and running, packaging and output, visual editing always runs through the process. This experience is similar to Visual Basic, Visual C++, and if you have similar experience, you can get started quickly.
+PyMe provides a complete set of visual development methods, from project construction, interface design, control properties, variable binding to logic writing, debugging and running, packaging and output, visual editing always runs through the process. This experience is similar to Visual Basic, Visual C++, and if you have similar experience, you can get started quickly.
 ![img](http://www.py-me.com/mkdoc_images/wps1.jpg) 
 
 #### **二、低代码：**
 #### **2. Low code: **
 ​	PyMe通过可视化的方式，可以生成出项目的代码框架，并在此基础上建立简单、灵活的函数脚本编程机制，使得整个开发过程由复杂而繁琐的事情变得简单而有条理，大大降低了工作量。
-        PyMe can generate the code framework of a project through visualization and establish a simple and flexible function script programming mechanism on this basis, making the entire development process simple and organized from complex and tedious tasks, greatly reducing workload.
+PyMe can generate the code framework of a project through visualization and establish a simple and flexible function script programming mechanism on this basis, making the entire development process simple and organized from complex and tedious tasks, greatly reducing workload.
 ![img](http://www.py-me.com/mkdoc_images/wps2.jpg) 
 
 #### 三、**跨平台：**
 #### 3、**Cross platform:**
 
 ​	PyMe提供多平台的编辑、运行与打包能力，可以帮助开发者在Window,Mac,Linux上建立符合自身需要的跨平台应用，更可以打包出APK和IOS移动应用和游戏。
-        PyMe provides multi platform editing, running, and packaging capabilities, which can help developers build cross platform applications that meet their needs on Windows, Mac, and Linux. It can also package APK and IOS mobile applications and games.
+PyMe provides multi platform editing, running, and packaging capabilities, which can help developers build cross platform applications that meet their needs on Windows, Mac, and Linux. It can also package APK and IOS mobile applications and games.
 # **PyMe面向什么用户人群？**
 # **What user group does PyMe target **
 
@@ -288,7 +288,7 @@ The main users of PyMe include the following groups:
 # **PyMe的下载、使用与教程、反馈**
 # **PyMe downloads, usage, tutorials, and feedback**
 ​	目前我提供了三种下载方式，你可以在其中找到PyMe的文件包并下载使用。
-        At present, I have provided three download methods, where you can find the PyMe file package and download it for use.
+At present, I have provided three download methods, where you can find the PyMe file package and download it for use.
  
 
 PyMe的官方网址：[www.py-me.com](http://www.py-me.com)
@@ -299,11 +299,11 @@ PyMe的官方QQ群共享：100180960
 ## **版本说明：**
 ## **Version Description:**
 ​	目前版本只支持***\*win64\**** ，其它平台如Mac,Linux请静待我的推进，也希望您能告诉我您的需要，因为目前的主要用户群是windows开发者，所有在精力有限的情况下，以windows版本为主。
-        The current version only supports***\*win64\****. For other platforms such as Mac and Linux, please wait for my progress and let me know your needs. The main user group at present is Windows developers, so with limited energy, the Windows version is the main version.
+The current version only supports***\*win64\****. For other platforms such as Mac and Linux, please wait for my progress and let me know your needs. The main user group at present is Windows developers, so with limited energy, the Windows version is the main version.
  
 
 ​	要注意的是：***\*PyMe不开源，它是一款工具产品，但PyMe中你生成的所有工程代码，包括内置的Fun函数库和游戏引擎底层源码，都是公开的。~\****
-        It should be noted that ***\*PyMe is not open-source and is a tool product. However, all the engineering code generated in PyMe, including the built-in Fun library and the underlying source code of the game engine, is publicly available~\****
+It should be noted that ***\*PyMe is not open-source and is a tool product. However, all the engineering code generated in PyMe, including the built-in Fun library and the underlying source code of the game engine, is publicly available~\****
  
 
 ## **官方教程：**
@@ -313,13 +313,13 @@ PyMe的官方QQ群共享：100180960
 #### 1、**作者的书**
 #### 1、**Author's book**
 ​	《Python跨平台应用软件开发实战》，机械工业出版社出版：
-        《Practical Development of Python Cross Platform Application Software》, published by China Machinery Industry Press:
+《Practical Development of Python Cross Platform Application Software》, published by China Machinery Industry Press:
 ![img](http://www.py-me.com/mkdoc_images/wps3.jpg) 
 
 #### 2、**B站的视频教程**
 #### 2. Video tutorials for Bilibili**
 ​	目前的视频教程分为两部分：
-        The current video tutorial is divided into two parts:
+The current video tutorial is divided into two parts:
 ​	《PyMe基础使用入门课》 https://www.bilibili.com/video/BV1tF411d7kN
         《Introduction to PyMe Basic Usage Course》 https://www.bilibili.com/video/BV1tF411d7kN
 ![img](http://www.py-me.com/mkdoc_images/wps4.jpg) 
@@ -329,13 +329,13 @@ PyMe的官方QQ群共享：100180960
 ![img](http://www.py-me.com/mkdoc_images/wps5.jpg) 
 
 ​	在PyMe中，也集成了这些教程，开发者可以通过“视频教程”页面来观看。
-        In PyMe, these tutorials are also integrated, and developers can watch them through the "Video Tutorial" page.
+In PyMe, these tutorials are also integrated, and developers can watch them through the "Video Tutorial" page.
 ![img](http://www.py-me.com/mkdoc_images/wps6.jpg) 
 
 #### 3、**PyMe的向导教程**
 #### 3、**PyMe Wizard Tutorial**
 ​	PyMe中加入了一步一步渐进式的操作向导，开发者可以跟着向导教程在具体的实例练习中快速的学会整个开发过程。
-        PyMe has added a step-by-step step-by-step operation guide, allowing developers to quickly learn the entire development process through specific instance exercises.
+PyMe has added a step-by-step step-by-step operation guide, allowing developers to quickly learn the entire development process through specific instance exercises.
 而向导教程也贯穿于两个方面：
 And the guide tutorial also runs through two aspects:
 ***\*1.“新手入门”：\****开发者新建项目后点击顶部菜单“新手入门”菜单项，就可以选择对应的向导教程进行学习。
@@ -343,7 +343,7 @@ And the guide tutorial also runs through two aspects:
 ![img](http://www.py-me.com/mkdoc_images/wps7.jpg) 
 
 ​	点击相应的教程向导，即可开始运行步进式的教程，只需要一步一步跟着做即可学会相应的案例开发。
-        Click on the corresponding tutorial guide to start running the step-by-step tutorial. Simply follow step by step to learn the corresponding case development.
+Click on the corresponding tutorial guide to start running the step-by-step tutorial. Simply follow step by step to learn the corresponding case development.
 ![img](http://www.py-me.com/mkdoc_images/wps8.jpg) 
 
 ​	2、***\*“模板项目”：\****新建的模版案例，会自带向导教程，双击文件与资源栏中的“向导教程”图标，即可进入向导教学。
@@ -353,17 +353,17 @@ And the guide tutorial also runs through two aspects:
 ## **建议反馈：**
 ## **Suggested feedback:**
 ​	作为软件内置的一种沟通机制，在最后一页“建议反馈”里，开发者可以反馈发现的问题，建议，我在收到反馈后会进行解答和回复。
-        As a communication mechanism built into the software, on the last page of "Suggestion Feedback", developers can provide feedback on discovered issues and suggestions. After receiving feedback, I will provide answers and replies.
+As a communication mechanism built into the software, on the last page of "Suggestion Feedback", developers can provide feedback on discovered issues and suggestions. After receiving feedback, I will provide answers and replies.
 ![img](http://www.py-me.com/mkdoc_images/wps10.jpg) 
 
 # **PyMe的角色类型**
 # **PyMe's Role Types**
 ​	PyMe并不强制要求登录使用，但只有注册账号才能够打包软件和访问开发者平台。注册账号分为免费账号和专业开发者账号。免费账号可以进行软件打包和访问开发者平台，但目前有几个功能是提供给专业开发者账号才能使用和享有。
-        PyMe does not require mandatory login for use, but only by registering an account can software be packaged and access the developer platform be accessed. Registered accounts are divided into free accounts and professional developer accounts. Free accounts can package software and access developer platforms, but currently there are several features that are only available for professional developer accounts to use and enjoy.
+PyMe does not require mandatory login for use, but only by registering an account can software be packaged and access the developer platform be accessed. Registered accounts are divided into free accounts and professional developer accounts. Free accounts can package software and access developer platforms, but currently there are several features that are only available for professional developer accounts to use and enjoy.
 
 
 ​	专业开发者账号所享有的这些功能包括以下几个方面：
-        The features enjoyed by professional developer accounts include the following aspects:
+The features enjoyed by professional developer accounts include the following aspects:
 
 
 **1、*****\*加密功能\****：帮助开发者可以将Python工程先转成C再编译成pyd文件后再进行打包，最大程度的保护源代码。
@@ -377,167 +377,167 @@ And the guide tutorial also runs through two aspects:
  
 
 ​	这些方面对于大多数开发者来说是不影响使用的，所以如果您只是做项目的开发、设计、代码编写、调试运行、非加密的打包输出，是没有问题的。
-
+These aspects do not affect the usage of most developers, so if you only focus on project development, design, code writing, debugging and running, and non encrypted packaged output, there is no problem.
  
 
 # **新手入门：应用软件开发快速上手**
 
 ​	千里之行，始于足下，下面我们来了解一下PyMe的简易使用，它将基于PyMe提倡的开发流程来进行讲解，我将结合一个简单的《计算器》软件来展示这个流程：
-
+A journey of a thousand miles begins with a single step. Now, let's learn about the simple use of PyMe, which will be explained based on the development process advocated by PyMe. I will use a simple calculator software to demonstrate this process:
 ![img](http://www.py-me.com/mkdoc_images/liuchengtu.png) 
 
 ## 1. **项目管理**
 
 ​	双击启动PyMe.exe，首先进入的是项目管理界面，首先开发者可以根据在右上角需要选择所用语言，这里我们点击“简”选择简体中文。
-
+Double click to launch PyMe. exe. The first step is to enter the project management interface. Firstly, developers can select the language they want to use in the upper right corner. Here, we click "Simplified" to select Simplified Chinese, click "Traditional" to display Traditional Chinese, click "En" to select English, click "Ko" to select Korean, click "Jp" to select Japanese, which defaults to English.
 ![img](http://www.py-me.com/mkdoc_images/wps30.jpg) 
 
 图示：登录界面
-
+Figure: Login interface
 #### 一、**基本设置:** 
 
 在开始进入到项目之前，我们先来了解一下软件的设置，在语言选择部分的上部“基于Python 3.8.8开发”文字右边有一个“齿轮”，点击它，可以进入到设置页。
-
+Before entering the project, let's first understand the software settings. In the language selection section, there is a "gear" on the right side of the "Development based on Python 3.8.8" text. Click on it to enter the settings page.
 ![img](http://www.py-me.com/mkdoc_images/wps130.jpg) 
 
 在这个“设置”对话框中有三个页面，分别为“常用设置”、“设计操作”、“代码编辑”，这里主要说明一下，在第一次使用PyMe时需要注意“常用设置”里的相关设置。
-
+In this "Settings" dialog box, there are three pages, namely "Common Settings", "Design Operations", and "Code Editing". Here, it is mainly explained that when using PyMe for the first time, attention should be paid to the relevant settings in "Common Settings".
  
 
 1、“环境”分为“真实环境”和“虚拟环境”，需要注意区分并正确设置。
-
+1. "Environment" is divided into "real environment" and "virtual environment", which need to be distinguished and set correctly.
 “真实环境”就是我们从Python官方网址下载Python安装程序进行安装，作为PyMe的执行环境，选中后设置Python目录为Python.exe所在目录。
-
+"Real environment" means that we download the Python installation program from the official Python website for installation, and use it as the execution environment for PyMe. After selecting it, we set the Python directory to the directory where Python. exe is located.
 “虚拟环境”是使用Conda等容器环境，使用容器中创建的Python环境作为PyMe的执行环境，选中后，会列出我们创建的Python环境名称，选择即可。
-
+"Virtual environment" refers to the use of container environments such as Conda, using the Python environment created in the container as the execution environment for PyMe. When selected, the name of the Python environment we created will be listed. Simply select it.
  
 
 2、“分辨率”：这个“分辨率”指定当前软件是否受DPI的影响。
-
+2. "Resolution": This "resolution" specifies whether the current software is affected by DPI.
 “高分辨率”会更加精细，但打包时会增大包体文件。
-
+High resolution will be more refined, but packaging will increase the size of the package file.
 “低分辨率”会更加粗颗粒，但打包时会减小包体文件，因为会去掉相关库的使用。
-
+"Low resolution" will result in coarser particles, but packaging will reduce the size of the package file as it will remove the use of related libraries.
  
 
 3、“打开项目时备份”可指定每次打开工程前，会先对工程的源码进行备份，备份文件会自动保存到项目所在目录的BackUp子目录中，需要时在PyMe中双击“BackUp”图标，进入“BackUp”目录，然后双击对应的备份文件即可恢复到对应备份时的项目文件。
-
+3. "Back up when opening a project" can specify that before each project is opened, the source code of the project will be backed up, and the backup file will be automatically saved to the BackUp subdirectory of the directory where the project is located. If necessary, double-click the "BackUp" icon in PyMe to enter the "BackUp" directory, and then double-click the corresponding backup file to restore it to the project file at the time of the backup.
 也可以在项目开发中，随时通过CTRL+B快捷键来进行项目备份，也可以通过CTRL+R快捷键来恢复最近的备份。
-
+You can also use the CTRL+B shortcut to backup the project at any time during project development, or use the CTRL+R shortcut to restore the most recent backup.
 “备份数量”限制，指定了自动备份的最大数量。
-
+The "backup quantity" limit specifies the maximum number of automatic backups.
  
 
 1、“版本下载目录”指定了自动下载增量更新时的下载文件本地目录，如果版本不一致，在启动PyMe后会在顶部显示最新版本的文字，点击即可进入更新。
-
+1. The "Version Download Directory" specifies the local directory for downloading files when automatically downloading incremental updates. If the versions are inconsistent, the latest version text will be displayed at the top after starting PyMe. Click to enter the update.
 ![img](http://www.py-me.com/mkdoc_images/wps131.jpg) 
 
 图示：有新版本时的更新提示
-
+Figure: Update prompt when there is a new version
  
 
 2、“Android字体”指定了打包APK时，安卓系统字体不支持中文时，需要设置为使用TTF或OTF文件。“TTF应用范围”指定这种字体文件是应用于所有文字还是只应用于中文显示。
-
+2. "Android font" specifies that when packaging APK, when the Android system font does not support Chinese, it needs to be set to use TTF or OTF files. "TTF application scope" specifies whether this font file is applied to all text or only to Chinese display.
 3、“多状态图片生成规则”代表在设置多状态按钮（普通状态、鼠标移入状态，点击状态）时，使用状态图片的命名规则。
-
+3. The "Multi state Image Generation Rule" represents the naming convention for using state images when setting multi state buttons (normal state, mouse in state, click state).
  
 
 “设计操作”和“代码编辑”主要帮助开发者在开发中进行一些辅助设置，大家可以自行体验尝试。
-
+"Design operations" and "code editing" mainly help developers make some auxiliary settings during development, and everyone can experience and try it out on their own.
 #### 二、**登录账号:** 
-
+####2、 * * Login account:**
 ​	默认情况下，开发者可以使用游客模式进行开发，如果想要使用平台功能，则需要点击图示中红框位置，进入到登录界面，在登录界面里，将可以注册新账号：
-
+By default, developers can use visitor mode for development. If they want to use platform features, they need to click on the red box in the diagram to enter the login interface. In the login interface, they can register a new account:
 ![img](http://www.py-me.com/mkdoc_images/wps31.jpg) 
 
  
 
 ​	在这里，我们仍然使用“离线使用”进入到启动界面，在这个界面中，我提供了五个选项的选项卡：
-
+Here, we still use "Offline Use" to enter the startup interface, where I provide tabs for five options:
 #### 三、**新建项目:** 
-
-​	提供了***\*空界面项目\****，***\*对话框项目\****，***\*单文档项目、多文档项目、数据库应用（DBMS）、2D游戏项目和3D游戏项目以及Git-SVN拉取项目 八\****种模版供选择，开发者可以跟据需要在此基础上创建项目。
-
+####3、 New project:**
+​	提供了***\*空界面项目\****，***\*对话框项目\****，***\*单文档项目\****，***\*多文档项目\****，***\*数据库应用（DBMS）\****，***\*2D游戏项目和***\*3D游戏项目\****以及Git-SVN拉取项目 八\****种模版供选择，开发者可以跟据需要在此基础上创建项目。
+We provide eight templates to choose from, including***\*empty interface project\****，***\*dialog box project\****，***\single document project\****，***\*multi document project\****，***\*database application (DBMS)\****，***\*2D game project\****，***\*3D game project\****，***\*Git SVN pull\**** project. Developers can create projects based on these templates as needed.
  
 
 **1、*****\*空界面项目\****：空白的界面项目框架，你可以随意的设计界面。
-
+**1、*****\*Empty Interface Project \****：: A blank interface project framework that allows you to freely design the interface.
 ![img](http://www.py-me.com/mkdoc_images/wps32.jpg) 
 
 图示：空界面项目设计视图
-
+Figure: Empty interface project design view
 ***\*2、对话框项目\****：最简单的登录框，方便开发者了解界面控件的使用。
-
+***\*2. Dialog box projec\****: The simplest login box, making it easy for developers to understand the use of interface controls.
 ![img](http://www.py-me.com/mkdoc_images/wps33.jpg) 
 
 图示：对话框编辑运行演示
-
+Figure: Demonstration of dialog box editing operation
 ***\*3、单文档项目\****：单文档的Python代码编辑器项目，具备基本的代码文件的创建、打开、编写与运行。
-
+***\*3. Single Document Project\****: A Python code editor project for a single document, equipped with basic code file creation, opening, writing, and running.
 ![img](http://www.py-me.com/mkdoc_images/wps34.jpg) 
 
 图示：单文档运行演示
-
+Figure: Single document running demonstration
 ***\*4、多文档项目\****：简单的多文档的Python项目IDE，包括对一个简单Python项目进行多文件编辑、运行、打包的功能。
-
+***\*4. Multi Document Project\****: A simple multi document Python project IDE that includes the ability to edit, run, and package multiple files for a simple Python project.
 ![img](http://www.py-me.com/mkdoc_images/wps35.jpg) 
 
 图示：多文档运行演示
-
+Figure: Demonstration of running multiple documents
 ***\*5、DBMS项目\****：简单的小型数据库管理软件，展示了基本的数据库管理软件框架和数据库组件的使用。
-
+***\*5. DBMS project\****: A simple small-scale database management software that showcases the basic database management software framework and the use of database components.
 ![img](http://www.py-me.com/mkdoc_images/wps36.jpg) 
 
 图示：数据库框架设计演示
-
+Figure: Demonstration of Database Framework Design
 ***\*6、2D游戏项目\****：2D的游戏开发框架，提供了动画、粒子、角色、界面、场景等编辑器的功能。
-
+***\*6. A 2D game project\****: 2D game development framework that provides editors for animations, particles, characters, interfaces, scenes, and more.
 ![img](http://www.py-me.com/mkdoc_images/wps37.jpg) 
 
 图示：2D游戏中场景编辑演示
-
+Illustration: Demonstration of scene editing in 2D games
 ***\*7、3D游戏项目\****：3D的引擎开发框架，目前只有部分底层库，工具尚不完善。
-
+***\*7. The engine development framework for 3D game project \****: 3D is currently limited to some underlying libraries and the tools are not yet complete.
 ![img](http://www.py-me.com/mkdoc_images/wps38.jpg) 
 
 图示：3D游戏中场景编辑演示
-
+Illustration: Demonstration of scene editing in 3D games
  
 
 ​	项目创建成功后，我们将立刻进入到主设计界面进行项目开发，我们可以通过右上角的关闭按钮来返回到项目管理控制台。
-
+After the project is successfully created, we will immediately enter the main design interface for project development. We can return to the project management console by clicking the close button in the upper right corner.
 #### 四．**打开项目:** 
-
+#### 4、**Open project:**
 ​	“打开项目”的面板主要用于显示已经创建的近期项目，在列表中以图标方式显示，我们只需要选择需要的项目并点击“确定”即可进入项目，第一个显示为加号的按钮，用于加载一个不在图标列表中的项目。
-
+The "Open Project" panel is mainly used to display recently created projects, which are displayed in an icon style in the list. We only need to select the desired project and click "OK" to enter the project. The first button displayed is a plus sign, used to load a project that is not in the icon list.
  
 
 ![img](http://www.py-me.com/mkdoc_images/wps39.jpg) 
 
 图示：“打开项目”选项页中的最近项目
-
+Figure: Recent projects in the "Open Project" option page
  
 
 #### 五、实例项目:**
-
+####5、 Example project:**
 ​	“实例项目”页主要展示我们从开发者商店下载的项目案例，开发者商店属于平台功能，必须要注册账号并登录后，才可以看到。这些案例从开发者商店下载后将保存在“Examples”文件夹中。
-
+The "Instance Project" page mainly displays the project cases we downloaded from the developer store. The developer store belongs to the platform function, and you must register an account and log in before you can see it. These cases will be saved in the "Examples" folder after downloading from the developer store.
  
 
 ![img](http://www.py-me.com/mkdoc_images/wps40.jpg) 
 
 图示：“实例项目”页面中展示了从开发者商店下载的案例
-
+Figure: The "Example Project" page displays a case downloaded from the developer store
 ![img](http://www.py-me.com/mkdoc_images/wps41.jpg) 
 
 图示：开发者商店中展示的可下载案例。
-
+Figure: Downloadable cases displayed in the developer store.
  
 
 ![img](http://www.py-me.com/mkdoc_images/wps42.jpg) 
 
 图示：案例的详细介绍。
-
+Figure: Detailed introduction of the case.
  
 
  
