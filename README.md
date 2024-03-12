@@ -31,11 +31,11 @@
 
 ​	朋友，你好，我是PyMe的作者火云红孩儿，一位热爱编程的程序员，在开始介绍这个项目前前，我想先讲一点我对于Python和PyMe的看法，或许不正确，或许脑洞有点大，但我觉得有必要讲出来，这样才能得到各位专家和开发者的指正。  
 
-        Hello friend, I am Huoyun Honghaier, the author of PyMe and a programmer who loves programming. Before introducing this project, I would like to share some of my views on Python and PyMe. Perhaps it is incorrect or my imagination is a bit broad, but I think it is necessary to speak up so that I can receive guidance from experts and developers.
+Hello friend, I am Huoyun Honghaier, the author of PyMe and a programmer who loves programming. Before introducing this project, I would like to share some of my views on Python and PyMe. Perhaps it is incorrect or my imagination is a bit broad, but I think it is necessary to speak up so that I can receive guidance from experts and developers.
 
 ​	这个项目是在四年前开始的，当时我关注到Python连续占据最受欢迎的编程语言榜首，所以我计划系统的学习一下Python，在此之前我有十五年以上的C++游戏开发经验，因为我从事的是游戏引擎和工具链的开发工作，所以我对于工具软件尤为重视，在学习Python的过程中，我有一种强烈的感觉：“Python的工具链薄弱程度与Python语言的受欢迎程度不匹配”。在2023年的今天，开发工具市场的产品已经发展的越来越强大，越来越人性化。而Python作为当今耀眼的明星，居然没有一款可视化、流程化、人性化的开发工具。  
 
-        This project started four years ago, when I noticed that Python had consistently ranked first among the most popular programming languages. Therefore, I planned to systematically study Python. Prior to this, I had more than fifteen years of experience in C++game development. As I worked in the development of game engines and toolchains, I attached great importance to tool software. In the process of learning Python, I have a strong feeling that the weakness of Python's toolchain does not match the popularity of the Python language. Today in 2023, the products in the development tool market have become increasingly powerful and user-friendly. As a dazzling star today, Python surprisingly lacks a visual, procedural, and user-friendly development tool.
+This project started four years ago, when I noticed that Python had consistently ranked first among the most popular programming languages. Therefore, I planned to systematically study Python. Prior to this, I had more than fifteen years of experience in C++game development. As I worked in the development of game engines and toolchains, I attached great importance to tool software. In the process of learning Python, I have a strong feeling that the weakness of Python's toolchain does not match the popularity of the Python language. Today in 2023, the products in the development tool market have become increasingly powerful and user-friendly. As a dazzling star today, Python surprisingly lacks a visual, procedural, and user-friendly development tool.
 
 ​	所以，我尝试着自已做，并逐步使它成为一个独立的技术创业项目。
 
