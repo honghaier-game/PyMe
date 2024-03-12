@@ -29,25 +29,32 @@
 ##"A little insight written at the beginning":**
  
 
-​	朋友，你好，我是PyMe的作者火云红孩儿，一位热爱编程的程序员，在开始介绍这个项目前前，我想先讲一点我对于Python和PyMe的看法，或许不正确，或许脑洞有点大，但我觉得有必要讲出来，这样才能得到各位专家和开发者的指正。
+​	朋友，你好，我是PyMe的作者火云红孩儿，一位热爱编程的程序员，在开始介绍这个项目前前，我想先讲一点我对于Python和PyMe的看法，或许不正确，或许脑洞有点大，但我觉得有必要讲出来，这样才能得到各位专家和开发者的指正。  
+
         Hello friend, I am Huoyun Honghaier, the author of PyMe and a programmer who loves programming. Before introducing this project, I would like to share some of my views on Python and PyMe. Perhaps it is incorrect or my imagination is a bit broad, but I think it is necessary to speak up so that I can receive guidance from experts and developers.
 
-​	这个项目是在四年前开始的，当时我关注到Python连续占据最受欢迎的编程语言榜首，所以我计划系统的学习一下Python，在此之前我有十五年以上的C++游戏开发经验，因为我从事的是游戏引擎和工具链的开发工作，所以我对于工具软件尤为重视，在学习Python的过程中，我有一种强烈的感觉：“Python的工具链薄弱程度与Python语言的受欢迎程度不匹配”。在2023年的今天，开发工具市场的产品已经发展的越来越强大，越来越人性化。而Python作为当今耀眼的明星，居然没有一款可视化、流程化、人性化的开发工具。
+​	这个项目是在四年前开始的，当时我关注到Python连续占据最受欢迎的编程语言榜首，所以我计划系统的学习一下Python，在此之前我有十五年以上的C++游戏开发经验，因为我从事的是游戏引擎和工具链的开发工作，所以我对于工具软件尤为重视，在学习Python的过程中，我有一种强烈的感觉：“Python的工具链薄弱程度与Python语言的受欢迎程度不匹配”。在2023年的今天，开发工具市场的产品已经发展的越来越强大，越来越人性化。而Python作为当今耀眼的明星，居然没有一款可视化、流程化、人性化的开发工具。  
+
         This project started four years ago, when I noticed that Python had consistently ranked first among the most popular programming languages. Therefore, I planned to systematically study Python. Prior to this, I had more than fifteen years of experience in C++game development. As I worked in the development of game engines and toolchains, I attached great importance to tool software. In the process of learning Python, I have a strong feeling that the weakness of Python's toolchain does not match the popularity of the Python language. Today in 2023, the products in the development tool market have become increasingly powerful and user-friendly. As a dazzling star today, Python surprisingly lacks a visual, procedural, and user-friendly development tool.
 
 ​	所以，我尝试着自已做，并逐步使它成为一个独立的技术创业项目。
+
         So, I tried to do it myself and gradually make it an independent technology entrepreneurship project.
 
-***\*最初\****，我只是尝试着写一个简单的界面编辑器，它基于tkinter，提供简单的控件拖拽设计和代码生成，可以直接运行，并通过pyinstaller打包成EXE。我将它命名为“TkinterDesigner”，并在github上提交了可执行程序，很快，就有人关注，并成为了第一批用户。于是，我利用工作之余，不断的完善它，加入了变量绑定、事件响应函数映射与代码编辑，并加入了一些预设的工程案例模版，使它看起来像VisualBasic一样简单而易用。
+***\*最初\****，我只是尝试着写一个简单的界面编辑器，它基于tkinter，提供简单的控件拖拽设计和代码生成，可以直接运行，并通过pyinstaller打包成EXE。我将它命名为“TkinterDesigner”，并在github上提交了可执行程序，很快，就有人关注，并成为了第一批用户。于是，我利用工作之余，不断的完善它，加入了变量绑定、事件响应函数映射与代码编辑，并加入了一些预设的工程案例模版，使它看起来像VisualBasic一样简单而易用。  
+
 ***\*At first\****, I was just trying to write a simple interface editor based on tkiner, which provides simple control drag and drop design and code generation, can be run directly, and packaged into EXE through pyinstaller. I named it "TkinterDesigner" and submitted an executable program on GitHub. Soon, someone followed and became one of the first users. So, in my spare time, I constantly improved it by adding variable binding, event response function mapping, and code editing, as well as adding some preset engineering case templates, making it look simple and user-friendly like Visual Basic.
 
-***\*很快，\****“TkinterDsigner”成长为一个可视化的桌面应用开发工具，在这个过程中，我熟练的掌握了Python的编程，但我并没有打算结束它，而是有了一些更大的想法。
+***\*很快，\****“TkinterDsigner”成长为一个可视化的桌面应用开发工具，在这个过程中，我熟练的掌握了Python的编程，但我并没有打算结束它，而是有了一些更大的想法。  
+
 ***\*Quickly\****, "TkinterDsigner" grew into a visual desktop application development tool. During this process, I became proficient in Python programming, but I had no intention of ending it. Instead, I had some bigger ideas.
  
 
-​	因为我逐渐的认知到，随着Python语言在全世界的广泛学习和应用，***\*未来Python有机会成为像英语一样的通用语言！\****
+​	因为我逐渐的认知到，随着Python语言在全世界的广泛学习和应用，***\*未来Python有机会成为像英语一样的通用语言！\****  
+
         Because I gradually realized that with the widespread learning and application of Python language around the world, there is a chance for Python to become a universal language like English in the future\****
-​	我意识到：随着网络和科技的不断发展，人的价值，会越来越回归到数字化的体现，即：
+​	我意识到：随着网络和科技的不断发展，人的价值，会越来越回归到数字化的体现，即：  
+
         I realize that with the continuous development of the internet and technology, human value will increasingly return to the manifestation of digitization, namely:
  
 
