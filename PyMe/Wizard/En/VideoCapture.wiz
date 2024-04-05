@@ -1,0 +1,20 @@
+name=VideoCapture
+lessonid=26
+difficulty=Simple
+reward=0
+introduction=Understand the function of developing video capture using components.
+stepindex=0
+1=Drag from the left toolbar to create a Canvas control and place it in Form_1, with a size of 800x600 pixels.["Create_Canvas","SetW_Canvas_1_800","SetH_Canvas_1_600"]
+2=Find the "VideoCapture" component from the "Other" category on the left toolbar and drag it into Form_1.["Create_VideoCapture"]
+3=Select the VideoCapture component, drag the tree item "Canvas_1" from the control tree in the upper right corner to the "Canvas" property value bar of the current "VideoCapture" component, and press Ctrl+S to save the current interface.["DragToAttribute_VideoCapture_Canvas_1","SaveFile_<%=ProjName%>.py"]
+4=Drag from the left toolbar to create a Button control and place it on the right side of Canvas_1. Set the text content to "Start Recording".["Create_Button","SetText_启动录制"]
+5=Then press ALT and drag to create a Button control and place it under Button 1. Set the text content to "Save Screenshot".["CopyCreate_Button_2","SetText_保存截图"]
+6=Then press ALT and drag to create a Button control and place it under Button 2. Set the text content to "stop recording".["CopyCreate_Button_3","SetText_停止录制"]
+7=Double click the "Start Camera" button to enter the click event response function. After wrapping, right-click and select "Start Recording" under "VideoCapture_1" in the "Interface Functions".["BindEvent_Button_1_onCommand","FunctionMenu_VideoCapture_StartCapture"]
+8=Start a new line below the function, select the "Save Screenshot" button in the thumbnail of the right-hand assistant bar, select the "Button Click" event, and click the "Bind" button to create an event response function.["BindEvent_Button_2_onCommand"]
+9=Enter the event response function, right-click after line wrapping, and select "Call Save File Box" in "System Functions".["FunctionMenu_saveFile"]
+10=Change the Python format saved in the code to PNG format, and write the code "if savePath:" after line breaks.["WriteCode_if savePath:"]
+11=After line breaking, right-click and select "Save Video as Image" under "VideoCapture_1" in the "Interface Functions". In the generated code, modify the parameter 1 of SaveImageToFile to savePath.["FunctionMenu_VideoCapture_SaveImageToFile","WriteCode_VideoCapture_1.SaveImageToFile(savePath,callbackFunction = None)"]
+12=Select the "Stop Recording" button in the thumbnail of the right-hand assistant bar, select the "Click" event, and click the "Bind" button to create an event response function.["BindEvent_Button_3_onCommand"]
+13=After line breaking, right-click and select "Stop Recording" under "VideoCapture_1" in the "Interface Functions" to generate the corresponding code.["FunctionMenu_VideoCapture_Stop"]
+14=Click on Run.["Run"]

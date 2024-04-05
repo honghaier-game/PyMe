@@ -1,0 +1,20 @@
+name=视频组件
+lessonid=26
+difficulty=简单
+reward=0
+introduction=了解使用组件开发视频采集的功能。
+stepindex=11
+1=从左边工具条拖动创建一个Canvas控件放到Form_1中，设置大小为800x600像素。["Create_Canvas","SetW_Canvas_1_800","SetH_Canvas_1_600"]
+2=从左边工具条的“其它”分类中找到“VideoCapture"组件，拖入到Form_1中。["Create_VideoCapture"]
+3=选中VideoCapture组件，从右上角的控件树中把树项“Canvas_1”拖动到当前“VideoCapture”组件的“Canvas”属性值栏中，按Ctrl+S保存当前界面。["DragToAttribute_VideoCapture_Canvas_1","SaveFile_<%=ProjName%>.py"]
+4=从左边工具条拖动创建一个Button控件放到Canvas_1右边，设置文字内容为“启动录制”。["Create_Button","SetText_启动录制"]
+5=再按着ALT拖动复制创建一个Button控件放到Button_1下边，设置文字内容为“保存截图”。["CopyCreate_Button_2","SetText_保存截图"]
+6=再按着ALT拖动复制创建一个Button控件放到Button_2下边，设置文字内容为“停止录制”。["CopyCreate_Button_3","SetText_停止录制"]
+7=双击“启动摄像头”按钮，进入点击事件响应函数，换行后鼠标右键单击，在“界面函数”中的“VideoCapture_1”下选择“开始录像”。["BindEvent_Button_1_onCommand","FunctionMenu_VideoCapture_StartCapture"]
+8=在函数下面另起一行，在右侧助手栏缩略图中选择选择“保存截图”按钮，选中“按钮点击”事件，并点击“绑定”按钮，创建事件响应函数。["BindEvent_Button_2_onCommand"]
+9=进入事件响应函数，换行后鼠标右键单击，在“系统函数”中选择“调用保存文件框”。["FunctionMenu_saveFile"]
+10=将代码中保存Python格式改为PNG格式，换行后编写代码“if savePath:”。["WriteCode_if savePath:"]
+11=换行后鼠标右键单击，在“界面函数”中的“VideoCapture_1”下选择“将视频保存为图片”，在生成的代码中将SaveImageToFile的参数1修改为savePath。["FunctionMenu_VideoCapture_SaveImageToFile","WriteCode_VideoCapture_1.SaveImageToFile(savePath,callbackFunction = None)"]
+12=在右侧助手栏缩略图中选择选择“停止录制”按钮，选中“点击”事件，并点击“绑定”按钮，创建事件响应函数。["BindEvent_Button_3_onCommand"]
+13=换行后鼠标右键单击，在“界面函数”中的“VideoCapture_1”下选择“停止录制”，生成对应代码。["FunctionMenu_VideoCapture_Stop"]
+14=点击运行。["Run"]
