@@ -2073,9 +2073,12 @@ def SetItemFGColor(uiName,elementName,lineIndex,color):
         if elementName in G_UIElementDictionary[uiName]:
             if elementName.find('ComboBox_') >= 0 or elementName.find('ListBox_') >= 0:
                     G_UIElementDictionary[uiName][elementName].itemconfig(lineIndex, {\'fg\':color})
+'''
+    f.write(code)
 #写入更新到文字
 def WriteAddItemTextFunction(f,runMode):
     #f.write(Language.G_Language[1243]+'
+    coede='''
 def AddItemText(uiName,elementName,text,lineIndex="end",set_see=False):
     """'+Language.G_Language[1243]+'"""
     global G_UIElementAliasDictionary
@@ -3222,8 +3225,11 @@ def DelAllItemText(uiName,elementName):
         if elementName in G_UIElementDictionary[uiName]:
             if elementName.find('ComboBox_') >= 0:
                 G_UIElementDictionary[uiName][elementName]['value'] = []
+'''
+    f.write(code)                
 #写入更新到文字
 def WriteSetImageFunction(f,exportMode = False,usePME = False):
+    code='''
 def LoadImageFromPMEFile(imagePath):
     if usePME == False:
         return None
@@ -3277,11 +3283,18 @@ def SetImage(uiName,elementName,imagePath,autoSize = True,format=\'RGBA\'):
                 if imagePath_Lower in G_ResourcesFileList:
                     imagePath = G_ResourcesFileList[imagePath_Lower]
                 if os.path.exists(imagePath) == False:
+'''
+    f.write(code)
+
     if exportMode == False:
+        code='''
                         Control.configure(image = '')
                         return
                 image = Image.open(imagePath).convert(format)
+'''
+        f.write(code)
     else:
+        code='''
                         image = LoadImageFromPMEFile(imagePath)
                         if image is None:
                             Control.configure(image = '')
@@ -3351,10 +3364,19 @@ def InsertImage(uiName,elementName,position=tkinter.END,imagePath='',reSize=None
                 if imagePath_Lower in G_ResourcesFileList:
                     imagePath = G_ResourcesFileList[imagePath_Lower]
                 if os.path.exists(imagePath) == False:
+'''
+        f.write(code)
+
     if exportMode == False:
+        code='''
                         return
+
                 image = Image.open(imagePath).convert(format)
+'''
+        f.write(code)
+
     else:
+        code='''
                         image = LoadImageFromPMEFile(imagePath)
                         if image is None:
                             return
@@ -3394,10 +3416,16 @@ def SetCanvasBGImage(uiName,elementName,imagePath,wrapType='Zoom'):
                         if imagePath_Lower in G_ResourcesFileList:
                             imagePath = G_ResourcesFileList[imagePath_Lower]
                         if os.path.exists(imagePath) == False:
+'''
+        f.write(code)
     if exportMode == False:
+        code='''
                                 return
                         newImage = Image.open(imagePath).convert(\'RGBA\')
+'''
+        f.write(code)
     else:
+        code='''
                                 newImage = LoadImageFromPMEFile(imagePath)
                         if newImage is None:
                             newImage = Image.open(imagePath).convert(\'RGBA\')
@@ -3499,7 +3527,7 @@ def RemoveImage(uiName,elementName):
         if elementName.find(\'Form_\') >= 0 or elementName.find(\'Canvas_\') >= 0 :
             Control.delete('BGImage')
 ''' 
-    f.write(code)
+        f.write(code)
 #写入更新到文字
 def WriteGetImageFunction(f):
     code='''
@@ -3664,9 +3692,11 @@ def StopGIF(uiName,elementName):
             Control.after_cancel(updateGIFFrame)
             if elementName in G_CanvasImageDictionary[uiName]:
                 G_CanvasImageDictionary[uiName][elementName].clear()
-
+'''
+    f.write(code)
 #写入更新到文字
 def WriteSetImageFunction_Mobile(f,exportMode = False,usePME = False):
+    code='''
 def LoadImageFromPMEFile(imagePath):
     if usePME == False:
         return None
@@ -4299,7 +4329,10 @@ def GetCurrentIndex(uiName,elementName):
             return Control.GetSelectedIndex()   
     return -1
 #写入更新到文字
+'''
+    f.write(code)
 def WriteInitFunction(f,HasCanvas,UseDataBase):
+    code='''
     #f.write(Language.G_Language[1215]+'
 def InitElementData(uiName):
     """'+Language.G_Language[1215]+'"""
@@ -4428,9 +4461,11 @@ def InitElementStyle(uiName,Style):
                     errorText = str(ex)
                     if errorText.find("no attribute \'winfo_exists\'") < 0:
                         print(ex)
-
+'''
+    f.write(code)
 #写入更新到文字
 def WriteInitFunction_Mobile(f,HasCanvas,UseDataBase):
+    code='''
     #f.write(Language.G_Language[1215]+'
 def InitElementData(uiName):
     """'+Language.G_Language[1215]+'"""
@@ -6838,7 +6873,7 @@ def UpdateChart(uiName,elementName,width = 0,height = 0):
     """'+Language.G_Language[759]+'"""
     theChart = GetUserData(uiName,elementName,\'ChartCanvas\')
     if theChart:
-        theChartCanvas = theChart.get_tk_widget()
+        theChartCanvas = theCharwt.get_tk_widget()
         w = width
         if w == 0:
             w = theChartCanvas.winfo_width()
@@ -6908,10 +6943,12 @@ def UpdateChartData(uiName,elementName,x,y,subplotName='subplot111'):
 def SetClickXYFunction(uiName,elementName,callBackFunction):
     """'+Language.G_Language[764]+'"""
     pass
-
+'''
+    f.write(code)
     
 #写入画板动作
 def WriteDoCanvasRecordFunction(f,useAggdraw = True):
+    code='''f.write(code)
     #f.write(Language.G_Language[1234]+'
 def DoCanvasRecord(drawCanvas,shapeType,x,y,x2,y2,fillcolor,outlinecolor,fillwidth,dash1=0,dash2=0,newImage=None,text='',textFont = None,textColor='',shapeTag=''):
     """'+Language.G_Language[1234]+'"""
@@ -10037,7 +10074,10 @@ def DeleteShape(uiName,drawCanvasName,shapeTag):
                 if drawCanvasName in G_CanvasParamDictionary[uiName]:
                     if shapeTag in G_CanvasParamDictionary[uiName][drawCanvasName]:
                         G_CanvasParamDictionary[uiName][drawCanvasName].pop(shapeTag)
+'''
+    f.write(code)
 def WriteSetShapeEventFunction(f,runMode):
+    code='''
 def BindShapeEvent_SetShapeRect(uiName,drawCanvasName,shapeTag,bindEvent,targetShapeTag,x,y,w,h):
     """'+Language.G_Language[858]+'"""
     if uiName in G_CanvasShapeDictionary:
@@ -10496,9 +10536,12 @@ def ReDrawCanvasRecord(uiName,ForceReDraw=False):
     pass
 def ResizeAllChart(uiName):
     """'+Language.G_Language[759]+'"""
-    pass
+    pass'''
+    f.write(code)
+
 #写入画板动作
 def WriteLoadCanvasRecordFunctions_Mobile(f,exportMode,androidTTFFile):
+    code='''
 def checkPtInRect(x,y,left,right,top,bottom):
     if x < left:return 0
     if x > right:return 0
@@ -10575,9 +10618,16 @@ def LoadCanvasRecord(uiName):
         g = int(hex[3:5],16)
         b = int(hex[5:7], 16)
         return (r,g,b)
+'''
+    f.write(code)
+
     if exportMode == False:
+        code='''
         canvasFile = GameLib.APKResDir + "\\\\res\\\\" + uiName + ".cav"
+'''
+        f.write(code)
     else:
+        code='''
         resdir = os.path.join(GameLib.APKResDir,"res")
         canvasFile = os.path.join(resdir,uiName + ".cav")
         canvasFile = canvasFile.replace("\\\\","//")
@@ -10703,14 +10753,22 @@ def LoadCanvasRecord(uiName):
                         overstrike = int(splitArray[16])
                         if len(splitArray) > 18:
                             shapeTag = splitArray[17]
+'''
+        f.write(code)
     if androidTTFFile and (androidTTFFile.find('.ttf') > 0 or androidTTFFile.find('.otf') > 0):
+        code='''
                             androidFont = GameLib.Res.GetFont("'+androidTTFFile+'",sizetext)
                             drawCanvas.create_text_simple(x1,y1,x2,y2,text=newtext,anchor='nw',fill=fill,font = androidFont,tag = shapeTag)
                             G_CanvasShapeDictionary[uiName][drawCanvasName][shapeTag]=[ShapeType,x1,y1,x2,y2,newtext,androidFont,fill]
+'''
+        f.write(code)
     else:
+        code='''
                             drawCanvas.create_text(x1,y1,x2,y2,text=newtext,anchor='nw',fill=fill,familytext = familytext,sizetext = sizetext,weighttext = weighttext,slanttext = slanttext,underline = underline,overstrike = overstrike,tag = shapeTag)
                             G_CanvasShapeDictionary[uiName][drawCanvasName][shapeTag]=[ShapeType,x1,y1,x2,y2,newtext,None,fill]
-    
+'''
+        f.write(code)
+    code='''
                     elif ShapeType == 'button':
                         if splitArray[1].find('.') > 0:
                             x1 = float(splitArray[1])
@@ -10749,10 +10807,17 @@ def LoadCanvasRecord(uiName):
                         imagefile = splitArray[18]
                         shapeTag = splitArray[20]
                         G_CanvasShapeDictionary[uiName][drawCanvasName][shapeTag]=[ShapeType,x1,y1,x2,y2,fill,familytext,sizetext,weighttext,slanttext,underline,overstrike,textcolor]
+'''
+        f.write(code)
+
     if androidTTFFile and (androidTTFFile.find('.ttf') > 0 or androidTTFFile.find('.otf') > 0):
+        code='''
                             androidFont = GameLib.Res.GetFont("'+androidTTFFile+'",sizetext)
                             drawCanvas.create_button_simple(x1,y1,x2,y2,text=newtext,anchor='nw',fill=fill,outline=outline,width=width,font = androidFont,textcolor=textcolor,imagefile=imagefile,tag = shapeTag)
+    '''
+        f.write(code)
     else:
+        code='''
                             drawCanvas.create_button(x1,y1,x2,y2,text=newtext,anchor='nw',fill=fill,outline=outline,width=width,familytext = familytext,sizetext = sizetext,weighttext = weighttext,slanttext = slanttext,underline = underline,overstrike = overstrike,textcolor=textcolor,imagefile=imagefile,tag = shapeTag)
                     elif ShapeType == \'point\':
                         if splitArray[1].find('.') > 0:
@@ -10937,7 +11002,7 @@ def LoadCanvasRecord(uiName):
                     for EventName in G_CanvasEventDictionary[uiName][drawCanvasName][shapeTag]:
                         drawCanvas.tag_bind(uiName,drawCanvasName,shapeTag, EventName,Shape_MouseEvent)  
 ''' 
-    f.write(code)
+        f.write(code)
 #写入设置图形矩形
 def WriteSetShapeRectFunction_Mobile(f):
     code='''
@@ -12195,81 +12260,87 @@ def WriteNativeCallBackFunction_Mobile(f):
    f.write('    return openPath
    f.write('def QuitApplication():
    f.write('    GameLib.gameAppInstance.GetCurrentScene().CallNativeEvent("quit")
-
+'''
+    f.write(code)
 #写入读取样式表数据
 def WriteReadStyleFileFunction(f,exportMode=False,StyleArray=None):
+
     #f.write(Language.G_Language[1230]+'
     if exportMode == True and StyleArray != None:
-    def ReadStyleFile(filePath):
-        """'+Language.G_Language[1230]+'"""
-        StyleArray = {}
+        code='''
+def ReadStyleFile(filePath):
+    """'+Language.G_Language[1230]+'"""
+    StyleArray = {}
+'''
+        f.write(code)
         for keyName in StyleArray.keys():
-            StyleArray['"+keyName+"'] = "+str(StyleArray[keyName])+"
-            if 'font_family' in StyleArray['"+keyName+"'] and 'font_size' in StyleArray['"+keyName+"']  and 'font_weight' in StyleArray['"+keyName+"'] :
-                StyleArray['"+keyName+"']['font'] = tkinter.font.Font(family=StyleArray['"+keyName+"']['font_family'], size=int(StyleArray['"+keyName+"']['font_size']),weight=StyleArray['"+keyName+"']['font_weight'])
-        return StyleArray 
+            f.write("    StyleArray['"+keyName+"'] = "+str(StyleArray[keyName])+"\n")
+            f.write("    if 'font_family' in StyleArray['"+keyName+"'] and 'font_size' in StyleArray['"+keyName+"']  and 'font_weight' in StyleArray['"+keyName+"'] :\n")
+            f.write("        StyleArray['"+keyName+"']['font'] = tkinter.font.Font(family=StyleArray['"+keyName+"']['font_family'], size=int(StyleArray['"+keyName+"']['font_size']),weight=StyleArray['"+keyName+"']['font_weight'])\n")
+        f.write("    return StyleArray \n")
     else:
-    def ReadStyleFile(filePath):
-        """'+Language.G_Language[1230]+'"""
-        global G_ExeDir
-        StyleArray = {}
-        if len(filePath)==0 :
-            return StyleArray
+        code='''
+def ReadStyleFile(filePath):
+    """'+Language.G_Language[1230]+'"""
+    global G_ExeDir
+    StyleArray = {}
+    if len(filePath)==0 :
+        return StyleArray
+    if os.path.exists(filePath) == False:
+        PathName, FileName = os.path.split(filePath)
+        filePath = os.path.join(G_ExeDir,FileName)
         if os.path.exists(filePath) == False:
-            PathName, FileName = os.path.split(filePath)
-            filePath = os.path.join(G_ExeDir,FileName)
-            if os.path.exists(filePath) == False:
-                return StyleArray
-        f = open(filePath,encoding='utf-8')
-        line =""
-        while True:
-            line = f.readline()
-            if not line:
-                break
-            text = line.strip()
-            if not text:
-                continue
-            if text.find('style = tkinter.ttk.Style()') >= 0:
-                continue
-            if text.find('style.configure(') >= 0:
-                splitarray1 = text.partition('style.configure(')
-                stylename = None
-                splitarray2 = None
-                if splitarray1[2].find(',') >= 0:
-                    splitarray2 = splitarray1[2].partition(',')
-                    stylename = splitarray2[0].replace('\"','')
-                else:
-                    splitarray2 = splitarray1[2].partition(')')
-                    stylename = splitarray2[0].replace('\"','')
-                sytleValueText = splitarray2[2]
-                fontindex_begin = sytleValueText.find('font=(')
-                fontindex_end = fontindex_begin
-                StyleArray[stylename] = {}
-                othertext = sytleValueText
-                if fontindex_begin >= 0:
-                    fontindex_end = sytleValueText.find(')')
-                    fonttext = sytleValueText[fontindex_begin+6:fontindex_end]
-                    fontsplitarray = fonttext.split(',')
-                    StyleArray[stylename]['font'] = tkinter.font.Font(family=fontsplitarray[0].replace('\"','').strip(), size=int(fontsplitarray[1].replace('\"','').strip()),weight=fontsplitarray[2].replace('\"','').strip())
-                    othertext = sytleValueText[0:fontindex_begin] + sytleValueText[fontindex_end+1:-1]
-                else:
-                    splitarray4 = sytleValueText.partition(')')
-                    othertext = splitarray4[0]
-                splitarray3 = othertext.split(',')
-                for stylecfgtext in splitarray3:
-                    if stylecfgtext.find('=') > 0:
-                        splitarray4 = stylecfgtext.partition('=')
-                        key = splitarray4[0].replace('\"','').strip()
-                        value = splitarray4[2].replace('\"','').strip()
-                        StyleArray[stylename][key] = value
-                continue
-            if text.find('style.map(') >= 0:
-                continue
-        f.close()
-        return StyleArray 
+            return StyleArray
+    f = open(filePath,encoding='utf-8')
+    line =""
+    while True:
+        line = f.readline()
+        if not line:
+            break
+        text = line.strip()
+        if not text:
+            continue
+        if text.find('style = tkinter.ttk.Style()') >= 0:
+            continue
+        if text.find('style.configure(') >= 0:
+            splitarray1 = text.partition('style.configure(')
+            stylename = None
+            splitarray2 = None
+            if splitarray1[2].find(',') >= 0:
+                splitarray2 = splitarray1[2].partition(',')
+                stylename = splitarray2[0].replace('\"','')
+            else:
+                splitarray2 = splitarray1[2].partition(')')
+                stylename = splitarray2[0].replace('\"','')
+            sytleValueText = splitarray2[2]
+            fontindex_begin = sytleValueText.find('font=(')
+            fontindex_end = fontindex_begin
+            StyleArray[stylename] = {}
+            othertext = sytleValueText
+            if fontindex_begin >= 0:
+                fontindex_end = sytleValueText.find(')')
+                fonttext = sytleValueText[fontindex_begin+6:fontindex_end]
+                fontsplitarray = fonttext.split(',')
+                StyleArray[stylename]['font'] = tkinter.font.Font(family=fontsplitarray[0].replace('\"','').strip(), size=int(fontsplitarray[1].replace('\"','').strip()),weight=fontsplitarray[2].replace('\"','').strip())
+                othertext = sytleValueText[0:fontindex_begin] + sytleValueText[fontindex_end+1:-1]
+            else:
+                splitarray4 = sytleValueText.partition(')')
+                othertext = splitarray4[0]
+            splitarray3 = othertext.split(',')
+            for stylecfgtext in splitarray3:
+                if stylecfgtext.find('=') > 0:
+                    splitarray4 = stylecfgtext.partition('=')
+                    key = splitarray4[0].replace('\"','').strip()
+                    value = splitarray4[2].replace('\"','').strip()
+                    StyleArray[stylename][key] = value
+            continue
+        if text.find('style.map(') >= 0:
+            continue
+    f.close()
+    return StyleArray 
 
 ''' 
-    f.write(code)
+        f.write(code)
 #数据源处理
 def WriteDataBaseClass(f):
     code='''
@@ -12755,23 +12826,32 @@ class DataTable:
         if self.BindingListView(uiName,elementName) == False:
             return False
         return self.OpenSQLSERVER(ip,port,user,password,database,sheetname)
-
+'''
+    f.write(code)
 #读取TXT            
 def WriteFileReader_ReadTXT(f,runMode,exportMode):
+    code='''
     #f.write('#Read TXT File
 def FileReader_ReadTXTFile(filename = None,encoding="utf-8",uiName = None,elementName = None):
     """Read TXT File"""
     global G_ResDir
     if filename is None:
        return ['TXT','No File']
+'''
+    f.write(code)
     if exportMode == True:
+        code='''
         if runMode == 'android':
             realpath = GameLib.Res.GetResPath(filename)
             if realpath is not None:
         else:
             realpath = os.path.join(G_ResDir,filename)
             if os.path.exists(realpath) == True:
+'''
+        f.write(code)
+
     else:
+        code='''
         if runMode == 'android':
             realpath = GameLib.Res.GetResPath(filename)
             if realpath is not None:
@@ -12791,22 +12871,31 @@ def FileReader_ReadTXTFile(filename = None,encoding="utf-8",uiName = None,elemen
     if uiName and elementName:
             SetText(uiName,elementName,"FileNotFoundError:"+realpath)
     return ['TXT',\"FileNotFoundError:\"+realpath]
+'''
+        f.write(code)
 #读取CSV
 def WriteFileReader_ReadCSV(f,runMode,exportMode):
+    code='''
     #f.write('#Read CSV File
 def FileReader_ReadCSVFile(filename,encoding,uiName = None,elementName = None):
     """Read CSV File"""
     global G_ResDir
     if filename is None:
        return ['CSV','No File']
+'''
+    f.write(code)
     if exportMode == True:
+        code='''
         if runMode == 'android':
             realpath = GameLib.Res.GetResPath(filename)
             if realpath is not None:
         else:
             realpath = os.path.join(G_ResDir,filename)
             if os.path.exists(realpath) == True:
+'''
+        f.write(code)
     else:
+        code='''
         if runMode == 'android':
             realpath = GameLib.Res.GetResPath(filename)
             if realpath is not None:
@@ -12826,8 +12915,11 @@ def FileReader_ReadCSVFile(filename,encoding,uiName = None,elementName = None):
     if uiName and elementName:
             SetText(uiName,elementName,"FileNotFoundError:"+realpath)
     return ['CSV',\"FileNotFoundError:\"+realpath]
+'''
+        f.write(code)
 #读取JSON
 def WriteFileReader_ReadJSON(f,runMode,exportMode):
+    code='''
     #f.write('#Read JSON File
 def FileReader_ReadJSONFile(fileorurl,encoding,uiName = None,elementName = None):
     """Read JSON File"""
@@ -12839,14 +12931,20 @@ def FileReader_ReadJSONFile(fileorurl,encoding,uiName = None,elementName = None)
         if uiName and elementName:
             SetText(uiName,elementName,content)
         return [\'JSON\',content]
+'''
+    f.write(code)
     if exportMode == True:
+        code='''
         if runMode == 'android':
             realpath = GameLib.Res.GetResPath(fileorurl)
             if realpath is not None:
         else:
             realpath = os.path.join(G_ResDir,fileorurl)
             if os.path.exists(realpath) == True:
+'''
+        f.write(code)
     else:
+        code='''
         if runMode == 'android':
             realpath = GameLib.Res.GetResPath(fileorurl)
             if realpath is not None:
@@ -12866,22 +12964,31 @@ def FileReader_ReadJSONFile(fileorurl,encoding,uiName = None,elementName = None)
     if uiName and elementName:
             SetText(uiName,elementName,"FileNotFoundError:"+realpath)
     return ['JSON',\"FileNotFoundError:\"+realpath]
+'''
+        f.write(code)
 #读取JSON
 def WriteFileReader_ReadXML(f,runMode,exportMode):
+    code='''
     #f.write('#Read XML File
 def FileReader_ReadXMLFile(filename,encoding,uiName = None,elementName = None):
     """Read XML File"""
     global G_ResDir
     if filename is None:
        return ['XML','No File']
+'''
+    f.write(code)
     if exportMode == True:
+        code='''
         if runMode == 'android':
             realpath = GameLib.Res.GetResPath(filename)
             if realpath is not None:
         else:
             realpath = os.path.join(G_ResDir,filename)
             if os.path.exists(realpath) == True:
+'''
+        f.write(code)
     else:
+        code='''
         if runMode == 'android':
             realpath = GameLib.Res.GetResPath(filename)
             if realpath is not None:
@@ -12902,7 +13009,7 @@ def FileReader_ReadXMLFile(filename,encoding,uiName = None,elementName = None):
             SetText(uiName,elementName,"FileNotFoundError:"+realpath)
     return ['XML',\"FileNotFoundError:\"+realpath]
 ''' 
-    f.write(code)
+        f.write(code)
 #读取WEB
 def WriteFileReader_ReadWEB(f):
     code='''
@@ -13032,8 +13139,12 @@ def WriteFileReader(f):
 #Create A Empty FileReader
 def FileReader():
     return None
+'''
+    f.write(code)
 #播放器
+
 def WriteAudioPlayer(f,runMode='windows'):
+    code='''
     #f.write('#Create AudioPlayer
 class AudioPlayer():
     """'+Language.G_Language[1785]+'"""
