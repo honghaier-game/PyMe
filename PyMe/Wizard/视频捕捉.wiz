@@ -3,7 +3,7 @@ lessonid=26
 difficulty=简单
 reward=0
 introduction=了解使用组件开发视频采集的功能。
-stepindex=11
+stepindex=14
 1=从左边工具条拖动创建一个Canvas控件放到Form_1中，设置大小为800x600像素。["Create_Canvas","SetW_Canvas_1_800","SetH_Canvas_1_600"]
 2=从左边工具条的“其它”分类中找到“VideoCapture"组件，拖入到Form_1中。["Create_VideoCapture"]
 3=选中VideoCapture组件，从右上角的控件树中把树项“Canvas_1”拖动到当前“VideoCapture”组件的“Canvas”属性值栏中，按Ctrl+S保存当前界面。["DragToAttribute_VideoCapture_Canvas_1","SaveFile_<%=ProjName%>.py"]
