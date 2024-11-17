@@ -1,5 +1,5 @@
-opencv_version = "4.8.1.78"
-contrib = True
-headless = False
+opencv_version = "4.10.0.84"
+contrib = False
+headless = True
 rolling = False
 ci_build = True
