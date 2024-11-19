@@ -3096,7 +3096,7 @@ def WriteDelItemTextFunction(f):
 #写入更新到文字
 def WriteSetImageFunction(f,exportMode = False,usePME = False):
     f.write('def LoadImageFromPMEFile(imagePath):\n')
-    if usePME == False:
+    if not usePME:
         f.write('    return None\n')
     else:
         f.write('    global PMEPassword\n')
@@ -3148,7 +3148,7 @@ def WriteSetImageFunction(f,exportMode = False,usePME = False):
     f.write('                if imagePath_Lower in G_ResourcesFileList:\n')
     f.write('                    imagePath = G_ResourcesFileList[imagePath_Lower]\n')
     f.write('                if os.path.exists(imagePath) == False:\n')
-    if exportMode == False:
+    if not exportMode:
         f.write("                    Control.configure(image = '')\n")
         f.write('                    return\n')
         f.write('            image = Image.open(imagePath).convert(format)\n')
@@ -3222,7 +3222,7 @@ def WriteSetImageFunction(f,exportMode = False,usePME = False):
     f.write('                if imagePath_Lower in G_ResourcesFileList:\n')
     f.write('                    imagePath = G_ResourcesFileList[imagePath_Lower]\n')
     f.write('                if os.path.exists(imagePath) == False:\n')
-    if exportMode == False:
+    if not exportMode:
         f.write('                    return\n')
         f.write('            image = Image.open(imagePath).convert(format)\n')
     else:
@@ -3265,7 +3265,7 @@ def WriteSetImageFunction(f,exportMode = False,usePME = False):
     f.write('                        if imagePath_Lower in G_ResourcesFileList:\n')
     f.write('                            imagePath = G_ResourcesFileList[imagePath_Lower]\n')
     f.write('                        if os.path.exists(imagePath) == False:\n')
-    if exportMode == False:
+    if not exportMode:
         f.write('                            return\n')
         f.write('                    newImage = Image.open(imagePath).convert(\'RGBA\')\n')
     else:
@@ -3536,7 +3536,7 @@ def WriteGetImageFunction(f):
 #写入更新到文字
 def WriteSetImageFunction_Mobile(f,exportMode = False,usePME = False):
     f.write('def LoadImageFromPMEFile(imagePath):\n')
-    if usePME == False:
+    if not usePME:
         f.write('    return None\n')
     else:
         f.write('    global PMEPassword\n')
@@ -4137,13 +4137,13 @@ def WriteInitFunction(f,HasCanvas,UseDataBase):
     f.write('                if EBData[3] == 1:\n')
     f.write('                    SetText(uiName,elementName,EBData[2],False)\n')
         
-    if  HasCanvas == True:
+    if HasCanvas:
         f.write('    UIScale = G_UIScale\n')
         f.write('    if uiName in G_UIRootSizeDictionary.keys():\n')
         f.write('        if "scale" in G_UIRootSizeDictionary[uiName].keys():\n')
         f.write('            UIScale = G_UIRootSizeDictionary[uiName]["scale"]\n')
         f.write('    LoadCanvasRecord(uiName,UIScale)\n')
-    if  UseDataBase == True:
+    if UseDataBase:
         f.write('    for elementName in G_UIElementDictionary[uiName]:\n')
         f.write('        if elementName.find("ListView_") >= 0 and elementName.find("Scroll") < 0:\n')
         f.write('             LoadDynamicColumn(uiName,elementName)\n')
@@ -4261,9 +4261,9 @@ def WriteInitFunction_Mobile(f,HasCanvas,UseDataBase):
     f.write('            for EBData in G_UIElementUserDataArray[uiName][elementName]:\n')
     f.write('                if EBData[3] == 1:\n')
     f.write('                    SetText(uiName,elementName,EBData[2],False)\n')
-    if  HasCanvas == True:
+    if  HasCanvas:
         f.write('    LoadCanvasRecord(uiName)\n')
-    if  UseDataBase == True:
+    if  UseDataBase:
         f.write('    for elementName in G_UIElementDictionary[uiName]:\n')
         f.write('        if elementName.find("ListView_") >= 0:\n')
         f.write('             LoadDynamicColumn(uiName,elementName)\n')
@@ -6665,7 +6665,7 @@ def WriteDoCanvasRecordFunction(f,useAggdraw = True):
     f.write('    """'+Language.G_Language[1234]+'"""\n')
     f.write('    if  drawCanvas != None:\n')
     f.write("        if shapeType == 'line' or shapeType == 'pen'  :\n")
-    if useAggdraw == True:
+    if useAggdraw:
 
         f.write('            if  dash1 > 0 :\n')
         f.write('                drawCanvas.create_line(x, y, x2, y2, fill=fillcolor,dash=(dash1,dash2),width = fillwidth,tag=shapeTag)\n')
@@ -6892,7 +6892,7 @@ def WriteDoCanvasRecordFunction(f,useAggdraw = True):
     f.write('                    drawCanvas.create_arc(x+width-2*roundRadius,y+height-2*roundRadius,x+width,y+height,extent=-90,outline=outlinecolor,width=fillwidth, style=\'arc\',tag=OutArcTag)\n')
     f.write('                    drawCanvas.create_arc(x,y+height-2*roundRadius,x+2*roundRadius,y+height,start=180,extent=90,outline=outlinecolor,width=fillwidth, style=\'arc\',tag=OutArcTag)\n')
     f.write("        elif shapeType == 'circle':\n")
-    if useAggdraw == True:
+    if useAggdraw:
         f.write('            if  fillcolor == \'None\':\n')
         f.write('                if  dash1 > 0 :\n')
         f.write('                    drawCanvas.create_oval(x, y, x2, y2, outline=outlinecolor,dash=(dash1,dash2),width = fillwidth,tag=shapeTag)\n')
@@ -10284,7 +10284,7 @@ def WriteLoadCanvasRecordFunctions_Mobile(f,exportMode,androidTTFFile):
     f.write('        g = int(hex[3:5],16)\n')
     f.write('        b = int(hex[5:7], 16)\n')
     f.write('        return (r,g,b)\n')
-    if exportMode == False:
+    if not exportMode:
         f.write('    canvasFile = GameLib.APKResDir + "\\\\res\\\\" + uiName + ".cav"\n')
     else:
         f.write('    resdir = os.path.join(GameLib.APKResDir,"res")\n')
@@ -11839,7 +11839,7 @@ def WriteNativeCallBackFunction_Mobile(f):
 #写入读取样式表数据
 def WriteReadStyleFileFunction(f,exportMode=False,StyleArray=None):
     #f.write(Language.G_Language[1230]+'\n')
-    if exportMode == True and StyleArray != None:
+    if exportMode and StyleArray is not None:
         f.write('def ReadStyleFile(filePath):\n')
         f.write('    """'+Language.G_Language[1230]+'"""\n')
         f.write('    StyleArray = {}\n')
@@ -12398,7 +12398,7 @@ def WriteFileReader_ReadTXT(f,runMode,exportMode):
     f.write('    global G_ResDir\n')
     f.write('    if filename is None:\n')
     f.write("       return ['TXT','No File']\n")
-    if exportMode == True:
+    if exportMode:
         if runMode == 'android':
             f.write('    realpath = GameLib.Res.GetResPath(filename)\n')
             f.write('    if realpath is not None:\n')
@@ -12433,7 +12433,7 @@ def WriteFileReader_ReadCSV(f,runMode,exportMode):
     f.write('    global G_ResDir\n')
     f.write('    if filename is None:\n')
     f.write("       return ['CSV','No File']\n")
-    if exportMode == True:
+    if exportMode:
         if runMode == 'android':
             f.write('    realpath = GameLib.Res.GetResPath(filename)\n')
             f.write('    if realpath is not None:\n')
@@ -12473,7 +12473,7 @@ def WriteFileReader_ReadJSON(f,runMode,exportMode):
     f.write('        if uiName and elementName:\n')
     f.write('            SetText(uiName,elementName,content)\n')
     f.write('        return [\'JSON\',content]\n')
-    if exportMode == True:
+    if exportMode:
         if runMode == 'android':
             f.write('    realpath = GameLib.Res.GetResPath(fileorurl)\n')
             f.write('    if realpath is not None:\n')
@@ -12508,7 +12508,7 @@ def WriteFileReader_ReadXML(f,runMode,exportMode):
     f.write('    global G_ResDir\n')
     f.write('    if filename is None:\n')
     f.write("       return ['XML','No File']\n")
-    if exportMode == True:
+    if exportMode:
         if runMode == 'android':
             f.write('    realpath = GameLib.Res.GetResPath(filename)\n')
             f.write('    if realpath is not None:\n')
